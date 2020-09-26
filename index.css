@@ -1,3 +1,33 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
 body {
+    margin: 0;
     background-color: rosybrown;
+}
+
+nav {
+    background-color: seashell;
+}
+
+
+
+ul {
+    display: flex;
+    justify-content:  flex-end;
+}
+
+.nav-list a:hover {
+    background-color: goldenrod;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 2rem;
+}
+#welcome-section {
+    background-color: antiquewhite;
 }
