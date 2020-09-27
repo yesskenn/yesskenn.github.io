@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&family=Sacramento&display=swap');
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -7,6 +9,9 @@ html {
 body {
     margin: 0;
     background-color: rosybrown;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    line-height: 1.2;
 }
 
 nav {
@@ -18,10 +23,23 @@ nav {
 ul {
     display: flex;
     justify-content:  flex-end;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
+
+a {
+    text-decoration: none;
+    color: sienna;
+}
+
+a:visited{
+    color:sienna;
+}
+
 
 .nav-list a:hover {
     background-color: goldenrod;
+    
 }
 
 li {
@@ -30,4 +48,24 @@ li {
 }
 #welcome-section {
     background-color: antiquewhite;
+    display:flex;
+    flex-direction: column;
+    width: 100 vw;
+    align-items: center;
+}
+
+#welcome-section > h1 {
+    font-family: 'Sacramento', monospace;
+    font-size: 3rem;
+}
+
+#welcome-section > h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+img {
+    display: block;
+    width: 100%;
 }
