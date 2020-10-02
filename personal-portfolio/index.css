@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&family=Sacramento&display=swap');
 
-/* base reset */
+/* BASE RESET */
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +10,52 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-
+/*BASE STYLES*/
 body {
     margin: 0;
     background-color: rosybrown;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 1rem; /* 10px*/
     line-height: 1.2;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: seashell;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* NAV */
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     background-color: seashell;
     position: fixed;
     top: 0;
@@ -29,45 +63,55 @@ nav {
     width: 100%;
     z-index: 10;
     padding: 1.2rem;
+    
 }
 
 
 .nav-list {
-    display: flex;
-    justify-content:  flex-end;
     font-size: 1.2rem;
     font-weight: 800;
-    list-style: none;
     margin-right: 2rem;
-
 }
 
-
+@media (max-width: 30em) {
+    .nav {
+        justify-content: center;
+    }
+    
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+    
+    
+    
 .nav-list a {
-    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
     color: sienna;
 }
 
-a:visited{
+.nav-list a:hover {
+    background-color: goldenrod;
+}
+
+.nav-list a:visited{
     color:sienna;
 }
 
 
-.nav-list a:hover {
-    background-color: goldenrod;
-    
-}
 
-li {
-    list-style-type: none;
-    margin-left: 2rem;
-}
+
+
+
+/* WELCOME-SECTION */
 #welcome-section {
     background-color: antiquewhite;
     display:flex;
     flex-direction: column;
     width: 100 vw;
-    height: 100vw;
+    height: 50vh;
     align-items: center;
     justify-content: center;
 }
@@ -83,14 +127,92 @@ li {
     font-weight: 300;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    max-height: 300px;;
+
+/* PROJECT SECTION */
 
 
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
     background: #45567d;
+}
+
+.projects-section-header {
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+@media (max-width: 30em) {
+    .projects-section-header {
+        font-size: 4rem;
+    }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 32rem) {
+    .projects-section {
+        padding: 5rem 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-image {
+    height: calc(100% - 6.6rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    padding: 0 2rem;
+    background: seashell
+}
+
+.contact-header > h2 {
+    font-size: 3rem;
+}
+
+@media (max-widht: 28.75rem) {
+    .contact-header >h2 {
+        font-size: 4rem;
+    }
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 960px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
 }
