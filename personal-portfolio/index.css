@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&family=Sacramento&display=swap');
 
+/* base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -16,18 +23,27 @@ body {
 
 nav {
     background-color: seashell;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 1.2rem;
 }
 
 
-
-ul {
+.nav-list {
     display: flex;
     justify-content:  flex-end;
     font-size: 1.2rem;
     font-weight: 800;
+    list-style: none;
+    margin-right: 2rem;
+
 }
 
-a {
+
+.nav-list a {
     text-decoration: none;
     color: sienna;
 }
@@ -51,7 +67,9 @@ li {
     display:flex;
     flex-direction: column;
     width: 100 vw;
+    height: 100vw;
     align-items: center;
+    justify-content: center;
 }
 
 #welcome-section > h1 {
@@ -67,5 +85,12 @@ li {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    max-height: 300px;;
+
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #45567d;
 }
