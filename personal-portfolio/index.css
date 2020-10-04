@@ -24,7 +24,7 @@ body {
     margin: 0;
     background-color: rosybrown;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem; /* 10px*/
+    font-size: 10px; /* 1rem*/
     line-height: 1.2;
 }
 
@@ -74,14 +74,23 @@ nav {
     margin-right: 2rem;
 }
 
-@media (max-width: 30em) {
-    .nav {
-        justify-content: center;
-    }
+@media screen and (max-width: 480px) {
+   
     
     .nav-list {
-        margin: 0 1rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    
+    .nav-list a {
+        font-size: 1.5rem;
+        font-weight: 200;
+        padding: 1px;
+    }
+   
 }
     
     
@@ -90,10 +99,11 @@ nav {
     font-size: 2rem;
     padding: 2rem;
     color: sienna;
+    margin-right: 2rem;
 }
 
 .nav-list a:hover {
-    background-color: goldenrod;
+   font-size: 2.2rem;
 }
 
 .nav-list a:visited{
@@ -110,7 +120,7 @@ nav {
     background-color: antiquewhite;
     display:flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -119,6 +129,7 @@ nav {
 #welcome-section > h1 {
     font-family: 'Sacramento', monospace;
     font-size: 6rem;
+    color: black;
 }
 
 #welcome-section > h2 {
@@ -127,15 +138,23 @@ nav {
     font-weight: 300;
 }
 
+@media screen and (max-width: 480px) {
+    #welcome-section > h1 {
+        font-size: 3rem;
+    }
+    #welcome-section > h2 {
+        font-size: 1.5rem;
+    }
+    
+    .welcome-section {
+        width: 100%;
+    }
+}
+
 
 /* PROJECT SECTION */
 
 
-.projects-section {
-    text-align: center;
-    padding: 10rem 2rem;
-    background: #45567d;
-}
 
 .projects-header {
     max-width: 600px;
@@ -145,9 +164,9 @@ nav {
     
 }
 
-@media (max-width: 30em) {
-    .projects-section-header {
-        font-size: 4rem;
+@media screen and (max-width: 480px) {
+    .projects-header {
+        font-size: 1.75rem;
     }
 }
 
@@ -156,18 +175,22 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     width: 100%;
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
+    justify-content: space-around;
+    align-content: center;
     margin-bottom: 3rem;
 }
 
-@media (max-width: 32rem) {
-    .projects-section {
+@media screen and (max-width: 480px) {
+    #projects {
         padding: 5rem 1rem;
+        margin: 0 auto;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }
 
@@ -179,14 +202,28 @@ nav {
 
 .project-title {
     font-size: 1.5rem;
+    font-family: 'Open Sans';
+    font-weight: 200;
     padding: 2rem 0.5rem;
+    background-color: rgba(218, 165, 32, 0.603);
+    display: flex;
+    justify-content: center;
+
 }
 
-.btn {
+.project-tile:hover {
+    background-color: sienna;
+    transition:  background-color 0.3s ease-in-out;
+}
+
+
+
+
+/* .btn {
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 1px;
-}
+}*/
 
 /* CONTACT SECTION */
 .contact-section {
@@ -211,11 +248,6 @@ nav {
     font-weight: 600;
     color: goldenrod;
 }
-@media (max-width: 28.75rem) {
-    .contact-header >h2 {
-        font-size: 4rem;
-    }
-}
 
 .contact-links {
     display: flex;
@@ -224,11 +256,51 @@ nav {
     flex-wrap: wrap;
     font-size: 1.75rem;
     margin: 1.75rem;
+    justify-content: space-around;
 }
 
 .contact-links > a {
     color: sienna;
 }
+
+i {
+    padding-right: 0.2rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .contact-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .contact-section > h1 {
+        font-size: 2rem;
+    }
+
+    .contact-section > h2 {
+        font-size: 1em;
+        margin-top: 0.5rem;
+    }
+
+    .contact-section > p {
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+    .contact-links {
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
 
 /* FOOTER */
 footer {
@@ -237,7 +309,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1 rem 2rem;
+    padding: 1rem 2rem;
     margin: 0 auto;
 }
 
@@ -246,3 +318,4 @@ footer > p {
     font-size: 1.25rem;
     margin-left: 2rem;
 }
+
