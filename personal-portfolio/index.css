@@ -21,7 +21,6 @@ html {
 
 /*BASE STYLES*/
 body {
-    margin: 0;
     background-color: rosybrown;
     font-family: 'Open Sans', sans-serif;
     font-size: 10px; /* 1rem*/
@@ -56,8 +55,6 @@ img {
 nav {
     background-color: seashell;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 10;
     padding: 3rem;
@@ -116,6 +113,10 @@ nav {
 
 
 /* WELCOME-SECTION */
+
+#welcome-section {
+    width: 100%;
+}
 .welcome-section {
     display:flex;
     flex-direction: column;
@@ -123,6 +124,7 @@ nav {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    margin: 0;
     background-color: antiquewhite;
 }
 
@@ -134,8 +136,15 @@ nav {
 
 #welcome-section > h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-weight: 300;
+}
+
+#welcome-section > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 100;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 480px) {
