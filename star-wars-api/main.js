@@ -1,10 +1,10 @@
 import { films } from './data/films.js'
+import { people } from './data/people.js'
 
 
-
-films.forEach(film => {
+people.forEach(person => {
     let newParagraph = document.body.appendChild(document.createElement("p"))
-    newParagraph.textContent = film.title
+    newParagraph.textContent = person.name
 })
 // console.log(films[0]);
 
