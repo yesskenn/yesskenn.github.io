@@ -1,4 +1,27 @@
-main (
+* {
+    margin: 0px;
+    box-sizing: border-box;;
+}
+
+
+main {
     display: flex;  
     flex-wrap: wrap;
-)
+    justify-content: center;
+}
+
+figure {
+    margin: 1rem;
+}
+
+figcaption {
+    background-color: lavender;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
