@@ -2,10 +2,29 @@ import { films } from './data/films.js'
 import { people } from './data/people.js'
 
 
-people.forEach(person => {
+/* people.forEach(person => {
     let newParagraph = document.body.appendChild(document.createElement("p"))
     newParagraph.textContent = person.name
-})
+}) */
+
+const main = document.querySelector('main')
+
+for (let step = 0; step < 7; step++) {
+    let figure = document.createElement('figure')
+    let figImg = document.createElement('img')  
+    figImg.src = `https://starwars-visualguide.com/assets/img/films/${step + 1}.jpg` 
+    let figCaption = document.createElement('figcaption')
+    figCaption.textContent = films[step].title
+    
+    figure.appendChild(figImg)
+    figure.appendChild(figCaption)
+    main.appendChild(figure)
+    
+}  
+
+
+
+
 // console.log(films[0]);
 
 
