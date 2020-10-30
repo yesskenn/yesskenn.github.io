@@ -19,27 +19,51 @@ const otherButton = document.createElement('button')
 otherButton.textContent = 'Other Characters'
 mainHeader.appendChild(otherButton)
 
-const maleCharacters = people.filter(person => person.gender === 'male')
-console.log(maleCharacters)
+const maleCharacters = people.filter((person) => person.gender === 'male')
 
-maleButton.addEventListener('click', event => {
-    maleCharacters.forEach(element => {
+const femaleCharacters = people.filter((person) => person.gender === 'female')
 
-    const charFigure = document.createElement('figure')
-    const charImg = document.createElement('img')
-    charImg.src = `https://starwars-visualguide.com/assets/img/characters/1.jpg`
-    const charCaption = document.createElement('figcaption')
-    charCaption.textContent = `Luke Skywalker`
+const otherCharacters = people.filter((person) => person.gender === 'none')
 
-    charFigure.appendChild(charImg)
-    charFigure.appendChild(charCaption)
 
-    mainContent.appendChild(charFigure)
+maleButton.addEventListener('click', () => populateDOM(maleCharacters))
+
+femaleButton.addEventListener('click', () => populateDOM(femaleCharacters))
+
+otherButton.addEventListener('click', () => populateDOM(otherCharacters))
+
+
+function populateDOM(characters){
+    removeChildren(mainContent)
+    characters.forEach(element => {
+
+        const charFigure = document.createElement('figure')
+        const charImg = document.createElement('img')
+        let charNum = getLastNumber(element.url)
+        charImg.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
+        charImg.addEventListener('error', () => charImg.hidden = true) // genius level
+        const charCaption = document.createElement('figcaption')
+        charCaption.textContent = element.name
+    
+        charFigure.appendChild(charImg)
+        charFigure.appendChild(charCaption)
+    
+        mainContent.appendChild(charFigure)
 })
-})
-let theUrl = "https://swapi.co/api/people/2/"
+}
+// let theUrl = "https://swapi.co/api/people/2/"
+
 function getLastNumber(url) {
-    console.log(url)
+    let end = url.lastIndexOf('/')
+    let start = end - 2
+    if(url.charAt(start) === '/') {
+        start++
+    }
+return url.slice(start, end)
 }
 
-getLastNumber(theUrl)
+function removeChildren(container) {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+}
