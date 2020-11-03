@@ -26,6 +26,11 @@ function populateNav(starships) {
 
 function populateShipView(shipData) {
     console.log(shipData)
+    // use createElement to create new img elements
+    //set their source to the url below
+    //make Shipnum act like charnum from the characters page
+    //https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg
+    //append the image to the shipView element
 }
 
 populateNav(starships)
