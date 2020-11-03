@@ -23,7 +23,13 @@ const maleCharacters = people.filter((person) => person.gender === 'male')
 
 const femaleCharacters = people.filter((person) => person.gender === 'female')
 
-const otherCharacters = people.filter((person) => person.gender === 'none')
+const otherCharacters = people.filter((thing) => {
+    if (thing.gender === 'n/a' || 
+        thing.gender === 'none' ||
+        thing.gender === 'hermaphrodite') {
+        return thing
+    }
+})
 
 
 maleButton.addEventListener('click', () => populateDOM(maleCharacters))
