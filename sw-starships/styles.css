@@ -2,7 +2,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+.container {
+    display: flex;
+}
 
+.main {
+    margin: 10rem 5rem 0 10rem;
+    width: 960px;
+}
 header, footer {
     display: flex;
     justify-content: center;
