@@ -50,7 +50,9 @@ img {
     width: 100%;
 }
 
-
+h3 {
+    margin: 0.5rem auto;
+}
 /* NAV */
 nav {
     background-color: seashell;
@@ -267,6 +269,10 @@ nav {
 }
 
 .contact-links > a {
+    color: sienna;
+}
+
+.pdf-download > a {
     color: sienna;
 }
 
