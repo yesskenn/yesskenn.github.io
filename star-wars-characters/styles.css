@@ -3,6 +3,30 @@
     box-sizing: border-box;
 }
 
+
+html {
+    font-family: 'Open Sans';
+    background-color: black;
+}
+
+h1 {
+    color: goldenrod;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+button {
+    display: inline-block;
+    padding: 0.375em 1em;
+    border:0.1em solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: none;
+    text-align: center;
+    font-family: 'Open Sans';
+    background-color: black;
+    color: white;
+
+}
 .mainHeader {
     display: flex;
     justify-content: space-around;
