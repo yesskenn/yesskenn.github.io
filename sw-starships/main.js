@@ -1,5 +1,5 @@
 import { starships } from '../data/starships.js'
-import { removeChildren, getLastNumber } from '../util/index.js'
+import { removeChildren, getLastNumber} from '../util/index.js'
 
 const nav = document.querySelector('.nav')
 const navList = document.querySelector('.navList')
@@ -39,19 +39,19 @@ function populateNav(starships) {
 
 
 function populateShipView(shipData) {
-    console.log(shipData)
+   removeChildren(shipView)
     // use createElement to create new img elements
     let shipImage = document.createElement('img')
     let shipNum = getLastNumber(shipData.url)
     //set their source to the url below
     shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
     //make Shipnum act like charnum from the characters page
-    shipImage.addEventListener('error', () => {
-    shipImage.hidden = true
+    shipImage.addEventListener('error', () => shipImage.hidden = true)
     dialog.classList.toggle("is-active")
-    })
+    
     //append the image to the shipView element
     shipView.appendChild(shipImage)
 }
 
 populateNav(starships)
+
