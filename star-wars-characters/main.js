@@ -60,6 +60,6 @@ function populateDOM(characters){
         mainContent.appendChild(charFigure)
 })
 }
-// let theUrl = "https://swapi.co/api/people/2/"
+
 
 
