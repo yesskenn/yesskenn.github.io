@@ -10,6 +10,12 @@
     margin: 10rem 5rem 0 10rem;
     width: 960px;
 }
+
+h1 {
+    margin: 10rem 5rem 0 10rem;
+}
+
+
 header, footer {
     display: flex;
     justify-content: center;
