@@ -5,6 +5,8 @@
 
 html {
     font-family: 'Open Sans';
+    background-color: black;
+
 }
 .container {
     display: flex;
@@ -18,10 +20,9 @@ html {
 h1 {
     margin: 10rem 5rem 0 10rem;
     text-align: center;
+    color: goldenrod;
     
 }
-
-
 
 header, footer {
     display: flex;

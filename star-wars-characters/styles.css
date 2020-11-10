@@ -18,15 +18,23 @@ h1 {
 button {
     display: inline-block;
     padding: 0.375em 1em;
-    border:0.1em solid #FFFFFF;
+    border:0.1em solid #be9b4e;
     box-sizing: border-box;
     box-shadow: none;
     text-align: center;
     font-family: 'Open Sans';
+    font-size: 2rem;
     background-color: black;
     color: white;
+    transition: all 0.3s;
 
 }
+
+button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
 .mainHeader {
     display: flex;
     justify-content: space-around;
