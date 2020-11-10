@@ -47,7 +47,7 @@ function populateShipView(shipData) {
     shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
     //make Shipnum act like charnum from the characters page
     shipImage.addEventListener('error', () => shipImage.hidden = true)
-    dialog.classList.toggle("is-active")
+    dialog.classList.toggle('is-active')
     
     //append the image to the shipView element
     shipView.appendChild(shipImage)

@@ -2,6 +2,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Open Sans';
+}
 .container {
     display: flex;
 }
@@ -13,7 +17,10 @@
 
 h1 {
     margin: 10rem 5rem 0 10rem;
+    text-align: center;
+    
 }
+
 
 
 header, footer {
