@@ -17,10 +17,15 @@ html {
     width: 960px;
 }
 
+header {
+    margin-top: 1.5rem;
+}
+
 h1 {
-    margin: 10rem 5rem 0 10rem;
     text-align: center;
-    color: goldenrod;
+    color: #be9b4e;
+    font-family: 'Orbitron';
+    margin-top: 3rem;
     
 }
 
@@ -30,9 +35,18 @@ header, footer {
     font-size: 1.75rem;
 }
 
+.navList {
+    
+
+}
+
 a {
     text-decoration: none;
     font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
 }
 
 li {
