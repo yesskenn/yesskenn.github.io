@@ -4,6 +4,7 @@ import { removeChildren, getLastNumber} from '../util/index.js'
 const nav = document.querySelector('.nav')
 const navList = document.querySelector('.navList')
 const shipView = document.querySelector('.main')
+const mainNav = document.querySelector('.mainHeader')
 
 const dialog = document.querySelector('.modal')
 const closeButton = document.querySelector('.modal-close')
@@ -13,7 +14,18 @@ const modalBackground = document.querySelector('.modal-background')
 /* MENU */
 
 /* NAV */
+const starshipsButton = document.createElement('button')
+starshipsButton.innerHTML = '<a href="../sw-starships">STARSHIPS</a>'
+mainNav.appendChild(starshipsButton)
 
+
+const charButton = document.createElement('button')
+charButton.innerHTML = '<a href="../star-wars-characters">CHARACTERS</a>'
+mainNav.appendChild(charButton)
+
+const filmsButton = document.createElement('button')
+filmsButton.innerHTML = '<a href="../star-wars-films">FILMS</a>'
+mainNav.appendChild(filmsButton)
 
 
 
@@ -56,9 +68,10 @@ function populateShipView(shipData) {
     //set their source to the url below
     shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
     //make Shipnum act like charnum from the characters page
-    shipImage.addEventListener('error', () => shipImage.hidden = true)
+    shipImage.addEventListener('error', () => {
+        shipImage.hidden = true
     dialog.classList.toggle('is-active')
-    
+    })
     //append the image to the shipView element
     shipView.appendChild(shipImage)
 }
