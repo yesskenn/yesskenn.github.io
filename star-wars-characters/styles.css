@@ -9,11 +9,14 @@ html {
     background-color: black;
 }
 
+header {
+    margin-top: 3rem;
+}
+
 h1 {
     font-family: 'Orbitron';
     color: goldenrod;
     text-align: center;
-    margin-top: 3rem;
 }
 
 button {

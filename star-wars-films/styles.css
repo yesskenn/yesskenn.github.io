@@ -14,10 +14,10 @@ main {
     justify-content: center;
 }
 
-
 header {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 }
+
 figure {
     margin: 1rem;
 }
@@ -37,5 +37,4 @@ h1 {
     font-family: 'Orbitron';
     text-align: center;
     color: goldenrod
-    
 }
