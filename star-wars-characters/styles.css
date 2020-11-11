@@ -40,6 +40,21 @@ button:hover {
     background-color: #ffffff;
 }
 
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+    margin-top: 1rem;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
 .mainHeader {
     display: flex;
     justify-content: space-around;

@@ -2,10 +2,27 @@ import { films } from '../data/films.js'
 import { people } from '../data/people.js'
 
 
-/* people.forEach(person => {
-    let newParagraph = document.body.appendChild(document.createElement("p"))
-    newParagraph.textContent = person.name
-}) */
+/* NAV BAR BUTTONS */
+
+const nav = document.querySelector('nav')
+
+const starshipsButton = document.createElement('button')
+starshipsButton.innerHTML = '<a href="../sw-starships">STARSHIPS</a>'
+nav.appendChild(starshipsButton)
+
+
+const charButton = document.createElement('button')
+charButton.innerHTML = '<a href="../star-wars-characters">CHARACTERS</a>'
+nav.appendChild(charButton)
+
+const filmsButton = document.createElement('button')
+filmsButton.innerHTML = '<a href="../star-wars-films">FILMS</a>'
+nav.appendChild(filmsButton)
+
+
+
+
+/* Main */
 
 const main = document.querySelector('main')
 

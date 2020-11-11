@@ -38,3 +38,39 @@ h1 {
     text-align: center;
     color: goldenrod
 }
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    display: inline-block;
+    padding: 0.375em 1em;
+    border:0.1em solid #be9b4e;
+    box-sizing: border-box;
+    box-shadow: none;
+    text-align: center;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    transition: all 0.3s;
+    
+
+}
+
+button:hover {
+    color: #000000;
+    background-color: goldenrod;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+    margin-top: 1rem;
+}
+
