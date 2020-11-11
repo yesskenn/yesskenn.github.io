@@ -10,6 +10,16 @@ const closeButton = document.querySelector('.modal-close')
 const modalBackground = document.querySelector('.modal-background')
 
 
+/* MENU */
+
+/* NAV */
+
+
+
+
+
+/* MAIN */
+
 closeButton.addEventListener('click', () => {
     dialog.classList.toggle("is-active")
 })
