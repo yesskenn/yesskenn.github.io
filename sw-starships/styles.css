@@ -79,8 +79,9 @@ button:hover {
 }
  
 button > a {
-    text-decoration: underline;
+    text-decoration: none;
 }
+
 
 footer { 
     display: flex;

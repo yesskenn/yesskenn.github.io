@@ -66,6 +66,10 @@ nav {
     margin-bottom: 1rem;
 }
 
+
+a {
+    text-decoration: none;
+}
 a:visited {
     text-decoration: none;
     color: white;
