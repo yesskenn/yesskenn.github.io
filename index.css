@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: seashell;
 }
 
@@ -53,12 +53,13 @@ img {
 h3 {
     margin: 0.5rem auto;
 }
+
+
 /* NAV */
 nav {
     background-color: seashell;
     position: fixed;
     width: 100%;
-    z-index: 10;
     padding: 3rem;
     
 }
@@ -68,8 +69,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    font-size: 1.2rem;
-    font-weight: 800;
+    font-weight: 600;
+    text-transform: uppercase;
     margin-right: 2rem;
 }
 
@@ -96,17 +97,20 @@ nav {
     
 .nav-list a {
     font-size: 2rem;
-    padding: 2rem;
-    color: sienna;
     margin-right: 2rem;
+    color: rosybrown;
+    border: 1.5px solid antiquewhite;
+    padding: 0.25em;
+    transition: all 0.2s;
 }
 
 .nav-list a:hover {
-   font-size: 2.2rem;
+   color: rosybrown;
+   background-color:antiquewhite;
 }
 
 .nav-list a:visited{
-    color:sienna;
+    color: rosybrown;
 }
 
 
@@ -119,6 +123,7 @@ nav {
 #welcome-section {
     width: 100%;
 }
+
 .welcome-section {
     display:flex;
     flex-direction: column;
@@ -171,6 +176,7 @@ nav {
     margin: 3rem auto;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
     
 }
 
@@ -252,7 +258,8 @@ nav {
 .project-title {
     font-size: 1.5rem;
     font-family: 'Open Sans';
-    font-weight: 200;
+    font-weight: 600;
+    text-transform: uppercase;
     padding: 2rem 0.5rem;
     background-color: rgba(218, 165, 32, 0.603);
     display: flex;
@@ -260,7 +267,7 @@ nav {
 
 }
 
-.project-tile:hover {
+.project-title:hover {
     background-color: sienna;
     transition:  background-color 0.3s ease-in-out;
 }
