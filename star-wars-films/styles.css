@@ -47,7 +47,7 @@ a:visited {
 button {
     display: inline-block;
     padding: 0.375em 1em;
-    border:0.1em solid #be9b4e;
+    border: none;
     box-sizing: border-box;
     box-shadow: none;
     text-align: center;
@@ -72,5 +72,6 @@ nav {
     justify-content: center;
     border: none;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
