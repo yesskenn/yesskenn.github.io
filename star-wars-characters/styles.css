@@ -66,6 +66,10 @@ nav {
     margin-bottom: 1rem;
 }
 
+img {
+    position: relative;
+    z-index: 1;
+}
 
 a {
     text-decoration: none;

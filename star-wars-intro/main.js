@@ -1,3 +1,4 @@
+import { addStarField } from '../util/index.js'
 
 const starshipsButton = document.createElement('button')
 starshipsButton.innerHTML = '<a href="../sw-starships">STARSHIPS</a>'
@@ -14,3 +15,4 @@ mainHeader.appendChild(filmsButton)
 
 
 
+addStarField(document.querySelector('body'), 100)

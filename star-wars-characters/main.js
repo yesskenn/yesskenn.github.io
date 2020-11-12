@@ -1,5 +1,5 @@
 import { people } from '../data/people.js'
-import { removeChildren, getLastNumber} from '../util/index.js'
+import { removeChildren, getLastNumber, addStarField} from '../util/index.js'
 
 /* NAV */
 
@@ -84,3 +84,4 @@ function populateDOM(characters){
 
 
 
+addStarField(document.querySelector('body'), 1000)

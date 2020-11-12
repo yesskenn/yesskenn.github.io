@@ -61,6 +61,11 @@ button {
 
 }
 
+
+img {
+    position: relative;
+    z-index: 1
+}
 button:hover {
     color: #000000;
     background-color: goldenrod;
