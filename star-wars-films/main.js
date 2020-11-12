@@ -1,5 +1,5 @@
 import { films } from '../data/films.js'
-import { people } from '../data/people.js'
+import { getLastNumber, addStarField } from '../util/index.js'
 
 
 /* NAV BAR BUTTONS */
@@ -31,11 +31,16 @@ for (let step = 0; step < 7; step++) {
     let figImg = document.createElement('img')  
     figImg.src = `https://starwars-visualguide.com/assets/img/films/${step + 1}.jpg` 
     let figCaption = document.createElement('figcaption')
-    figCaption.textContent = films[step].title
+    
+    const foundFilm = films.find(film => parseInt(getLastNumber(film.url)) === (step + 1))
+    figCaption.textContent = foundFilm.title
+    
     
     figure.appendChild(figImg)
     figure.appendChild(figCaption)
+    
     main.appendChild(figure)
     
 }  
 
+addStarField(document.querySelector('body'), 1000)
