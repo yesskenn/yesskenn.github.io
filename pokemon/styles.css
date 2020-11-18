@@ -16,3 +16,11 @@
     margin: 10px;
     perspective: 600px;
 }
+
+img {
+    max-height: 200px;
+}
+
+h1 {
+    text-align: center;
+}
