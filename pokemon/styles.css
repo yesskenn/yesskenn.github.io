@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-.pokeGrid {
+.pokemonGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -13,6 +13,6 @@
     width: 200px;
     height: 260px;
     border: 1px solid #ccc;
-    margin: 40px 0;
+    margin: 10px;
     perspective: 600px;
 }
