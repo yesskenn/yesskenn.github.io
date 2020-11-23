@@ -1,5 +1,3 @@
-
-
 //Reusable async function to fetch data from URL
 
 async function getAPIData(url) {
@@ -89,5 +87,18 @@ function Pokemon(name, height, weight, abilities) {
     this.id = 900
 }
 
+
+
+
+
+/* function Pokemon(name, height, weight, abilities) {
+    this.name = name
+    this.height = height
+    this.weight = weight
+    this.abilities = abilities
+    this.id = 900
+}
+
 let yessimon = new Pokemon('Yessimon', 450, 200, ['cry', 'sleep'])
-console.log(yessimon)
+console.log(yessimon) */
+
