@@ -176,7 +176,9 @@ nav {
     margin: 3rem auto;
     display: flex;
     justify-content: center;
-    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.75rem;
+    
     
 }
 
@@ -186,49 +188,10 @@ nav {
     }
 }
 
-.featured {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5rem;
-    max-width: 100 vw;
-    max-height: 300px;
-}
-
-
-
-
-.featured-image {
-    max-height: 300px;
-    max-width: 300px;
-    background-color: black;
-    
-}
-
-
-
-.featured-title {
-    font-size: 3rem;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    position: relative;
-    margin-top: -75px;
-    background-color: rgba(0,0,0,0.5);
-    text-align: center;
-    width: 100%;
-}
-
-.featured-title:hover {
-    background-color: black;
-    transition:  background-color 0.3s ease-in-out;
-}
-
-
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
@@ -248,38 +211,40 @@ nav {
     }
 }
 
+
+
 .project-image {
     height: calc(100% - 6.6rem);
+    border-radius: 25px;
     width: 100%;
-    object-fit: cover;
-    border-inline: 1px solid gray;
+    border: 1px solid seashell;
+   
 }
 
+
 .project-title {
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    margin-top: -1rem;
+}
+
+.project-p {
     font-size: 1.5rem;
     font-family: 'Open Sans';
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2rem 0.5rem;
-    background-color: rgba(218, 165, 32, 0.603);
-    display: flex;
-    justify-content: center;
-
+    padding: 2.5rem 0.5rem;
 }
 
 .project-title:hover {
-    background-color: sienna;
+    background-color: seashell;
     transition:  background-color 0.3s ease-in-out;
 }
 
 
 
 
-/* .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 1px;
-}*/
 
 /* CONTACT SECTION */
 .contact-section {
