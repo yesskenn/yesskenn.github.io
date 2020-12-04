@@ -14,19 +14,35 @@ async function getAPIData(url) {
 //now, use async getAPIData function
 
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=3`).then
+     //?limit=25&offset=800
     (async (data) => {
         for (const pokemon of data.results) {
             await getAPIData(pokemon.url).then((pokeData) => {
-                console.log(pokeData)
+                //console.log(pokeData)
                 populatePokeCard(pokeData)
             })
         }
-    })
+    },
+    )
 }
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('button')
+const newPokemonButton = document.querySelector('.newPokemon')
+
+newPokemonButton.addEventListener('click', () => {
+    let pokeName = prompt('What is your new Pokemon name?')
+    let newPokemon = new Pokemon(
+        pokename,
+        400,
+        200,
+        ['eat', 'study', 'work'],
+        ['poop', 'drink coffee', 'code'])
+        populatePokeCard(newPokemon)
+    }
+    )
+
 
 loadButton.addEventListener('click', () => {
     loadPage()
@@ -36,7 +52,7 @@ loadButton.addEventListener('click', () => {
 
 
 
-function populatePokeCard(pokemon) {
+function populatePokeCard(singlePokemon) {
     let pokeScene = document.createElement('div')
     pokeScene.className = 'scene'
     let pokeCard = document.createElement('div')
@@ -44,8 +60,8 @@ function populatePokeCard(pokemon) {
     pokeCard.addEventListener('click', () => {
         pokeCard.classList.toggle('is-flipped')
     })
-    pokeCard.appendChild(populateCardFront(pokemon))
-    pokeCard.appendChild(populateCardBack(pokemon))
+    pokeCard.appendChild(populateCardFront(singlePokemon))
+    pokeCard.appendChild(populateCardBack(singlePokemon))
     pokeScene.appendChild(pokeCard)
     pokemonGrid.appendChild(pokeScene)
 }
@@ -65,9 +81,29 @@ function populateCardFront(pokemon) {
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = `card-face card-face-back`
-    let backLabel = document.createElement('h3')
-    backLabel.textContent = `Abilities:`
-    let abilityList = document.createElement('ul')
+    let backLabel = document.createElement('p')
+    backLabel.textContent = `${pokemon.moves.length} moves`
+    cardBack.appendChild(backLabel)
+    return cardBack
+}
+    
+ function getMovesDetails(pokemonMoves) {
+
+    const nonNullMoves = pokemonMoves.filter(async (move) => {
+        if (!move.move) return
+        const moveData = await getAPIData(move.move.url)
+        console.log(moveData.accuracy, moveData.power)
+        if ((moveData.accuracy && moveData.power) !== null) {
+            return moveData
+        }
+    })
+
+    Promise.all(nonNullMoves).then((values) => {
+        console.log(values)
+    })
+ }   
+    
+    /* let abilityList = document.createElement('ul')
     pokemon.abilities.forEach(ability => {
         let abilityName = document.createElement('li')
         abilityName.textContent = ability.ability.name
@@ -85,21 +121,24 @@ function populateCardBack(pokemon) {
     return cardBack
 }
 
-function getBestAccuracy(pokemoves) {
+/* function getBestAccuracy(pokemoves) {
     return pokemoves.reduce((mostAccurate, move) => {
         getAPIData(move.move.url).then
         (async (data) => {
             console.log(data.accuracy, data.power)
         })
     }, {});
-}
+} */
 
 function getImageFileName(pokemon) {
     if (pokemon.id < 10) {
         return `00${pokemon.id}`
-    } else if (pokemon.id > 9 && pokemon.id <99) {
+    } else if (pokemon.id > 9 && pokemon.id < 100) {
         return `0${pokemon.id}`
+    } else if (pokemon.id > 99 && pokemon.id < 810) {
+        return `$(pokemon.id)`
     }
+    return `pokeball`
 }
 
 function Pokemon(name, height, weight, abilities) {
@@ -108,6 +147,7 @@ function Pokemon(name, height, weight, abilities) {
     this.weight = weight
     this.abilities = abilities
     this.id = 900
+    this.moves = moves
 }
 
 
