@@ -14,7 +14,7 @@ async function getAPIData(url) {
 //now, use async getAPIData function
 
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=3`).then
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
      //?limit=25&offset=800
     (async (data) => {
         for (const pokemon of data.results) {
@@ -31,17 +31,19 @@ const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('button')
 const newPokemonButton = document.querySelector('.newPokemon')
 
-newPokemonButton.addEventListener('click', () => {
-    let pokeName = prompt('What is your new Pokemon name?')
+/* newPokemonButton.addEventListener('click', () => {
+    let pokemonName = prompt('What is your new Pokemon name?')
     let newPokemon = new Pokemon(
-        pokename,
+        pokemonname,
         400,
         200,
         ['eat', 'study', 'work'],
         ['poop', 'drink coffee', 'code'])
         populatePokeCard(newPokemon)
-    }
-    )
+    })
+*/
+
+
 
 
 loadButton.addEventListener('click', () => {
@@ -57,9 +59,10 @@ function populatePokeCard(singlePokemon) {
     pokeScene.className = 'scene'
     let pokeCard = document.createElement('div')
     pokeCard.className = 'card'
-    pokeCard.addEventListener('click', () => {
+    pokeCard.addEventListener('click', function () {
         pokeCard.classList.toggle('is-flipped')
     })
+
     pokeCard.appendChild(populateCardFront(singlePokemon))
     pokeCard.appendChild(populateCardBack(singlePokemon))
     pokeScene.appendChild(pokeCard)
@@ -141,7 +144,7 @@ function getImageFileName(pokemon) {
     return `pokeball`
 }
 
-function Pokemon(name, height, weight, abilities) {
+function Pokemon(name, height, weight, abilities, moves) {
     this.name = name
     this.height = height
     this.weight = weight
@@ -153,14 +156,6 @@ function Pokemon(name, height, weight, abilities) {
 
 
 
-
-/* function Pokemon(name, height, weight, abilities) {
-    this.name = name
-    this.height = height
-    this.weight = weight
-    this.abilities = abilities
-    this.id = 900
-}
-
+/*
 let yessimon = new Pokemon('Yessimon', 450, 200, ['cry', 'sleep'])
 console.log(yessimon) /* */
