@@ -1,5 +1,5 @@
 import { senators } from '../data/senators.js'
-import { removeChildren } from '../utils/index.js'
+import { removeChildren } from '../util/index.js'
 
 const senatorGrid = document.querySelector('.senatorGrid')
 const seniorityButton = document.querySelector('#seniorityButton')
@@ -7,7 +7,7 @@ const birthdayButton = document.querySelector('#birthdayButton')
 
 
 seniorityButton.addEventListener('click', () => {
-    seniortySort()
+    senioritySort()
 })
 
 birthdayButton.addEventListener('click', () => {
@@ -37,13 +37,13 @@ function populateSenatorDiv(simpleSenators) {
     })
 }
 
-function getSiomplifiedSenators(senatorArray) {
+function getSimplifiedSenators(senatorArray) {
     return senatorArray.map(senator => {
         let middleName = senator.middle_name ? ` ${senator.middle_name}` : ` `
         return {
             id: senator.id,
             name: `${senator.first_name}${middleName}${senator.last_name}`,
-            imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-200px.jpeg`,
+            imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}.jpeg`,
             seniority: parseInt(senator.seniority, 10),
             missedVotesPct: senator.missed_votes_pct,
             party: senator.party,
@@ -74,7 +74,7 @@ function birthdaySort() {
 
 function senioritySort() {
     populateSenatorDiv(getSimplifiedSenators(senators).sort((a,b) => {
-        return a.seniority - b.seniority
+        return a.seniority - b.seniority;
     }))
 }
 

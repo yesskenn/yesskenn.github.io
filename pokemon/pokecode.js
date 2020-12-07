@@ -31,7 +31,7 @@ const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('button')
 const newPokemonButton = document.querySelector('.newPokemon')
 
-/* newPokemonButton.addEventListener('click', () => {
+/newPokemonButton.addEventListener('click', () => {
     let pokemonName = prompt('What is your new Pokemon name?')
     let newPokemon = new Pokemon(
         pokemonname,
@@ -41,7 +41,6 @@ const newPokemonButton = document.querySelector('.newPokemon')
         ['poop', 'drink coffee', 'code'])
         populatePokeCard(newPokemon)
     })
-*/
 
 
 
