@@ -11,7 +11,7 @@ async function getAPIData(url) {
 }
 
 
-//now, use async getAPIData function
+//now, using async getAPIData function
 
 function loadPage() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
@@ -31,10 +31,10 @@ const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('button')
 const newPokemonButton = document.querySelector('.newPokemon')
 
-/newPokemonButton.addEventListener('click', () => {
+newPokemonButton.addEventListener('click', () => {
     let pokemonName = prompt('What is your new Pokemon name?')
     let newPokemon = new Pokemon(
-        pokemonname,
+        pokemonName,
         400,
         200,
         ['eat', 'study', 'work'],
@@ -80,30 +80,28 @@ function populateCardFront(pokemon) {
     return cardFront
 }
 
+
+function populateCardBack(pokemon) {
+
+}
+/* this one works but needs to display the two types
+
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = `card-face card-face-back`
-    let backLabel = document.createElement('p')
-    backLabel.textContent = `${pokemon.moves.length} moves`
-    cardBack.appendChild(backLabel)
+    let movesLabel = document.createElement('p')
+    movesLabel.textContent = `${pokemon.moves.length} moves`
+    let typesLabel = document.createElement('p')
+    typesLabel.textContent = `Type: ${pokemon.types.length}`
+    cardBack.appendChild(movesLabel)
+    cardBack.appendChild(typesLabel)
     return cardBack
 }
+    */ 
+ 
+
     
- function getMovesDetails(pokemonMoves) {
-
-    const nonNullMoves = pokemonMoves.filter(async (move) => {
-        if (!move.move) return
-        const moveData = await getAPIData(move.move.url)
-        console.log(moveData.accuracy, moveData.power)
-        if ((moveData.accuracy && moveData.power) !== null) {
-            return moveData
-        }
-    })
-
-    Promise.all(nonNullMoves).then((values) => {
-        console.log(values)
-    })
- }   
+   
     
     /* let abilityList = document.createElement('ul')
     pokemon.abilities.forEach(ability => {
@@ -155,6 +153,3 @@ function Pokemon(name, height, weight, abilities, moves) {
 
 
 
-/*
-let yessimon = new Pokemon('Yessimon', 450, 200, ['cry', 'sleep'])
-console.log(yessimon) /* */
