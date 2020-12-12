@@ -19,7 +19,7 @@ function loadPage() {
     (async (data) => {
         for (const pokemon of data.results) {
             await getAPIData(pokemon.url).then((pokeData) => {
-                //console.log(pokeData)
+                console.log(pokeData)
                 populatePokeCard(pokeData)
             })
         }
@@ -81,10 +81,8 @@ function populateCardFront(pokemon) {
 }
 
 
-function populateCardBack(pokemon) {
 
-}
-/* this one works but needs to display the two types
+ 
 
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
@@ -92,15 +90,26 @@ function populateCardBack(pokemon) {
     let movesLabel = document.createElement('p')
     movesLabel.textContent = `${pokemon.moves.length} moves`
     let typesLabel = document.createElement('p')
-    typesLabel.textContent = `Type: ${pokemon.types.length}`
+    typesLabel.textContent = `Type: `
+    let typeList = document.createElement('ul')
+        pokemon.types.forEach(type => {
+            let typeName = document.createElement('li')
+            typeName.textContent = type.type.name
+            typeList.appendChild(typeName)
+        })
+
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(typesLabel)
+    
+    
     return cardBack
 }
-    */ 
+        
  
 
-    
+function getTypes(poketypes) {
+    return poketypes.reduce()
+}
    
     
     /* let abilityList = document.createElement('ul')
