@@ -66,10 +66,8 @@ h3 {
 nav {
     background-color: #ab8093;
     position: fixed;
-    padding: 3rem;
-    width: 100%;
     top: 0;
-    left: 0;
+    width: 100%;
     
 }
 
@@ -77,11 +75,10 @@ nav {
 .nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 2rem;
     font-weight: 600;
     text-transform: uppercase;
-    margin-right: 2rem;
+    justify-content: flex-end;
+    padding: 3rem 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -193,8 +190,8 @@ nav {
 .project-section {
     display: flex;
     flex-direction: column;
-    border: 5px solid red;
 }
+
 .project {
     display: flex;
     margin: auto;
@@ -216,8 +213,7 @@ nav {
     
 }
 
-.project-desc > p {
-}
+
 
 @media screen and (max-width: 480px) {
     .projects-header {
@@ -251,9 +247,9 @@ nav {
 
 
 .project-image {
-    height: calc(100% - 6.6rem);
+    /* height: calc(100% - 6.6rem); only applicable with project grid */
     border-radius: 25px;
-    width: 50%;
+    width: 60%;
     border: 1px solid seashell;
    
 }
@@ -347,10 +343,8 @@ footer {
     background-color: #ab8093;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     padding: 1rem 3rem;
     margin: 0;
-    width: 100%;
 }
 
 footer > p {
