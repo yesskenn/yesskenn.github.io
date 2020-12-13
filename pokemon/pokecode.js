@@ -53,7 +53,7 @@ loadButton.addEventListener('click', () => {
 
 
 
-function populatePokeCard(singlePokemon) {
+function populatePokeCard(pokemon) {
     let pokeScene = document.createElement('div')
     pokeScene.className = 'scene'
     let pokeCard = document.createElement('div')
@@ -62,8 +62,8 @@ function populatePokeCard(singlePokemon) {
         pokeCard.classList.toggle('is-flipped')
     })
 
-    pokeCard.appendChild(populateCardFront(singlePokemon))
-    pokeCard.appendChild(populateCardBack(singlePokemon))
+    pokeCard.appendChild(populateCardFront(pokemon))
+    pokeCard.appendChild(populateCardBack(pokemon))
     pokeScene.appendChild(pokeCard)
     pokemonGrid.appendChild(pokeScene)
 }
@@ -71,7 +71,7 @@ function populatePokeCard(singlePokemon) {
 function populateCardFront(pokemon) {
     let cardFront = document.createElement('div')
     cardFront.className = `card-face card-face-front`
-    let frontLabel = document.createElement('p')
+    let frontLabel = document.createElement('h2')
     let frontImage = document.createElement('img')
     frontLabel.textContent = pokemon.name
     frontImage.src = `../images/pokemon/${getImageFileName(pokemon)}.png`
@@ -82,21 +82,13 @@ function populateCardFront(pokemon) {
 
 
 
- 
-
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = `card-face card-face-back`
     let movesLabel = document.createElement('p')
-    movesLabel.textContent = `${pokemon.moves.length} moves`
+    movesLabel.textContent = `Moves: ${pokemon.moves.length}`
     let typesLabel = document.createElement('p')
-    typesLabel.textContent = `Type: `
-    let typeList = document.createElement('ul')
-        pokemon.types.forEach(type => {
-            let typeName = document.createElement('li')
-            typeName.textContent = type.type.name
-            typeList.appendChild(typeName)
-        })
+    typesLabel.textContent = `Types: ${pokemon.types.length}`
 
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(typesLabel)
@@ -104,40 +96,8 @@ function populateCardBack(pokemon) {
     
     return cardBack
 }
-        
- 
 
-function getTypes(poketypes) {
-    return poketypes.reduce()
-}
-   
-    
-    /* let abilityList = document.createElement('ul')
-    pokemon.abilities.forEach(ability => {
-        let abilityName = document.createElement('li')
-        abilityName.textContent = ability.ability.name
-        abilityList.appendChild(abilityName)
-    })
-    let movesLabel = document.createElement('h3')
-    movesLabel.textContent = 'Most Accurate Moves:'
-    let moveAccuracy = document.createElement('h4')
-    const mmostAccurateMove = getBestAccuracy(pokemon.moves)
-   // moveAccuracy.textContent = `${mostAccurateMove.move.name}`
-    cardBack.appendChild(backLabel)
-    cardBack.appendChild(abilityList)
-    cardBack.appendChild(movesLabel)
-    cardBack.appendChild(moveAccuracy)
-    return cardBack
-}
-
-/* function getBestAccuracy(pokemoves) {
-    return pokemoves.reduce((mostAccurate, move) => {
-        getAPIData(move.move.url).then
-        (async (data) => {
-            console.log(data.accuracy, data.power)
-        })
-    }, {});
-} */
+console.log(pokemon)
 
 function getImageFileName(pokemon) {
     if (pokemon.id < 10) {
@@ -150,14 +110,14 @@ function getImageFileName(pokemon) {
     return `pokeball`
 }
 
-function Pokemon(name, height, weight, abilities, moves) {
+/* function Pokemon(name, height, weight, abilities, moves) {
     this.name = name
     this.height = height
     this.weight = weight
     this.abilities = abilities
     this.id = 900
     this.moves = moves
-}
+} */
 
 
 

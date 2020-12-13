@@ -1,5 +1,33 @@
-import { senators } from '../data/senators.js'
-import { removeChildren } from '../util/index.js'
+//reusable api url
+
+async function getAPIData(url) {
+    try {
+        const response = await fetch(url)
+        const data = await response.json()
+        return data
+    } catch(error) {
+        console.error(error)
+    }
+}
+
+function loadPage() {
+    getAPIData(`https://api.propublica.org/congress/v1/`).then
+     //?limit=25&offset=800
+     //https://pokeapi.co/api/v2/pokemon?limit=100&offset=200
+    (async (data) => {
+        for (const members of data.results) {
+            await getAPIData(members.url).then((senateData) => {
+                console.log(senateData)
+                populatePokeCard(senateData)
+            })
+        }
+    },
+    )
+}
+
+
+
+
 
 
 
@@ -17,9 +45,8 @@ partyButton.addEventListener('click', () => {
     partySort()
 })
 
-function populateDOM(simpleSenators) {
-    removeChildren(senatorGrid)
-    simpleSenators.forEach(members => {
+function populateSenate(senators) {
+    senators.forEach(senator => {
         let senDiv = document.createElement('div')
         let senFigure = document.createElement('figure')
         let figImg = document.createElement('img')
@@ -34,17 +61,4 @@ function populateDOM(simpleSenators) {
         senDiv.appendChild(senFigure)
         senatorGrid.appendChild(senDiv)
     })
-    }
-
-    function getSimpleSenators(senatorArray) {
-        return senatorArray.map(members => {
-           // let lastName = members.last_name ? `${members.last_name}` : ` `
-            return {
-             
-                name: `${members.first_name}`
-            }
-        
-        })
-    }
-
-    console.log(populateSsimpleSenators)
+}

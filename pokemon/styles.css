@@ -72,8 +72,8 @@ button {
 }
 
 .card-face-back {
-    background: repeating-linear-gradient(-45deg, #f3f3f3, #f3f3f3 20px, #999797 30px, #f3f3f3 25px);
-    /*background: radial-gradient(circle, rgb(37, 36, 36) 0%, rgb(37, 36, 36) 48%, rgb(37, 65, 102) 100%);*/
+    background: #f3f3f3;
+   /* background: repeating-linear-gradient(-45deg, #f3f3f3, #f3f3f3 20px, #999797 30px, #f3f3f3 25px);*/
     transform: rotateY(180deg);
 }
 
@@ -91,8 +91,17 @@ h1 {
     font-family: 'Raleway';
 
 }
+
 p {
     text-align: center;
     font-family: 'Ranchers';
     color: goldenrod;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-family: "Raleway";
+    text-align: center;
+    color: rgb(131, 131, 131);
+    text-transform: capitalize;
 }
