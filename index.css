@@ -167,6 +167,9 @@ nav {
     min-width: 100vw;
     max-width: 100vw;
     align-items: center;
+    background-image: url('../images/yr-gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -175,6 +178,7 @@ nav {
     font-size: 6rem;
     color: #ffffff;
     text-transform: none;
+    background-color: inherit;
     
 }
 
@@ -240,8 +244,9 @@ nav {
 .project-image {
     /* height: calc(100% - 6.6rem); only applicable with project grid */
     border-radius: 25px;
-    width: 75%;
+    width: 100%;
     border: 1px solid seashell;
+    object-fit: cover;
    
 }
 
@@ -281,6 +286,12 @@ nav {
 
 /* CONTACT SECTION */
 
+.contact-section {
+    background-image: url('../images/yr-gradient-b.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .invite {
     display: flex;
     justify-content: center;
@@ -288,6 +299,7 @@ nav {
     max-width: 100%;
     margin: 2rem auto 0 auto;
     height: 75vh;
+    
 }
 
 .emailme {
@@ -295,6 +307,10 @@ nav {
     color: goldenrod;
     margin: 2rem;
     max-width: 33%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 3rem;
+    
+
 }
 
 
@@ -322,6 +338,7 @@ nav {
         max-width: 100%;
         margin: 2rem auto 0 auto;
         height: 75vh;
+      
     }
 
     .contact-section > h1 {
