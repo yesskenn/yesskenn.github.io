@@ -37,7 +37,8 @@ h1 {
     font-weight: 900;
     margin: 3rem 6rem;
     display: flex;  
-    font-size: 2.75rem;
+    font-size: 3.25rem;
+    text-transform: uppercase;
    
 }
 
@@ -69,16 +70,23 @@ button {
     padding: 2rem;
     align-items: center;
     font-size: 2rem;
-    margin: 1rem;
+    margin: 3rem 1rem 1rem -0.5rem;
     background-color: goldenrod;
     color: #fff;
     font-weight: 600;
     font-family: 'Work Sans';
     font-style: italic;
-
-    
+  
 }
 
+
+button:hover {
+    background-color: #e6e6e6;
+    color: goldenrod;
+    transition: all 0.2s ease-out;
+ }
+
+ 
 
 /* NAV */
 nav {
@@ -99,13 +107,12 @@ nav {
     padding: 3rem 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
    
     
     .nav-list {
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -118,20 +125,21 @@ nav {
    
 }
     
-    
+/* NAV LIST LINKS */   
     
 .nav-list a {
     font-size: 2rem;
     margin-right: 2rem;
     color: #e6e6e6;
     padding: 0.25em;
-    transition: all 0.2s;
+    
 }
 
 .nav-list a:hover {
-   color: #996666;
-   background-color:#e6e6e6;
-}
+    color: #996666;
+    background-color:#e6e6e6;
+    transition: all 0.2s;
+ }
 
 .nav-list a:visited{
     color: #f2f2f2;
@@ -166,6 +174,7 @@ nav {
     font-family: 'Sacramento', monospace;
     font-size: 6rem;
     color: #ffffff;
+    text-transform: none;
     
 }
 
@@ -184,7 +193,7 @@ nav {
     color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     #welcome-section > h1 {
         font-size: 3rem;
     }
@@ -205,21 +214,17 @@ nav {
     width: 100%;
 }
 
-.project-section {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .project {
     display: flex;
     margin: auto;
-    border: 5px solid green;
     height: 75vh;
     align-items: center;
     justify-content: center;
+    max-width: 75%;
 
 }
-
 
 .project-desc {
     padding: 2rem;
@@ -232,65 +237,43 @@ nav {
 }
 
 
-
-@media screen and (max-width: 480px) {
-    .projects-header {
-        font-size: 1.75rem;
-    }
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1.5rem;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    
-}
-
-@media screen and (max-width: 480px) {
-    #projects {
-        padding: 5rem 1rem;
-        margin: 0 auto;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-        margin: 0 auto;
-    }
-}
-
-
-
 .project-image {
     /* height: calc(100% - 6.6rem); only applicable with project grid */
     border-radius: 25px;
-    width: 60%;
+    width: 75%;
     border: 1px solid seashell;
    
 }
 
 
-.project-title {
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-    margin-top: -1rem;
+
+@media screen and (max-width: 600px) {
+    .project {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+
+    .project-image {
+        min-width: 200px;
+        margin: 1rem auto 0 auto;
+    }
+
+    .project-desc {
+        min-width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .project-section > h1 {
+        justify-content: center;
+
+    }
 }
 
-.project-p {
-    font-size: 1.5rem;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 2.5rem 0.5rem;
-}
 
-.project-title:hover {
-    transition:  background-color 0.3s ease-in-out;
-}
+
 
 
 
@@ -321,37 +304,30 @@ nav {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
-    .contact-section {
-        width: 100%;
+    .emailme {
+        font-size: 1rem;
+        color: goldenrod;
+        margin: 2rem;
+        max-width: 75%;
+        text-align: center;
+    }
+
+    .invite {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-        
+        max-width: 100%;
+        margin: 2rem auto 0 auto;
+        height: 75vh;
     }
 
     .contact-section > h1 {
-        font-size: 2rem;
+        justify-content: center;
     }
-
-    .contact-section > h2 {
-        font-size: 1em;
-        margin-top: 0.5rem;
-    }
-
-    .contact-section > p {
-        font-size: 1.5rem;
-        margin: auto;
-    }
-
-    .contact-links {
-        font-size: 1.25rem;
-        display: flex;
-        justify-content: space-around;
-    }
+   
 }
 
 
@@ -381,4 +357,19 @@ footer > p {
     
 }
 
+@media screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+
+    .sm-links > a {
+        font-size: 3rem;
+    }
+
+    footer > p {
+        font-size: 1.5rem;
+    }
+}
 /* need to add social media icon links */
