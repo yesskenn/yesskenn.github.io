@@ -30,8 +30,10 @@ button {
     justify-content: center;
     margin: auto 1rem;
     padding: 10px;
-    
     border: none;
+    background-color: goldenrod;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .pokemonGrid {
@@ -44,10 +46,15 @@ button {
 .scene {
     width: 200px;
     height: 260px;
-    border: 1px solid #ccc;
-    margin: 10px;
+    border: 3px solid #ccc;
+    margin: 0.5rem;
     perspective: 600px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-image: url('../images/pokemon/holo.jpg');
+  
 }
+
 
 .card {
     width: 100%;
@@ -83,21 +90,24 @@ button {
 }
 
 img {
-    max-height: 200px;
+    max-height: 175px;
+    
 } 
 
 h1 {
     text-align: center;
     font-family: 'Raleway';
+    margin-top: 1.25rem;
+    
 
 }
 
-p,
-li{
+p {
     text-align: center;
     font-family: 'Ranchers';
     color: goldenrod;
-    margin-top: 2rem;
+    
+
 }
 
 h2 {
@@ -105,10 +115,17 @@ h2 {
     text-align: center;
     color: rgb(131, 131, 131);
     text-transform: capitalize;
+    margin-top: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 
 li {
-    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    list-style-type: none;
     color: black;
+    margin-left: -3rem;
 }
