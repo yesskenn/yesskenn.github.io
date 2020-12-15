@@ -92,7 +92,8 @@ h1 {
 
 }
 
-p {
+p,
+li{
     text-align: center;
     font-family: 'Ranchers';
     color: goldenrod;
@@ -104,4 +105,10 @@ h2 {
     text-align: center;
     color: rgb(131, 131, 131);
     text-transform: capitalize;
+}
+
+
+li {
+    text-decoration: none;
+    color: black;
 }

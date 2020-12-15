@@ -222,12 +222,13 @@ nav {
 
 .project {
     display: flex;
-    margin: auto;
+    margin: 3rem auto;
     height: 75vh;
     align-items: center;
     justify-content: center;
     max-width: 75%;
-
+   /* border-left: 3px solid #ab8093;;*/
+   
 }
 
 .project-desc {
@@ -257,6 +258,7 @@ nav {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        border-top: 3px solid #ab8093;
         
     }
 
@@ -307,7 +309,7 @@ nav {
     color: goldenrod;
     margin: 2rem;
     max-width: 33%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.7);
     padding: 3rem;
     
 
@@ -338,7 +340,7 @@ nav {
         max-width: 100%;
         margin: 2rem auto 0 auto;
         height: 75vh;
-      
+        
     }
 
     .contact-section > h1 {

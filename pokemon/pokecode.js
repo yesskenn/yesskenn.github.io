@@ -31,6 +31,10 @@ const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('button')
 const newPokemonButton = document.querySelector('.newPokemon')
 
+
+// to pick out specific types
+
+
 newPokemonButton.addEventListener('click', () => {
     let pokemonName = prompt('What is your new Pokemon name?')
     let newPokemon = new Pokemon(
@@ -85,19 +89,30 @@ function populateCardFront(pokemon) {
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = `card-face card-face-back`
+   
+   
+    
+    let typesList = document.createElement('ul')
+    pokemon.types.forEach(type => {
+        let typeName = document.createElement('li')
+        typeName.textContent = type.type.name
+        typesList.appendChild(typeName)
+
+        
+    })
     let movesLabel = document.createElement('p')
     movesLabel.textContent = `Moves: ${pokemon.moves.length}`
-    let typesLabel = document.createElement('p')
-    typesLabel.textContent = `Types: ${pokemon.types.length}`
+    let weightLabel = document.createElement('p')
+    weightLabel.textContent = `Weight: ${pokemon.weight}`
 
     cardBack.appendChild(movesLabel)
-    cardBack.appendChild(typesLabel)
-    
+    cardBack.appendChild(weightLabel)
+    cardBack.appendChild(typesList)
     
     return cardBack
 }
 
-console.log(pokemon)
+
 
 function getImageFileName(pokemon) {
     if (pokemon.id < 10) {
@@ -110,15 +125,18 @@ function getImageFileName(pokemon) {
     return `pokeball`
 }
 
-/* function Pokemon(name, height, weight, abilities, moves) {
+
+
+function Pokemon(name, height, weight, moves, types) {
     this.name = name
     this.height = height
     this.weight = weight
-    this.abilities = abilities
-    this.id = 900
     this.moves = moves
-} */
+    this.types = types
+    this.id = 999
 
+    
+}
 
 
 
