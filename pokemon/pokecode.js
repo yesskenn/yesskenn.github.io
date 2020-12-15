@@ -29,18 +29,11 @@ function loadPage() {
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
 const loadButton = document.querySelector('.load')
-const fireButton = document.querySelector('.fireButton')
-const electricButton = document.querySelector('.electricButton')
-const poisonButton = document.querySelector('.poisonButton')
-const normalButton = document.querySelector('.normalButton')
-const groundButton = document.querySelector('.groundButton')
-const bugButton = document.querySelector('.bugButton')
-const waterButton = document.querySelector('.waterButton')
 const newPokemonButton = document.querySelector('.newPokemon')
 
 
 // to pick out specific types
-
+//const firePokemon = pokemon.filter((pokemon) => pokemon.type === 'fire')
 
 newPokemonButton.addEventListener('click', () => {
     let pokemonName = prompt('What is your new Pokemon name?')
@@ -66,6 +59,7 @@ loadButton.addEventListener('click', () => {
 
 
 
+
 function populatePokeCard(pokemon) {
     let pokeScene = document.createElement('div')
     pokeScene.className = 'scene'
@@ -84,12 +78,12 @@ function populatePokeCard(pokemon) {
 function populateCardFront(pokemon) {
     let cardFront = document.createElement('div')
     cardFront.className = `card-face card-face-front`
-    let frontLabel = document.createElement('h2')
+    
     let frontImage = document.createElement('img')
-    frontLabel.textContent = pokemon.name
+    
     frontImage.src = `../images/pokemon/${getImageFileName(pokemon)}.png`
     cardFront.appendChild(frontImage)
-    cardFront.appendChild(frontLabel)
+    
     return cardFront
 }
 
@@ -98,26 +92,27 @@ function populateCardFront(pokemon) {
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = `card-face card-face-back`
+    let pokeLabel = document.createElement('h2')
+    pokeLabel.textContent = pokemon.name
    
-   
+    let movesLabel = document.createElement('p')
+    movesLabel.textContent = `Moves: ${pokemon.moves.length}`
+    let weightLabel = document.createElement('p')
+    weightLabel.textContent = `Weight: ${pokemon.weight}`
     
     let typesList = document.createElement('ul')
     pokemon.types.forEach(type => {
         let typeName = document.createElement('li')
         typeName.textContent = type.type.name
         typesList.appendChild(typeName)
+    
+   
 
-        
-    })
-    let movesLabel = document.createElement('p')
-    movesLabel.textContent = `Moves: ${pokemon.moves.length}`
-    let weightLabel = document.createElement('p')
-    weightLabel.textContent = `Weight: ${pokemon.weight}`
-
+    cardBack.appendChild(pokeLabel)
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(weightLabel)
     cardBack.appendChild(typesList)
-    
+})
     return cardBack
 }
 

@@ -55,6 +55,7 @@ a {
 img {
     display: block;
     width: 100%;
+    max-width: 700px;
 }
 
 h3 {
@@ -199,10 +200,10 @@ nav {
 
 @media screen and (max-width: 600px) {
     #welcome-section > h1 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
     #welcome-section > h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     .welcome-section {
@@ -227,7 +228,7 @@ nav {
     align-items: center;
     justify-content: center;
     max-width: 75%;
-   /* border-left: 3px solid #ab8093;;*/
+   border-top: 3px dashed #ab8093;
    
 }
 
@@ -243,7 +244,7 @@ nav {
 
 
 .project-image {
-    /* height: calc(100% - 6.6rem); only applicable with project grid */
+    
     border-radius: 25px;
     width: 100%;
     border: 1px solid seashell;
@@ -281,9 +282,46 @@ nav {
 
 
 
+/*SKILLS SECTION */
 
+.skills-section {
+    margin-bottom: 10rem;
+}
+.skills-grid {
+    display: flex;
+    flex-direction: row;
+     
+}
 
+.skill-tile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: calc(100%/3); 
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e9e9e9;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.skill-shot > img {
+    max-width: 300px;
+}
 
+.skill-desc {
+    max-width: 300px;
+    text-align: center;
+}
+
+.skill-desc > h3 {
+    font-size: 1.75rem;
+    font-style: italic;
+}
+
+.skill-desc > p {
+    font-size: 1.75rem;
+    
+}
 
 
 /* CONTACT SECTION */
@@ -391,4 +429,3 @@ footer > p {
         font-size: 1.5rem;
     }
 }
-/* need to add social media icon links */
