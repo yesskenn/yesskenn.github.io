@@ -14,7 +14,7 @@ async function getAPIData(url) {
 //now, using async getAPIData function
 
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=33`).then
      //?limit=25&offset=800
     (async (data) => {
         for (const pokemon of data.results) {
@@ -28,7 +28,14 @@ function loadPage() {
 }
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
-const loadButton = document.querySelector('button')
+const loadButton = document.querySelector('.load')
+const fireButton = document.querySelector('.fireButton')
+const electricButton = document.querySelector('.electricButton')
+const poisonButton = document.querySelector('.poisonButton')
+const normalButton = document.querySelector('.normalButton')
+const groundButton = document.querySelector('.groundButton')
+const bugButton = document.querySelector('.bugButton')
+const waterButton = document.querySelector('.waterButton')
 const newPokemonButton = document.querySelector('.newPokemon')
 
 
@@ -38,14 +45,16 @@ const newPokemonButton = document.querySelector('.newPokemon')
 newPokemonButton.addEventListener('click', () => {
     let pokemonName = prompt('What is your new Pokemon name?')
     let newPokemon = new Pokemon(
-        pokemonName,
-        400,
-        200,
-        ['eat', 'study', 'work'],
-        ['poop', 'drink coffee', 'code'])
-        populatePokeCard(newPokemon)
-    })
 
+   pokemonName,
+   60, 90, 
+   ["eat", "fly", "throw knives"], 
+   ["regular", "normal"])
+   populatePokeCard(newPokemon)
+
+    
+    
+})
 
 
 
@@ -127,16 +136,13 @@ function getImageFileName(pokemon) {
 
 
 
-function Pokemon(name, height, weight, moves, types) {
+function Pokemon(name, height, weight, moves) {
     this.name = name
     this.height = height
     this.weight = weight
     this.moves = moves
-    this.types = types
     this.id = 999
 
     
 }
-
-
 

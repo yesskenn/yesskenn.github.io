@@ -1,15 +1,12 @@
 export const senators = [
 
-{
-  "status": "OK",
-  "copyright": " Copyright (c) 2019 Pro Publica Inc. All Rights Reserved.",
-  "results": [
+
       {
           "congress": "116",
           "chamber": "Senate",
           "num_results": 100,
           "offset": 0,
-          "members": [
+          "senator": [
               {
                   "id": "A000360",
                   "title": "Senator, 2nd Class",
@@ -4613,5 +4610,3 @@ export const senators = [
           ]
       }
   ]
-}
-]
