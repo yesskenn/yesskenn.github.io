@@ -1,171 +1,168 @@
-//reusable api url
+//this is the control file for the senators page
+//this code contains: map, reduce
+//import/export statements
 
-/*async function getAPIData(url) {
-    try {
-        const response = await fetch(url)
-        const data = await response.json()
-        return data
-    } catch(error) {
-        console.error(error)
-    }
-}
+//import export here
+//import data
+import {senators} from '../data/senators.js'
 
-function loadPage() {
-    getAPIData(`https://api.propublica.org/congress/v1/`).then
-     //?limit=25&offset=800
-     //https://pokeapi.co/api/v2/pokemon?limit=100&offset=200
-    (async (data) => {
-        for (const members of data.results) {
-            await getAPIData(members.url).then((senateData) => {
-                console.log(senateData)
-                populatePokeCard(senateData)
-            })
-        }
-    },
-    )
-}
-*/
+//import child remover function (which was exported from utils)
+import {removeChildren} from '../util/index.js'
 
+//define the senategrid
+const senateGrid = document.querySelector('.senategrid')
 
-import { senators } from '../data/senators.js'
-import { removeChildren } from '../util/index.js'
+//button logic
+const senButton = document.querySelector('#senioritybutton')
+const birButton = document.querySelector('#bdaybutton')
+const truButton = document.querySelector('#truthbutton')
 
+//event listener for seniority button
+//sort from low to high
+senButton.addEventListener('click', () => {
+    seniorSort ()
+})
 
+//event listener for birthday button
+birButton.addEventListener('click', () => {
+    bdaySort ()
+})
 
-const senatorGrid = document.querySelector('.senatorGrid')
-//const stateButton = document.querySelector('#stateButton')
-//const partyButton = document.querySelector('#partyButton')
-//const infoButton = document.querySelector('#yourInfoButton')
+//let the truth be revealed
+truButton.addEventListener('click', () => {
+    theSenate ()
+})
 
-//stateButton.addEventListener('click', () => {
-//    stateSort()
-//})
-
-
-//partyButton.addEventListener('click', () => {
-//    partySort()
-//})
-
-
-/* const filterSenators = (prop, value) => {
-   return senators.filter(senator => {
-        return senator[prop] === value
-    })
-} */
-//const republicans = filterSenators('party, 'R')
-//const democrats = filterSenators('party, 'D')
-
-
-/* function populateSenatorDiv(simpleSenators) {
-    removeChildren(senatorGrid)
-    simpleSenators.forEach(senators => {
-        let senDiv = document.createElement('div')
-        let senFigure = document.createElement('figure')
-        let figImg = document.createElement('img')
-        let figCaption = document.createElement('figcaption')
-        let partyIcon = document.createElement('i')
-        if (senators.party === 'R') partyIcon.className = 'fas fa-republican'
-        if (senators.party === 'D') partyIcon.className = 'fas fa-democrat'
-        if (senators.party === 'ID') partyIcon.className = 'fas fa-star'
-        figImg.src = senators.imgURL
-        figCaption.textContent = senators.name
-
-        figCaption.appendChild(partyIcon)
-        senFigure.appendChild(figImg)
-        senFigure.appendChild(figCaption)
-        senDiv.appendChild(senFigure)
-        senatorGrid.appendChild(senDiv)
-    })
-}
-
-
-function getSimplifiedSenators(senatorArray) {
-    return senatorArray.map(senator => {
-        let middleName = senators.middle_name ? ` ${senators.middle_name}  ` : ` `
-        return {
-            id: senators.govtrack_id,
-            name: `${senators.first_name}${middleName}${senators.last_name}`,
-            imgURL: `https://www.govtrack.us/static/legislator-photos/${senators.govtrack_id}-200px.jpeg`,
-            party: senators.party,
-            state: senators.state,
-            address: senators.office,
-            phone: senators.phone,
-            socialMedia: senators.twitter_account,
-            officialContact: senators.contact_form
-        }
+//function to populate an individual senator card
+function populateSenateGrid(sendata) {
+    //clear the grid
+    removeChildren(senateGrid)
+    sendata.forEach(senator => {
+        //**DEFINE ELEMENTS**
+    //start with a scene
+    let cardScene = document.createElement('div')
+    //create card fig to go inside the scene
+    let cardFig = document.createElement('figure')
+    //card image
+    let cardImg = document.createElement('img')
+    //card caption
+    let cardCap = document.createElement('figcaption')
+    //create icon
+    let cardIcon = document.createElement('i')
+    //create seniority tag
+    let cardSen = document.createElement('p')
+    //create age tag
+    let cardDOB = document.createElement('p')
+    //**ASSIGN CLASS NAMES**
+    //assign cardScene a class name
+    cardScene.className = 'cardscene'
+    //assign cardfig a class name
+    cardFig.className = 'cardfig'
+    //assign cardimg a class name
+    cardImg.className  = 'cardimg'
+    //assign cardcap a class name
+    cardCap.className = 'cardcap'
+    //assign cardicon a class name based on party
+    if (senator.party === 'R') cardIcon.className = 'fas fa-republican'
+    if (senator.party === 'D') cardIcon.className = 'fas fa-democrat'
+    if (senator.party === 'ID') cardIcon.className = 'fas fa-flag-usa'
+    //assign seniority tag a class name
+    cardSen.className = 'cardsen'
+    //assign age tag a class name
+    cardDOB.className = 'carddob'
+    //**FILL CONTENT**
+    cardImg.src = senator.imgURL
+    cardCap.textContent = senator.name
+    cardSen.textContent = `Seniority: ${senator.seniority}`
+    cardDOB.textContent = `Born: ${senator.birthday}`
+    //build the scene
+    cardCap.appendChild(cardIcon)
+    cardFig.appendChild(cardImg)
+    cardFig.appendChild(cardCap)
+    cardScene.appendChild(cardFig)
+    cardScene.appendChild(cardSen)
+    cardScene.appendChild(cardDOB)
+    //add the scene to the grid
+    senateGrid.appendChild(cardScene)
     })
 }
 
-populateSenatorDiv(getSimplifiedSenators(senators))
-console.log(senators)*/
-
-
-
-
-function populateSenatorDiv(simpleSenators) {
-    removeChildren(senatorGrid)
-    simpleSenators.forEach(senator => {
-        let senDiv = document.createElement('div')
-        let senFigure = document.createElement('figure')
-        let figImg = document.createElement('img')
-        let figCaption = document.createElement('figcaption')
-        let partyIcon = document.createElement('i')
-        if (senator.party === 'R') partyIcon.className = 'fas fa-republican'
-        if (senator.party === 'D') partyIcon.className = 'fas fa-democrat'
-        if (senator.party === 'ID') partyIcon.className = 'fas fa-star'
-        figImg.src = senator.imgURL
-        figCaption.textContent = senator.name
-
-        figCaption.appendChild(partyIcon)
-        senFigure.appendChild(figImg)
-        senFigure.appendChild(figCaption)
-        senDiv.appendChild(senFigure)
-        //senDiv.appendChild(progressBars(senator))
-        senatorGrid.appendChild(senDiv)
-    })
-}
-
-function getSimplifiedSenators(senatorArray) {
-    return senatorArray.map(senator => {
-        let middleName = senator.middleName ? ` ${senator.middleName} ` : ` `
+//map here
+//function to get a simpler senator object with only the properties we need via map
+function simplifySenators(senArray) {
+    return senArray.map(senator => {
         return {
             id: senator.id,
-            name: `${senator.first_name}${middleName}${senator.last_name}`,
+            name: `${senator.first_name} ${senator.last_name} `,
             imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-200px.jpeg`,
             seniority: parseInt(senator.seniority, 10),
-            missedVotesPct: senator.missed_votes_pct,
-            loyaltyPct: senator.votes_with_party_pct,
+            missedVotes: senator.missed_votes_pct,
             party: senator.party,
-            date_of_birth: parseInt(senator.date_of_birth, 10)
+            loyalty: senator.votes_with_party_pct,
+            birthday: senator.date_of_birth
         }
     })
 }
 
-const filterSenators = (prop, value) => {
-    return getSimplifiedSenators(senators).filter(senator => {
-        return senator[prop] === value
-    })
-}
+//reduce here
+//find most seniority
+const mostSenior = simplifySenators(senators).reduce((acc, senator) => acc.seniority >senator.seniority ? acc: senator)
 
-const republicans = filterSenators('party', 'R')
-const democrats = filterSenators('party', 'D')
+//missed votes function
+const missedVoting = simplifySenators(senators).reduce((acc, senator) => acc.missedVotes >senator.missedVotes ? acc: senator)
 
-const mostSeniority = getSimplifiedSenators(senators).reduce((acc, senator) => acc.seniority > senator.seniority ? acc : senator)
+//find the most loyal senators
+//create an array for them
+let loyalArr = []
 
-const missedVotes = getSimplifiedSenators(senators).reduce((acc, senator) => acc.missedVotesPct > senator.missedVotesPct ? acc : senator)
+//push 100% loyalty members into it
+const theLoyals = simplifySenators(senators).reduce((acc, senator) => {
+    if (senator.loyalty === 100) {
+        loyalArr.push(senator)
+    }
+    return acc.loyalty > senator.loyalty ? acc : senator
+})
 
-function birthdaySort() {
-    populateSenatorDiv(getSimplifiedSenators(senators).sort((a, b) => {
-        return a.date_of_birth - b.date_of_birth
+//sort by seniority
+function seniorSort () {
+    populateSenateGrid(simplifySenators(senators).sort((a, b) => {
+        return parseInt(a.seniority) - parseInt(b.seniority)
     }))
 }
 
-function senioritySort() {
-    populateSenatorDiv(getSimplifiedSenators(senators).sort((a, b) => {
-        return a.seniority - b.seniority
+//sort by birthday
+function bdaySort () {
+    populateSenateGrid(simplifySenators(senators).sort((a, b) => {
+        return parseInt(a.birthday) - parseInt(b.birthday)
     }))
 }
 
-console.log(mostSeniority, missedVotes, republicans, democrats)
+//the truth can be disturbing
+function theSenate () {
+    //clear the way for the truth
+    removeChildren(senateGrid)
+    //create elements to show the truth
+    let sheevDiv = document.createElement('div')
+    let sheevCard = document.createElement('div')
+    let sheevFig = document.createElement('figure')
+    let sheev = document.createElement('img')
+    let sheevcap = document.createElement('figcaption')
+    //class names
+    sheevDiv.className = 'sheevdiv'
+    sheevCard.className = 'sheevcard'
+    sheevFig.className = 'sheevfig'
+    sheev.className = 'sheev'
+    sheevcap.className = 'sheevcap'
+    //assign values
+    sheev.src = '../DATA/truthimage.png'
+    sheevcap.textContent = 'Sheev Palpatine'
+    //let it be shown to all
+    sheevFig.appendChild(sheev)
+    sheevFig.appendChild(sheevcap)
+    sheevCard.appendChild(sheevFig)
+    sheevDiv.appendChild(sheevCard)
+    senateGrid.appendChild(sheevDiv)
+}
 
-populateSenatorDiv(getSimplifiedSenators(senators))
+//show all senators
+populateSenateGrid(simplifySenators(senators))
