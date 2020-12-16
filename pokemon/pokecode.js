@@ -40,12 +40,12 @@ newPokemonButton.addEventListener('click', () => {
     let newPokemon = new Pokemon(
 
    pokemonName,
-   60, 90, 
+    90, 
    ["eat", "fly", "throw knives"], 
    ["regular", "normal"])
+   
+   
    populatePokeCard(newPokemon)
-
-    
     
 })
 
@@ -131,11 +131,11 @@ function getImageFileName(pokemon) {
 
 
 
-function Pokemon(name, height, weight, moves) {
+function Pokemon(name, weight, moves, types) {
     this.name = name
-    this.height = height
     this.weight = weight
     this.moves = moves
+    this.types = types
     this.id = 999
 
     
