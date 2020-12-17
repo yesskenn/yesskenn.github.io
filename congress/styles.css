@@ -1,166 +1,150 @@
+/* BASE RESET */
+
 * {
     margin: 0;
     box-sizing: border-box;
-    background-color: lightgrey;
-    user-select: none;
+  
 }
-main {
-    background-color: lightgrey;
-    min-width: 900px;
-}
-img {
-    -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
+body {
+    background-color:  rgb(169, 184, 199);
+    font-family: 'Open Sans';
 }
 
-button:focus {
-     outline-style: none; 
-}
 
-#peopleof {
-    font-size: 70px;
-    color: rgb(63, 75, 180);
-    padding: 20px;
-    font-family: monospace;
+/*HEADER*/
+
+
+
+.pageTitle {
+    color: #000;
     text-align: center;
-    background-color: lightgrey;
-    text-shadow: 2px 2px white;
-    min-width: 820px;
+    margin-top: 3rem; 
+    
 }
 
-#buttons {
-    background-color: red;
-    height: 70px;
+.pageTitle > h2 {
+ font-style: italic;
+ font-weight: 200;
+ font-size: 2.5rem;
+ margin-bottom: -2rem;
+ margin-left: -6rem;
+ text-transform: uppercase;
+}
+
+.pageTitle > h1 {
+    font-weight: 700;
+    font-size: 3rem;
+   }
+
+
+   /*BUTTON STYLES*/
+
+.buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    min-width: 820px;
-}
-#buttons button {
-    border-radius: 25px;
-    width: 250px;
-    margin: 10px;
-    background-color: rgb(48, 73, 180);
-    color: white;
-    font-family: monospace;
-    font-size: 1.7em;
+    justify-content: center;
 }
 
-#buttons button:hover{
-    background-color: rgb(18, 115, 243);
+button {
+    border: 2px solid grey;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: #e6e6e6;
+    color: rgb(66, 63, 63);
+    cursor: pointer;
 }
 
-.senategrid {
+
+
+/* MAIN */
+
+.senateGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 75%;
+    margin: 3rem auto 0 auto;
 }
-.cardfig {
-    background-color: rgb(43, 43, 43);
-}
-.cardscene {
-    width: 250px;
-    height: 400px;
-    margin: 20px;
-    perspective: 600px;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    background-color: rgb(43, 43, 43);
+
+.scene {
+    border: 4px solid black;
     display: flex;
     flex-direction: column;
+    margin: 1rem auto;
+    justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    padding: 1rem;
+    background-color: #e6e6e6;
+}
+
+figcaption {
+ 
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+i {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+p {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    color: rgb(43, 44, 46);
+}
+
+/* CARD ANIMATION FLIPS */
+
+.cardBack {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     color: white;
-    font-size: 1.5em;
-    font-family: monospace;
-    transition: transform 0.5s ease-out;
+    backface-visibility: hidden;
 }
 
-.cardscene:hover {
-    transition: all 0.5s;
-    transform: translateY(-5px);
+
+.card-face-front {
+    background: aliceblue;
 }
 
-.cardimg {
-    width:200px;
-    margin-top: 25px;
-    border-radius: 10px;
+.card-face-back {
+    background: #f3f3f3;
+   /* background: repeating-linear-gradient(-45deg, #f3f3f3, #f3f3f3 20px, #999797 30px, #f3f3f3 25px);*/
+    transform: rotateY(180deg);
 }
 
-.cardcap {
-    width: 200px;
-    margin-top: 10px;
-    text-align: center;
-    background-color: rgb(43, 43, 43);
-}
 
-.cardsen {
-    margin-top: 5px;
-    background-color: rgb(43, 43, 43);
+.card.is-flipped {
+    transform: rotateY(180deg);
 }
-
-.carddob {
-    margin-top: 5px;
-    background-color: rgb(43, 43, 43);
-}
+/* PARTY ICONS*/
 
 .fa-democrat {
-    color: #166bcc;
-    background-color: rgb(43, 43, 43);
+    color: #000;
 }
 
 .fa-republican {
-    color: rgb(226, 58, 58);
-    background-color: rgb(43, 43, 43);
+    color: #000;
+    
 }
 
-.fa-flag-usa {
+.fa-star {
     color: lightgrey;
-    background-color: rgb(43, 43, 43);
 }
 
-.sheevcard {
-    width: 340px;
-    height:340px;
-    margin: 20px;
-    perspective: 600px;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    background-color: rgb(43, 43, 43);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.5em;
-    font-family: monospace;
-}
-
-.sheevcap {
-    background-color: rgb(43, 43, 43);
-    text-align: center;
-    margin-top: 7px;
-}
-
-.sheevfig {
-    background-color: rgb(43, 43, 43);
-    margin-top: 20px;
-}
-
-.sheev {
-    border-radius: 10px;
-}
-
-.sheevdiv {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}

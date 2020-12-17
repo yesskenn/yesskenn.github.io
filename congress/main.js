@@ -102,7 +102,7 @@ console.log(senators)*/
 
 
 
-function populateSenatorDiv(simpleSenators) {
+function populateSenate(simpleSenators) {
     removeChildren(senatorGrid)
     simpleSenators.forEach(senator => {
         let senDiv = document.createElement('div')
