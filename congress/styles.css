@@ -69,46 +69,62 @@ button {
     margin: 3rem auto 0 auto;
 }
 
-.scene {
-    border: 4px solid black;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #e6e6e6;
+h2 {
+    color: black;
+
 }
 
-figcaption {
- 
- display: flex;
- align-items: center;
- justify-content: space-around;
+p {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: rgb(43, 44, 46);
+}
+
+img {
+    max-width: 200px;
 }
 
 i {
     font-size: 2rem;
-    padding: 0.5rem;
-}
-
-p {
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 1.75rem;
-    color: rgb(43, 44, 46);
 }
 
 /* CARD ANIMATION FLIPS */
 
-.cardBack {
+
+.scene {
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #e6e6e6;
+    width: 300px;
+    height: 360px;
+    margin: 0 auto;
+    perspective: 600px;
+}
+
+.card {
     width: 100%;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+
 
 .card-face {
     position: absolute;
@@ -121,6 +137,10 @@ p {
 
 .card-face-front {
     background: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-face-back {
@@ -130,9 +150,10 @@ p {
 }
 
 
-.card.is-flipped {
-    transform: rotateY(180deg);
-}
+
+
+
+
 /* PARTY ICONS*/
 
 .fa-democrat {
@@ -145,6 +166,6 @@ p {
 }
 
 .fa-star {
-    color: lightgrey;
+    color: #000;
 }
 
