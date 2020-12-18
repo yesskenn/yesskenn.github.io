@@ -23,13 +23,13 @@ repButton.addEventListener('click', () => populateSenateGrid(republicans))
 const independents = senators.filter((senator) => senator.party === 'ID')
 indButton.addEventListener('click', () => populateSenateGrid(independents))
 
-stateButton.addEventListener('click', () => populateSenateGrid(senators.state.sort()))
+stateButton.addEventListener('click', () => populateSenateGrid(stateSort()))
 
 //STATE SORT IN ALPHABETICAL ORDER
 
-/*function (senators.state).sort() {
-    state.sort((a, b) =>  (a.senators.state).localeComapre(b.senators.state))
-};*/
+function stateSort() {
+    senators.state.sort((a, b) =>  (a.senators.state).localeComapre(b.senators.state))
+};
 
 const yourContactInfo = document.querySelector('#yourContactInfo')
 yourContactInfo.addEventListener('click', () => {
