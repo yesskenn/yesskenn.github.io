@@ -328,6 +328,12 @@ nav {
     
 }
 
+.portfolio-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
 
 @media screen and (max-width:600px) {
     .skills-grid {
