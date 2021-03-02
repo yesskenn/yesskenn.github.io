@@ -72,7 +72,7 @@ button {
     align-items: center;
     font-size: 2rem;
     margin: 3rem 1rem 1rem -0.5rem;
-    background-color: goldenrod;
+    background-color: #666;
     color: #fff;
     font-weight: 600;
     font-family: 'Work Sans';
@@ -83,7 +83,7 @@ button {
 
 button:hover {
     background-color: #e6e6e6;
-    color: goldenrod;
+    color: #666;
     transition: all 0.2s ease-out;
  }
 
@@ -179,7 +179,7 @@ nav {
     font-size: 6rem;
     color: #ffffff;
     text-transform: none;
-    background-color: inherit;
+    background-color: none;
     
 }
 
@@ -376,7 +376,7 @@ nav {
 
 .emailme {
     font-size: 3rem;
-    color: goldenrod;
+    color: #666;
     margin: 2rem;
     max-width: 33%;
     background-color: rgba(255,255,255,0.7);
@@ -396,7 +396,7 @@ nav {
 
     .emailme {
         font-size: 1rem;
-        color: goldenrod;
+        color: #666;
         margin: 2rem;
         max-width: 75%;
         text-align: center;
