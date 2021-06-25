@@ -105,7 +105,7 @@ nav {
     font-weight: 600;
     text-transform: uppercase;
     justify-content: flex-end;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -159,7 +159,7 @@ nav {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 66vh;
     margin: 0;
     background-color: #fafafa;
     justify-self: center;
@@ -174,7 +174,7 @@ nav {
     
 }
 
-#welcome-section > h1 {
+#home > h1 {
     font-family: 'Sacramento', monospace;
     font-size: 6rem;
     color: #ffffff;
@@ -183,14 +183,14 @@ nav {
     
 }
 
-#welcome-section > h2 {
+#home > h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 2.75rem;
     font-weight: 300;
     color: #ffffff;
 }
 
-#welcome-section > p {
+#home > p {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.75rem;
     font-weight: 100;
@@ -199,14 +199,14 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-    #welcome-section > h1 {
+    #home > h1 {
         font-size: 5rem;
     }
-    #welcome-section > h2 {
+    #home > h2 {
         font-size: 2rem;
     }
     
-    .welcome-section {
+    .home {
         width: 100%;
     }
 }
@@ -230,6 +230,12 @@ nav {
     max-width: 75%;
    border-top: 3px dashed #ab8093;
    
+}
+
+#projects > h1 {
+    padding-top: 6rem;
+    text-align: center;
+    border-top: 3px solid #ab8093;
 }
 
 .project-desc {
@@ -284,14 +290,6 @@ nav {
 
 /*SKILLZ SECTION */
 
-.skills-section {
-    margin-bottom: 10rem;
-    
-}
-
-.skills-section > h1 {
-    margin-bottom: 10rem;
-}
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -303,42 +301,32 @@ nav {
      
 }
 
-
 .skill-tile {
     margin: 1rem;
     max-width: calc(100%/3); 
     
 }
-
-/*.skill-tile {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-   
-    border: 4px solid #e9e9e9;
-    border-top: 6px solid #ab8093;
-    padding: 1rem;
-    margin: 0 auto;
-} */
-
 .skill-shot > img {
-    max-width: 300px;
+    max-height: 600px;
 }
-
-.skill-desc {
-    max-width: 300px;
-    text-align: center;
-}
-
-.skill-desc > h3 {
-    font-size: 1.75rem;
-    font-style: italic;
-}
-
-.skill-desc > p {
-    font-size: 1.75rem;
+.skills-section {
+    margin-bottom: 10rem;
     
 }
+
+.skills-list > li {
+    padding-right: 2rem;
+    color: #666;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+     
+}
+
 
 .portfolio-button {
     display: flex;
@@ -347,26 +335,6 @@ nav {
     
 }
 
-@media screen and (max-width:600px) {
-    .skills-grid {
-        display: flex;
-        flex-direction: column;
-         
-    }
-
-    .skill-tile {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 90%;
-        border: 3px dashed #e9e9e9;
-        margin: 1rem auto;
-    }
-
-    .skills-section > h1 {
-        justify-content: center;
-    }
-}
 
 /* CONTACT SECTION */
 
@@ -387,7 +355,7 @@ nav {
 }
 
 .emailme {
-    font-size: 3rem;
+    font-size: 1rem;
     color: #666;
     margin: 2rem;
     max-width: 33%;
@@ -449,7 +417,7 @@ footer > p {
     color: #fff;
 }
 
-.sm-links > a {
+.social-links > a{
     width: 100%;
     font-size: 4rem;
     margin: 1.5rem;
@@ -475,6 +443,3 @@ footer > p {
 }
 
 
-.portfolio-grid {
-    margin-top: 3rem;
-}
