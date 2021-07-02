@@ -70,23 +70,31 @@ button {
     border-radius: 0.5rem;
     padding: 2rem;
     align-items: center;
-    font-size: 2rem;
     margin: 3rem 1rem 1rem -0.5rem;
     background-color: #666;
-    color: #fff;
-    font-weight: 600;
-    font-family: 'Work Sans';
-    font-style: italic;
-  
+}
+
+button a:visited{
+    color: #e6e6e6;
+
 }
 
 
-button:hover {
+ button a {
+     font-size: 2rem;
+     font-family: 'Work Sans';
+     text-transform: uppercase;
+     color: #e6e6e6;  
+ }
+
+ button:hover {
     background-color: #e6e6e6;
-    color: #666;
     transition: all 0.2s ease-out;
  }
 
+ button a:hover{
+    color: #666;
+ }
  
 
 /* NAV */
@@ -140,6 +148,7 @@ nav {
     color: #ab8093;
     background-color:#e6e6e6;
     transition: all 0.2s;
+    border-radius: 0.5rem;
  }
 
 .nav-list a:visited{
@@ -248,7 +257,6 @@ nav {
     
 }
 
-
 .project-image {
     
     border-radius: 25px;
@@ -296,8 +304,6 @@ nav {
     padding: 1rem;
     justify-content: center;
     align-items: center;
-
-
      
 }
 
@@ -328,13 +334,6 @@ nav {
 }
 
 
-.portfolio-button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    
-}
-
 
 /* CONTACT SECTION */
 
@@ -363,8 +362,6 @@ nav {
     max-width: 33%;
     background-color: rgba(255,255,255,0.7);
     padding: 3rem;
-    
-
 }
 
 
@@ -372,6 +369,9 @@ nav {
     max-width: 300px;
 }
 
+.contact-section > button {
+    font-weight: 600;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -419,7 +419,7 @@ footer > p {
     color: #fff;
 }
 
-.social-links > a{
+.social-links > a {
     width: 100%;
     font-size: 4rem;
     margin: 1.5rem;
