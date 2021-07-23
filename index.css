@@ -282,11 +282,6 @@ nav {
         margin: 1rem auto 0 auto;
     }
 
-    .project-desc {
-        min-width: 90%;
-        margin: 0 auto;
-
-    }
 
     .project-section > h1 {
         justify-content: center;
@@ -307,14 +302,7 @@ nav {
      
 }
 
-.skill-tile {
-    margin: 1rem;
-    max-width: calc(100%/3); 
-    
-}
-.skill-shot > img {
-    max-height: 600px;
-}
+
 .skills-section {
     margin-bottom: 10rem;
     
@@ -341,8 +329,16 @@ nav {
 
 .row {
 	display: flex;
+    flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.row > img {
+    min-height: 300px;
+    margin: 1rem;
+    max-width: calc(100%/3); 
 }
 
 .row > .col {
@@ -350,7 +346,7 @@ nav {
 }
 
 .col {
-  float: left;
+  float: center;
   width: 25%;
 }
 
@@ -358,7 +354,7 @@ nav {
   display: none;
   position: fixed;
   z-index: 1;
-  padding: 10px 62px 0px 62px;
+  padding: 1rem;
   left: 0;
   top: 0;
   width: 100%;
@@ -372,6 +368,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: auto;
   padding: 0 0 0 0;
   width: 80%;
@@ -385,10 +382,14 @@ nav {
 
 .image-slide {
 	width: 100%;
+    margin: 0.5rem;
+    padding: 1rem;
 }
 
 .modal-preview {
 	width: 100%;
+    margin: 0.5rem;
+    padding: 1rem;
 }
 
 .dots {
@@ -417,9 +418,10 @@ img.hover-shadow {
 
 .close {
   color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
+  position: relative;
+  top: 0.5rem;
+  right: 1rem;
+  padding-left: 2rem;
   font-size: 35px;
   font-weight: bold;
 }
@@ -447,7 +449,10 @@ img.hover-shadow {
   user-select: none;
   -webkit-user-select: none;
 }
-
+.previous {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
