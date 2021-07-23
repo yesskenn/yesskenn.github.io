@@ -13,6 +13,7 @@
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"/>
+      <script src="index.js"></script>
     </head>
     
 </head>
@@ -32,53 +33,96 @@
            
     <h1>Graphic Design </h1>
    
-    <div class="skills-grid">
+   
 
-        <div class="skill-tile">
-            <div class="skill-shot"><img src="images/graphic-design/gallerybrochure.png"></div>
+        <div class="row">
+            <div class="col">
+                <img src="images/graphic-design/gallerybrochure.png" onclick="openLightbox();toSlide(1)" class="hover-shadow">
+            </div>
         
-        </div>
     
-        <div class="skill-tile">
-            <div class="skill-shot"><img src="images/graphic-design/halloween-poster-mockup.jpg"></div>
-            
-        </div>
-    
-        <div class="skill-tile">
-            <div class="skill-shot"><img src="images/graphic-design/yr-drapermtn.png"></div>
-            
-        </div>
-    
-        <div class="skill-tile">
-            <div class="skill-shot"><img src="images/graphic-design/vdbizcard.png"></div>
-            
-        </div>
-    
-        <div class="skill-tile">
-            <div class="skill-shot"><img src="images/graphic-design/yr_energybrochure.jpg"></div>
-           
-        </div>
-
-        <div class="skill-tile">
-            <div class="skill-shot"><img src="images/graphic-design/yr_simplelabelmockup.jpg"></div>
-           
-        </div>
+             <div class="col">
+                 <img src="images/graphic-design/halloween-poster-mockup.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview">
+            </div>
         
-        <div class="skill-tile">
-            <div class="skill-shot"><img src="images/graphic-design/yr_posterwork.png"></div>
-           
-        </div>
-
-        <div class="skill-tile">
-            <div class="skill-shot"><img src="images/graphic-design/icon-set.jpg"></div>
-           
-        </div>
-
-
-
+            <div class="col">
+                <img src="images/graphic-design/vdbizcard.png" onclick="openLightbox();toSlide(3)" class="hover-shadow preview">
+            </div>
         
-     </div>
+            <div class="col">
+                <img src="images/graphic-design/yr_simplelabelmockup.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview">
+            </div>
+    
+            <div class="col">
+                <img src="images/graphic-design/yr_posterwork.png" onclick="openLightbox();toSlide(5)" class="hover-shadow preview">
+            </div>
 
+            <div class="col">
+                <img src="images/graphic-design/yr_energybrochure.jpg" onclick="openLightbox();toSlide(6)" class="hover-shadow preview">
+            </div>
+    
+       
+
+    </div>
+        
+    </div>
+
+
+<!--Lightbox-->
+    <div id="Lightbox" class="modal">
+        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+        <div class="modal-content">
+            <div class="slide">
+                <img src="images/graphic-design/gallerybrochure.png" class="image-slide" alt="brochure of a gallery event" />
+            </div>
+            <div class="slide">
+                <img src="images/graphic-design/halloween-poster-mockup.jpg" class="image-slide" alt="poster of a halloween illustration" />
+            </div>
+            <div class="slide">
+                <img src="images/graphic-design/vdbizcard.png" class="image-slide" alt="photograph of a business card" />
+            </div>
+            <div class="slide">
+                <img src="images/graphic-design/yr_simplelabelmockup.jpg" class="image-slide" alt="two herb packages with labels" />
+            </div>
+            <div class="slide">
+                <img src="images/graphic-design/yr_posterwork.png" class="image-slide" alt="two informational posters" />
+            </div>
+            <div class="slide">
+                <img src="images/graphic-design/yr_energybrochure.jpg" class="image-slide" alt="a brochure about renewable energy" />
+            </div>
+
+            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+            <div class="dots">
+                <div class="col">
+                    <img src="images/graphic-design/gallerybrochure.png" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="a brochure about an art gallery opening">
+                </div>
+        
+                 <div class="col">
+                     <img src="images/graphic-design/halloween-poster-mockup.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="an poster with a little halloween ghost">
+                </div>
+            
+                <div class="col">
+                    <img src="images/graphic-design/vdbizcard.png" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="a business card">
+                </div>
+            
+                <div class="col">
+                    <img src="images/graphic-design/yr_simplelabelmockup.jpg" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="two packages with a label">
+                </div>
+        
+                <div class="col">
+                    <img src="images/graphic-design/yr_posterwork.png" class="modal-preview hover-shadow" onclick="toSlide(5)" alt="two informational posters">
+                </div>
+    
+                <div class="col">
+                    <img src="images/graphic-design/yr_energybrochure.jpg" class="modal-preview hover-shadow" onclick="toSlide(6)" alt="brochure about renewable energy">
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
     
 
  <!--FOOTER-->
