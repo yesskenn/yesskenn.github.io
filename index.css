@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-    color: #666;
+    color: #5A6273;
     font-weight: 900;
     margin: 3rem 6rem;
     display: flex;  
@@ -71,7 +71,7 @@ button {
     padding: 2rem;
     align-items: center;
     margin: 3rem 1rem 1rem -0.5rem;
-    background-color: #666;
+    background-color: #5A6273;
 }
 
 button a:visited{
@@ -93,7 +93,7 @@ button a:visited{
  }
 
  button a:hover{
-    color: #666;
+    color: #5A6273;
  }
  
 
@@ -310,7 +310,7 @@ nav {
 
 .skills-list > li {
     padding-right: 2rem;
-    color: #666;
+    color: #5A6273;
 }
 .skills-list {
     display: flex;
@@ -470,7 +470,7 @@ img.hover-shadow {
 
 
 .contact-section {
-    background-image: url('../images/yr-gradient-b.png');
+    background-color: #5A6273;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -487,7 +487,7 @@ img.hover-shadow {
 
 .emailme {
     font-size: 1rem;
-    color: #666;
+    color: #5A6273;
     margin: 2rem;
     max-width: 33%;
     background-color: rgba(255,255,255,0.7);
@@ -497,6 +497,9 @@ img.hover-shadow {
 
 .selfie {
     max-width: 300px;
+    border: #e6e6e6;
+    border-radius: 0.75rem;
+    offset: 1rem;
 }
 
 .contact-section > button {
@@ -508,7 +511,7 @@ img.hover-shadow {
 
     .emailme {
         font-size: 1rem;
-        color: #666;
+        color: #5A6273;
         margin: 2rem;
         max-width: 75%;
         text-align: center;
