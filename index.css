@@ -110,7 +110,7 @@ nav {
 .nav-list {
     display: flex;
     flex-direction: row;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     justify-content: flex-start;
     padding: 2rem 4rem;
@@ -168,7 +168,7 @@ nav {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 66vh;
+    height: 90vh;
     margin: 0;
     background-color: #5A6273;
     justify-self: center;
@@ -194,7 +194,7 @@ nav {
 
 #home > h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.75rem;
+    font-size: 2rem;
     font-weight: 300;
     color: #ffffff;
 }
@@ -299,12 +299,13 @@ nav {
     padding: 1rem;
     justify-content: center;
     align-items: center;
-     
+     margin-top: 500px;
 }
 
 
 .skills-section {
-    margin-bottom: 10rem;
+    margin: 0
+    
     
 }
 
@@ -312,12 +313,14 @@ nav {
     padding-right: 2rem;
     color: #5A6273;
 }
+
 .skills-list {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: center;
     align-items: center;
+   
      
 }
 
@@ -473,33 +476,43 @@ img.hover-shadow {
     background-color: #5A6273;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image:"../gob-vall-5.jpg";
 }
 
-.invite {
+.image-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     margin: 2rem auto 0 auto;
-    height: 75vh;
+    height: 50vh;
     
 }
 
 .emailme {
+    position: relative;
+    top: 0%;
+    left: 33%;
+    transform: translate(-50%, -50%);
     font-size: 1rem;
     color: #5A6273;
     margin: 2rem;
     max-width: 33%;
     background-color: rgba(255,255,255,0.7);
     padding: 3rem;
+    text-align: center;
 }
 
 
 .selfie {
-    max-width: 300px;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 366px;
     border: #e6e6e6;
     border-radius: 0.75rem;
-    offset: 1rem;
+  
 }
 
 .contact-section > button {
@@ -538,7 +551,7 @@ img.hover-shadow {
 
 /* FOOTER */
 footer {
-    background-color: #004E5B;
+    background-color: #fafafa;
     display: flex;
     flex-direction: row;
     padding: 2rem 3rem;
@@ -549,14 +562,14 @@ footer {
 
 footer > p {
     font-size: 2rem;
-    color: #fff;
+    color: #004E5B;
 }
 
 .social-links > a {
     width: 100%;
     font-size: 4rem;
     margin: 1.5rem;
-    color: #fff;
+    color: #004E5B;
     
     
 }
