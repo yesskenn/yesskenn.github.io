@@ -299,7 +299,7 @@ nav {
     padding: 1rem;
     justify-content: center;
     align-items: center;
-     margin-top: 500px;
+     margin-top: 10px;
 }
 
 
@@ -473,40 +473,29 @@ img.hover-shadow {
 
 
 .contact-section {
-    background-color: #5A6273;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:"../gob-vall-5.jpg";
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+   
+
 }
 
-.image-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin: 2rem auto 0 auto;
-    height: 50vh;
-    
-}
 
 .emailme {
-    position: relative;
-    top: 0%;
-    left: 33%;
-    transform: translate(-50%, -50%);
     font-size: 1rem;
     color: #5A6273;
-    margin: 2rem;
-    max-width: 33%;
+    margin: 0;
+    max-width: 45%;
     background-color: rgba(255,255,255,0.7);
     padding: 3rem;
     text-align: center;
+    border-radius: 0.75rem;
+  
 }
 
 
-.selfie {
-    display: block;
+.selfie { 
     width: 100%;
     height: auto;
     max-width: 366px;
