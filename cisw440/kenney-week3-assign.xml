@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="patientSS3.xsl"?>
+<Records>
+    <Patient>
+        <ID>1</ID>
+        <FullName>John Doe</FullName>
+        <DOB>3/2/1987</DOB>
+        <Gender>Male</Gender>
+        <ServiceDate>4/5/2016</ServiceDate>
+        <ProcedureCode>99215</ProcedureCode>
+        <PrimaryDiagnosis>R51</PrimaryDiagnosis>
+    </Patient>
+    <Patient>
+        <ID>2</ID>
+        <FullName>Jane Doe</FullName>
+        <DOB>7/13/1977</DOB>
+        <Gender>Female</Gender>
+        <ServiceDate>2/3/2016</ServiceDate>
+        <ProcedureCode>99213</ProcedureCode>
+        <PrimaryDiagnosis>Z34.0</PrimaryDiagnosis>
+    </Patient>
+    <Patient>
+        <ID>3</ID>
+        <FullName>Jackie Chan</FullName>
+        <DOB>9/23/2010</DOB>
+        <Gender>Male</Gender>
+        <ServiceDate>10/5/2016</ServiceDate>
+        <ProcedureCode>99214</ProcedureCode>
+        <PrimaryDiagnosis>S92.302A</PrimaryDiagnosis>
+    </Patient>
+    <Patient>
+        <ID>4</ID>
+        <FullName>Chuck Norris</FullName>
+        <DOB>5/15/2015</DOB>
+        <Gender>Male</Gender>
+        <ServiceDate>8/12/2016</ServiceDate>
+        <ProcedureCode>99283</ProcedureCode>
+        <PrimaryDiagnosis>813.80</PrimaryDiagnosis>
+    </Patient>
+    <Patient>
+        <ID>5</ID>
+        <FullName>Mario Bros</FullName>
+        <DOB>2/12/1943</DOB>
+        <Gender>Male</Gender>
+        <ServiceDate>5/2/2014</ServiceDate>
+        <ProcedureCode>99214</ProcedureCode>
+        <PrimaryDiagnosis>R51</PrimaryDiagnosis>
+    </Patient>
+</Records>
