@@ -1,0 +1,9 @@
+<!ELEMENT Records (Patient)>
+<!ELEMENT Patient (ID, FullName, DOB, Gender, ServiceDate, ProcedureCode, PrimaryDiagnosis)>
+<!ELEMENT Patient (#PCDATA)> 
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT FullName (#PCDATA)>
+<!ELEMENT DOB (#PCDATA)>
+<!ELEMENT Gender (#PCDATA)>
+<!ELEMENT ServiceDate (#PCDATA)>
+<!ELEMENT ProcedureCode (#PCDATA)>
