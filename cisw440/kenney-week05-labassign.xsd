@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:annotation>
+<xs:documentation>This XML Schema will be used to validate the Patient Records
+of the office visits log.
+</xs:documentation>
+</xs:annotation>
+<xs:element name="Records">
+<xs:element name="Patient">
+    <xs:complexType>
+    <xs:sequence>
+    <xs:element name="ID"
+        type="integer"/>
+
+    <xs:element name="FullName"
+        type="string"/>
+
+    <xs:element name="DOB"
+        type="xs:date"/>
+
+    <xs:element name="Gender"
+        type="string"/>
+
+    <xs:element name="ServiceDate"
+        type="xs:date"/>
+
+    <xs:element name="ProcedureCode"
+        type="integer"/>
+
+    <xs:element name="PrimaryDiagnosis"
+        type="string"/> 
+    </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:element>
+</xs:schema>
