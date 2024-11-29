@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     background-color: #fafafa;
     font-family: 'Work Sans', sans-serif;
-    font-size: 10px; /* 1rem*/
+    font-size: 16px; /* 1rem*/
     line-height: 1.2;
     margin: 0 auto;
     max-width: 100%;
@@ -50,7 +50,18 @@ ul {
 
 a {
     text-decoration: none;
+    transition: all 0.2s ease-out;
+    color: #111111;
+
 }
+
+a:hover{
+    color: #5A6273;
+ }
+
+ a:visited{
+    color:#004E5B;
+ }
 
 img {
     display: block;
@@ -168,18 +179,17 @@ nav {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 200px;
     margin: 0;
-    background-color: #5A6273;
+    text-align: center;
     justify-self: center;
     top: 0;
     left: 0;
-    min-width: 100vw;
-    max-width: 100vw;
     align-items: center;
     background-image: url('');
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: solid 1px #004E5B;
     
 }
 
@@ -223,53 +233,44 @@ nav {
 
 /* PROJECT SECTION */
 
-#projects {
-    background-color: #ffffff;
-    width: 100%;
-}
 
 
-
-.project {
+.projects, .about, .visit  {
     display: flex;
+    flex-direction: column;
     margin: 3rem auto;
-    height: 75vh;
     align-items: center;
     justify-content: center;
     max-width: 75%;
-   border-top: 3px dashed #004E5B;
+   border-top: 0px solid #004E5B;
    
 }
 
-#projects > h1 {
-    padding-top: 6rem;
+.projects > h2 {
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 1rem;
     text-align: center;
-    border-top: 3px solid #004E5B;
+    border-bottom: 1px solid #004E5B;
+}
+.visit > h2 {
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #004E5B;
+}
+.about > h2 {
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #004E5B;
 }
 
-.project-desc {
-    padding: 2rem;
-    font-family: 'Work Sans';
-    font-size: 1.75rem;
-    max-width: 33%;
-    margin-left: 6rem;
-    
-    
-}
 
-.project-image {
-    
-    border-radius: 25px;
-    width: 100%;
-    border: 1px solid seashell;
-    object-fit: cover;
-   
-}
 
 
 
 @media screen and (max-width: 600px) {
-    .project {
+    .projects {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -291,38 +292,7 @@ nav {
 
 
 
-/*SKILLZ SECTION */
 
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-     margin-top: 10px;
-}
-
-
-.skills-section {
-    margin: 0
-    
-    
-}
-
-.skills-list > li {
-    padding-right: 2rem;
-    color: #5A6273;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-   
-     
-}
 
 /* LIGHTBOX */
 
@@ -540,7 +510,7 @@ img.hover-shadow {
 
 /* FOOTER */
 footer {
-    background-color: #fafafa;
+    background-color: #111111;
     display: flex;
     flex-direction: row;
     padding: 2rem 3rem;
@@ -551,14 +521,14 @@ footer {
 
 footer > p {
     font-size: 2rem;
-    color: #004E5B;
+    color: #fafafa;
 }
 
 .social-links > a {
     width: 100%;
     font-size: 4rem;
     margin: 1.5rem;
-    color: #004E5B;
+    color: #fafafa;
     
     
 }
