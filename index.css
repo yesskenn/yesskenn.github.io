@@ -39,6 +39,7 @@ h1 {
     display: flex;  
     font-size: 3.25rem;
     text-transform: uppercase;
+    text-align: center;
    
 }
 
@@ -176,13 +177,11 @@ nav {
 
 
 .welcome-section {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 200px;
     margin: 0;
-    text-align: center;
-    justify-self: center;
     top: 0;
     left: 0;
     align-items: center;
@@ -190,9 +189,19 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid 1px #004E5B;
-    
 }
 
+.welcome-section h2 {
+    text-align: center;
+}
+
+.skills-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 #home > h1 {
     font-family: 'Abril Fatface', monospace;
     font-size: 6rem;
