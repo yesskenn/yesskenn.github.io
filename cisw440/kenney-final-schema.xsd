@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:annotation>
+<xs:documentation> This XML schema will be used to validate the records in the property listings.
+</xs:documentation>
+</xs:annotation>
+
+<xs:element name="Listings">
+    <xs:complexType>
+    <xs:sequence>
+    <xs:element name="Property" type="propertyList" maxOccurs="unbounded">
+        <xs:annotation>
+        <xs:documentation>
+        This represents for the property listing record. There is more than one property listing.
+        The HOA column can only be yes or no values.
+        </xs:documentation>
+        </xs:annotation>
+
+    <xs:complexType>
+        <xs:sequence>
+    
+        <xs:element name="propertyID"
+            type="text"/>
+        <xs:element name="city"
+            type="text"/>
+        <xs:element name="price"
+            type="text"/>
+        <xs:element name="bedBath"
+        type="text"/>
+        <xs:element name="lotSize"
+            type="text"/>
+        <xs:element name="yearBuilt"
+            type="text"/>
+        <xs:element name="features"
+            type="text"/>
+        <xs:element name="hasHoa"
+            type="text"/>
+    
+        </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
