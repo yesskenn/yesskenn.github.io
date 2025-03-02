@@ -1,4 +1,4 @@
-## Hi there 👋
+## I'm Yessi — I'm a cancer, millenial, wife, and mom. ✨
 
 <!--
 **yesskenn/yesskenn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -13,4 +13,6 @@ Here are some ideas to get you started: -->
 - 📫 How to reach me: yessi@rpkstudio.com
 - 😄 Pronouns: she/her
 - ⚡ Fun fact: love my cats and cozy video games. 
+
+
 
