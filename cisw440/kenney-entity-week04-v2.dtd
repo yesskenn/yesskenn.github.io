@@ -1,3 +1,0 @@
-<!ENTITY m "MALE">
-<!ENTITY f "FEMALE">
-<p> I am testing this to see if this will show up anywhere. Here are the genders: &f; and &m;.</p>
