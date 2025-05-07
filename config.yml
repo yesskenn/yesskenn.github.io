@@ -3,3 +3,12 @@ plugins:
 - jekyll-remote-theme
 
 title: Yessi Kenney
+
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+
+    
