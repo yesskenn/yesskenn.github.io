@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Projects
+---
+
+<h1>My GitHub Projects</h1>
+
+<ul>
+  {% for repo in github %}
+    <li>
+      <h2><a href="{{ repo.url }}">{{ repo.name }}</a></h2>
+      <p>{{ repo.description or "No description provided." }}</p>
+      <p><strong>Language:</strong> {{ repo.language or "N/A" }} | ⭐ {{ repo.stars }}</p>
+    </li>
+  {% endfor %}
+</ul>
