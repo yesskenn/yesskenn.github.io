@@ -14,6 +14,7 @@ module.exports = async function () {
   // Optionally filter or sort the repos
   return data
     .filter(repo => !repo.fork) // skip forks
+    .slice(0,10)
     .map(repo => ({
       name: repo.name,
       description: repo.description,
