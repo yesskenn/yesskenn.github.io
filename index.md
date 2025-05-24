@@ -1,8 +1,11 @@
 ---
-layout: none
+layout: default
 title: Yessi Kenney
 ---
 
 # Welcome to my GitHub Pages site
 
-This is a simple test to confirm the page loads.
+A project
+### [Google Homepage Dupe](https://github.com/yesskenn/google-homepage-dupe)
+A brief description of what it does.
+
