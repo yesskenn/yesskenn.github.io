@@ -1,6 +1,6 @@
 ---
 layout: default
-title: My Projects
+title: Home
 ---
 
 Welcome to my portfolio site built with Jekyll on GitHub Pages!
