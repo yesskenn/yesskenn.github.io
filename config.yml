@@ -3,7 +3,8 @@ plugins:
 - jekyll-remote-theme
 
 title: Yessi Kenney
-
+description: A collection of my github projects
+theme: minima
 
 collections:
   projects:
