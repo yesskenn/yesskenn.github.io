@@ -1,8 +1,8 @@
 ---
-layout: default
-title: Home
+layout: none
+title: Yessi Kenney
 ---
-<h1>
-I'm Yessi. </h1>
-Welcome to my portfolio site built with Jekyll on GitHub Pages!
-Check out my [projects](/projects).
+
+# Welcome to my GitHub Pages site
+
+This is a simple test to confirm the page loads.
