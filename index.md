@@ -4,9 +4,13 @@ title: Yessi Kenney
 ---
 <link rel="stylesheet" href="index.css">
 
-# Welcome to my GitHub Pages site
+# YESSI KENNEY: GH PAGES SITE
 
 PROJECTS
 ### [Google Homepage Dupe](https://github.com/yesskenn/google-homepage-dupe)
-A brief description of what it does.
+Just a Google Homepage Dupe
 
+### [Simple Recipes Cards](https://github.com/yesskenn/simple-recipes-cards)
+Supposed to be recipes, cards... 
+### [Pokemon Cards](https://github.com/yesskenn/pokemon-cards)
+Interactive Pokemon Cards
