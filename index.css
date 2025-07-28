@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,900&display=swap');
 
+
+
+/*colors*/
+$blue {
+    #396afc};
+
 /* BASE RESET */
 * {
     margin: 0;
@@ -43,6 +49,29 @@ h1 {
    
 }
 
+.title-cloud > h1 {
+	margin: 20px 0 0 80px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, rgba($blue, 0.3), rgba($blue, 0.2));
+	box-shadow: 20px 20px 0 0 rgba($blue, 0.15), 60px -30px 0 0 rgba($blue, 0.1),
+		60px 50px 0 0 rgba($blue, 0.12), -50px -20px 0 0 rgba($blue, 0.12),
+		-50px 20px 0 0 rgba($blue, 0.12), -40px 50px 0 0 rgba($blue, 0.2);
+	position: relative;
+	line-height: 1;
+	padding: 1.5rem 1rem 1.5rem 0;
+	transform: rotate(-3deg);
+	span {
+		display: block;
+		width: 100%;
+		white-space: nowrap;
+		text-align: center;
+		&:nth-child(2) {
+			transform: translate(-4px, -8px);
+		}
+	}
+}
 
 
 ul {
