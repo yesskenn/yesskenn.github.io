@@ -1,4 +1,4 @@
-# Yessi Kenney — Front-End  ✨
+# Yessi Kenney — Front-End Web Developer ✨
 
 I'm a **web designer and developer** with a focus on **WCAG compliance, user experience, and digital strategy**.  
 
@@ -6,7 +6,7 @@ I'm a **web designer and developer** with a focus on **WCAG compliance, user exp
 
 purpose: publishing projects, practice runs, etc
 author: Yesenia Kenney
-version: 2.0 March 2025
+version: 2.7 July 2025
 
 =======
 
