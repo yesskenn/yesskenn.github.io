@@ -10,7 +10,7 @@ version: 2.7 July 2025
 
 =======
 
-## 🛠️ Skills & Technologies  
+## Skills & Technologies  
 
 - **Front-end:** HTML, CSS, JavaScript  
 - **CMS & Platforms:** Drupal, WordPress, Sitecore  
