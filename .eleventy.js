@@ -3,7 +3,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",      // source folder
-      output: "."    // where the built site will go
+      output: "_site"    // where the built site will go
     }
   };
 };
