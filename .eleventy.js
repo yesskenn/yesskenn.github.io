@@ -1,12 +1,3 @@
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/css"); 
-  return {
-    dir: {
-      input: "src",
-      output: "."
-    }
-  };
-};
 
 
 module.exports = function(eleventyConfig) {
@@ -19,7 +10,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
-      output: "docs"
+      output: "."
     }
   };
 };
