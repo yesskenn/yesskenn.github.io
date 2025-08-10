@@ -64,6 +64,7 @@ h1 {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
+    color: var(--cloud-blue-20);
 	background: linear-gradient(to bottom, var(--cloud-blue-30), (var(--cloud-blue-20)));
 	box-shadow: 
         20px 20px 0 0 var(--cloud-blue-15), 
