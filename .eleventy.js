@@ -7,3 +7,19 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
+
+
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addCollection("blog", function(collection) {
+    return collection.getFilteredByGlob("src/blog/*.md");
+  });
+
+  eleventyConfig.addPassthroughCopy("src/css");
+
+  return {
+    dir: {
+      input: "src",
+      output: "docs"
+    }
+  };
+};
