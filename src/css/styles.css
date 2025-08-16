@@ -88,6 +88,9 @@ h1 {
 	}
 }
 
+main {
+    margin: 0 auto;
+}
 
 ul {
     list-style: none;
