@@ -1,9 +1,10 @@
 ---
 layout: layouts/post.njk
-title: Posts
+title: Thoughts
 ---
 
 <h2>Thoughts</h2>
+
 <ul>
 {% for post in collections.blog | reverse %}
   <li>
@@ -13,3 +14,4 @@ title: Posts
   </li>
 {% endfor %}
 </ul>
+
