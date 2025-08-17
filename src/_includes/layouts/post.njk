@@ -8,9 +8,9 @@
 </head>
 <body>
   <header>
-  <div class="posts-header">
     <h1>{{ title }}</h1>
-    <small>({{ post.date }})</small>
+    <small> {{ post.date | date("EEEE, MMMM d, yyyy h:mma z") }}
+ </small>
      </div>
   </header>
 
@@ -20,6 +20,11 @@
 
   <footer>
     <p><a href="/">← Back to home</a></p>
+     <p>© 2025 Yessi Kenney</p>
+    <div> <a href="https://yessikenney.com" target="_blank" rel="noopener"> Portfolio </a>
+      <a href="https://github.com/yesskenn" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yessikenney" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://rubyspice.neocities.org/" target="_blank" rel="noopener">NeoCities</a>
   </footer>
 </body>
 </html>

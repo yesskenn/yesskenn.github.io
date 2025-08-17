@@ -167,11 +167,10 @@ nav {
 }
 
 
-.nav-list {
+.nav {
     display: flex;
     flex-direction: row;
     font-weight: 500;
-    text-transform: uppercase;
     justify-content: flex-start;
     padding: 2rem 4rem;
 }
