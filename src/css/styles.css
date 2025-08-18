@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Engagement&family=Manufacturing+Consent&family=Meow+Script&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
@@ -8,7 +8,7 @@
   --default-background-color: #fafafa; 
   --cloud-blue: #a3c9f9;
   --cloud-blue-15: rgba(163, 201, 249, 0.15);
-  --cloud-blue-12: rgba(163, 201, 249, 0.12);
+  --cloud-blue-12: rgba(108, 168, 240, 0.343);
   --cloud-blue-10: rgba(163, 201, 249, 0.1);
   --cloud-blue-20: rgba(163, 201, 249, 0.2);
   --cloud-blue-30: rgba(163, 201, 249, 0.3);
@@ -59,6 +59,11 @@ h1 {
    
 }
 
+h3 {
+    margin: 0.5rem auto;
+    color: #004E5B;
+    margin-top: 1.75rem;
+}
 .title-cloud {
 	margin: 20px 0 0 80px;
 	width: 150px;
@@ -117,11 +122,7 @@ img {
     max-width: 700px;
 }
 
-h3 {
-    margin: 0.5rem auto;
-    color: #004E5B;
-    margin-top: 1.75rem;
-}
+
 
 
 button {
@@ -195,7 +196,7 @@ nav {
     
 /* NAV LIST LINKS */   
     
-.nav-list a {
+.nav a {
     font-size: 2rem;
     margin-right: 2rem;
     color: #004E5B;
@@ -203,14 +204,14 @@ nav {
     
 }
 
-.nav-list a:hover {
+.nav a:hover {
     color: #004E5B;
     background-color:#e6e6e6;
     transition: all 0.2s;
     border-radius: 0.5rem;
  }
 
-.nav-list a:visited{
+.nav a:visited{
     color: #004E5B;
 }
 
@@ -247,10 +248,10 @@ nav {
     align-items: center;
     margin: 0 auto;
 }
-#home > h1 {
-    font-family: 'Abril Fatface', monospace;
+.title-cloud > h1 {
+    font-family: 'Manufacturing Consent', monospace;
     font-size: 6rem;
-    color: #ffffff;
+    color: #111111;
     text-transform: none;
     background-color: none;
     
@@ -260,15 +261,14 @@ nav {
     font-family: 'Work Sans', sans-serif;
     font-size: 2rem;
     font-weight: 300;
-    color: #ffffff;
+    color: #111111;
 }
 
 #home > p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 100;
+    font-size: 1.15em;
     margin-top: 1rem;
-    color: #ffffff;
+    color: #111111;
 }
 
 @media screen and (max-width: 600px) {
