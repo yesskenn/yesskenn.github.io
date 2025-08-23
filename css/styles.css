@@ -173,8 +173,7 @@ nav {
     flex-direction: row;
     font-weight: 500;
     justify-content: flex-start;
-    padding: 2rem 4rem;
-}
+    gap: 1rem;}
 
 @media screen and (max-width: 600px) {
    
