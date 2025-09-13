@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thoughts</title>
+  <title>{{ title }}</title>
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
@@ -17,25 +17,18 @@
       </div>
     </nav>
 
-    <div class="title-cloud"><h1></h1></div>
+    <div class="title-cloud"><h1>{{ siteName }}</h1></div>
     <div id="home">
-      
+      {{ headerContent | safe }}
     </div>
   </header>
 
   <main>
-    
-<h2>Thoughts</h2>
-
-<ul>
-
-</ul>
-
-
+    {{ content | safe }}
   </main>
 
   <footer>
-    <p>© 2025 </p>
+    <p>© 2025 {{ siteName }}</p>
     <div>
       <a href="https://yessikenney.com" target="_blank" rel="noopener"> Portfolio </a>
       <a href="https://github.com/yesskenn" target="_blank" rel="noopener">GitHub</a>
