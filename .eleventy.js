@@ -3,7 +3,7 @@
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("blog", function(collection) {
-    return collection.getFilteredByGlob("src/blog/*.njk");
+    return collection.getFilteredByGlob("src/blog/*.md");
   });
 
   eleventyConfig.addPassthroughCopy("src/css");

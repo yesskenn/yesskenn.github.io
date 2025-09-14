@@ -9,17 +9,22 @@
 <body>
   <header>
     <nav>
-      <a href="/">← Back to home</a>
+      <div class="nav">
+        <a href="/" rel="noopener"> /home </a>
+        <a href="/credits/" rel="noopener"> /credits </a> 
+        <a href="/blog/" rel="noopener"> /blog</a>
+      </div>
     </nav>
     <h1>{{ title }}</h1>
+    
   </header>
 
-  <main class="blog-index">
+  <main>
     <ul>
-      {% for post in collections.post | reverse %}
+      {% for post in collections.blog | reverse %}
         <li>
           <a href="{{ post.url }}">{{ post.data.title }}</a>
-          <small>{{ page.date | postDate }}</small>
+          <small>{{ post.date | postDate }}</small>
         </li>
       {% endfor %}
     </ul>
