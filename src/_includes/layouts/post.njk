@@ -8,14 +8,22 @@
 </head>
 <body>
   <header>
+    <nav>
+      <div class="nav">
+        <a href="/" rel="noopener"> /home </a>
+        <a href="/credits/" rel="noopener"> /credits </a> 
+        <a href="/blog/" rel="noopener"> /blog</a>
+      </div>
+    </nav>
     <h1>{{ title }}</h1>
-<small> {{ page.date | postDate }} </small>
-
-
+    
   </header>
 
   <main class="blog-post">
+  <small> {{ page.date | postDate }} </small>
+<div>
     {{ content | safe }}
+    </div>
   </main>
 
   <footer>
