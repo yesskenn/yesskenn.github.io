@@ -1,27 +1,75 @@
 ---
-import type { HeroProps } from "@types";
-type Props = HeroProps;
+import { Link } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
 
-const { name, specialty, summary, email } = Astro.props;
+/**
+ * Hero Component
+ *
+ * @description A component that displays a hero section with a title, description, and image
+ */
+interface Props {
+  /**
+   * The source URL for the image
+   */
+  src?: string
+}
+
+const { src = '/astronaut-hero-img.webp' }: Props = Astro.props
 ---
 
-<section class="py-24 md:py-32" id="#hero">
-  <h1
-    class="mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-9xl"
-  >
-    {name}
-  </h1>
-  <p
-    class="mb-9 font-serif text-4xl leading-[46px] font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl"
-  >
-    {specialty}
-  </p>
-  <p class="mb-16 text-base font-normal text-neutral md:text-lg">
-    {summary}
-  </p>
-
-  <a
-    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${email}`}>Get in Touch</a
-  >
+<section class="hero my-24">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h1 class="text-center text-6xl md:text-left lg:text-8xl">
+          <slot><span class="text-gradient">Design + Development </span> by Yessi Kenney</slot>
+        </h1>
+        <div class="flex flex-col gap-3 min-[500px]:flex-row">
+          <Link
+            href="/contact/"
+            isButton
+            type="primary"
+            animateOnHover
+            animationType="boop"
+          >
+            <Icon aria-hidden="true" name="lucide:send" size="1.5rem" />
+            connect with me
+          </Link>
+          
+          <Link
+            href="/portfolio/"
+            isButton
+            type="secondary"
+            animateOnHover
+            animationType="boop"
+          >
+            <Icon aria-hidden="true" name="lucide:bookmark" size="1.5rem" />
+            view my work
+          </Link>
+         
+        
+         
+          </div>
+      </div>
+      <!-- <Image class="hidden lg:block" src={src} alt="" decoding="async" width={800} height={600} loading="eager" /> -->
+    </div>
+  </div>
 </section>
+
+<style lang="scss">
+  h1 {
+    text-wrap: unset;
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      315deg,
+      light-dark(var(--color-primary-300), var(--color-secondary-100)) 25%,
+      light-dark(var(--color-secondary-300), var(--color-primary-200))
+    );
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
