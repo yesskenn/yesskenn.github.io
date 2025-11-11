@@ -1,0 +1,136 @@
+@use 'breakpoint' as *;
+
+
+// Work Sans (main text)
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 100 900; // variable font
+  font-display: swap;
+  src:
+    local('Work Sans'),
+    url('/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src:
+    local('Work Sans Italic'),
+    url('/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+// Space Mono (accents/code)
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Space Mono'),
+    url('/fonts/SpaceMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('Space Mono Bold'),
+    url('/fonts/SpaceMono-Bold.ttf') format('truetype');
+}
+
+// Atkinson Hyperlegible (alt / accessibility / headings)
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src:
+    local('Atkinson Hyperlegible'),
+    url('/fonts/AtkinsonHyperlegibleNext-Variable.woff2') format('woff2');
+}
+
+// Manufacturing Consent (Display / Blackletter)
+@font-face {
+  font-family: 'Manufacturing Consent';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: 
+    local('Manufacturing Consent'),
+    url('/fonts/ManufacturingConsent-Regular.ttf') format('truetype');
+}
+
+// Engagement (Brush Script)
+@font-face {
+  font-family: 'Engagement';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Engagement'),
+    url('/fonts/Engagement-Regular.ttf') format('truetype');
+}
+
+
+@layer base {
+  p {
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    text-wrap: balance;
+  }
+
+  h1,
+  h2 {
+    font-weight: 600;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: var(--font-size-6);
+    line-height: var(--font-size-7);
+  }
+
+  h2 {
+    font-size: var(--font-size-5);
+    line-height: var(--font-size-6);
+  }
+
+  h3 {
+    font-size: var(--font-size-4);
+    line-height: var(--font-size-5);
+  }
+
+  h4 {
+    font-size: var(--font-size-3);
+    line-height: var(--font-size-4);
+  }
+
+  h5 {
+    font-size: var(--font-size-2);
+    line-height: var(--font-size-3);
+  }
+
+  h6 {
+    font-size: var(--font-size-1);
+    line-height: var(--font-size-2);
+  }
+}

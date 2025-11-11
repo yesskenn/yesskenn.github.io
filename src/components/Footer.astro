@@ -1,33 +1,49 @@
 ---
-import type { SiteConfig } from "@types";
+import CallToAction from './CallToAction.astro'
+import Logo from './Logo.astro'
+import { Heading, Link } from 'accessible-astro-components'
 
-type Props = Pick<SiteConfig, "author" | "socialLinks">;
-
-const { author, socialLinks } = Astro.props;
-const currentYear = new Date().getFullYear();
+/**
+ * Footer Component
+ *
+ * @description A component that displays the footer of the website
+ */
+const currentYear = new Date().getFullYear()
 ---
 
-<footer
-  class="w-full border-t border-neutral/20 px-5 pt-5 pb-8 text-center text-white"
->
-  <ul class="mb-5 flex flex-wrap justify-center gap-x-5 text-xs">
-    {
-      socialLinks.map(({ text, href }) => (
-        <li>
-          <a
-            href={href}
-            target="_blank"
-            class="inline-block px-4 py-3 after:relative after:bottom-[-4px] after:content-[url(/external.svg)] hover:text-primary"
+<footer>
+  <CallToAction />
+  <section class="py-20">
+    <Heading level="h2" class="sr-only">Footer</Heading>
+    <div class="container grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1">
+     
+      <div class="flex flex-col gap-1">
+        <Logo loading="lazy" />
+        <p class="leading-[1.75]">
+          Tip: Use a screen reader. Press <kbd>⌘</kbd> + <kbd>F5</kbd> to start VoiceOver or <kbd
+            >Win</kbd
           >
-            {text}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
-  <p class="text-xs">
-    {author} © {currentYear}. <span class="text-neutral"
-      >Designed & Developed by</span
-    > Moisés Machuca
-  </p>
+          + <kbd>Ctrl</kbd> + <kbd>Enter</kbd> for Narrator.
+        </p>
+       
+      </div>
+    </div>
+  </section>
+  <section class="py-8">
+    <div class="container flex flex-col gap-4 md:flex-row md:justify-between">
+      <p>
+        &copy; {currentYear} - Web Design + Development by Yessi Kenney ✨ ♥  </p>
+        <p> Built with <Link href="https://astro.build/">Astro</Link> | Hosted on <Link href="https://docs.github.com/en/pages/quickstart">GitHub Pages</Link> | 
+       <Link href="/credits">Inspo</Link></p>
+        
+        <!--Theme by <Link href="https://github.com/markteekman">Mark Teekman</Link>-->
+      </p>
+    </div>
+  </section>
 </footer>
+
+<style>
+  section {
+    border-top: 1px solid var(--border-color-subtle);
+  }
+</style>
