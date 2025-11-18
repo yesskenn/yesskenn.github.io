@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav">
+        <a href="/" rel="noopener"> /home </a>
+        <a href="/credits/" rel="noopener"> /credits </a> 
+        <a href="/blog/" rel="noopener"> /blog</a>
+      </div>
+    </nav>
+    <h1>{{ title }}</h1>
+    
+  </header>
+
+  <main class="blog-post">
+  <small> {{ page.date | postDate }} </small>
+<div>
+    {{ content | safe }}
+    </div>
+  </main>
+
+  <footer>
+    <p><a href="/">← Back to home</a></p>
+     <p>© 2025 Yessi Kenney</p>
+    <div> <a href="https://yessikenney.com" target="_blank" rel="noopener"> Portfolio </a>
+      <a href="https://github.com/yesskenn" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yessikenney" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://rubyspice.neocities.org/" target="_blank" rel="noopener">NeoCities</a>
+  </footer>
+</body>
+</html>
