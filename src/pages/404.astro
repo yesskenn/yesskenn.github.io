@@ -1,22 +1,43 @@
 ---
-import DefaultLayout from '@layouts/DefaultLayout.astro'
-import { Heading, Link } from 'accessible-astro-components'
-import { Icon } from 'astro-icon/components'
----
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro";
+import BottomLayout from "@layouts/BottomLayout.astro";
+import TwinklingStars from "@components/TwinklingStars.astro"
+import MeteorShower from "@components/MeteorShower.astro"
 
-<DefaultLayout title="404">
-  <section class="my-12">
-    <div class="container">
-      <Heading level="h1">404</Heading>
+---
+ <!-- Light Mode: Particles -->
+  <div class='absolute inset-0 block dark:hidden'>
+    <div id='particles1' class='fixed inset-0'></div>
+    <div id='particles2' class='fixed inset-0'></div>
+    <div id='particles3' class='fixed inset-0'></div>
+  </div>
+
+  <!-- Dark Theme: Stars -->
+  <div class='absolute inset-0 bg-black hidden dark:block'>
+    <div id='stars1' class='fixed inset-0'></div>
+    <div id='stars2' class='fixed inset-0'></div>
+    <div id='stars3' class='fixed inset-0'></div>
+  </div>
+
+  <!-- Dark Theme: Twinkling Stars / Metors -->
+  <div id="galaxy" class="fixed inset-0">
+    <div class="hidden dark:block">
+      <TwinklingStars/>
+      <MeteorShower/>
     </div>
-  </section>
-  <section class="my-12">
-    <div class="space-content container">
-      <p class="text-2xl">PAGE LOST IN THE SAUCE.</p>
-      <Link href="/" isButton type="primary" animateOnHover animationType="nudge">
-        HEAD HOME.
-        <Icon aria-hidden="true" name="lucide:sparkle" size="1.5rem" />
-      </Link>
+  </div>
+
+  <script is:inline src="/js/bg.js"></script>
+<PageLayout>
+  <TopLayout>
+    <div class="animate">
+      <h1 class="page-heading">404. PAGE LOST IN THE SAUCE.</h1>
     </div>
-  </section>
-</DefaultLayout>
+  </TopLayout>
+  <BottomLayout>
+    <article class="animate">
+      
+    </article>
+  </BottomLayout>
+</PageLayout>

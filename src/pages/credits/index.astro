@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import { CREDITS } from "@consts"
+
+
+---
+
+<PageLayout title={CREDITS.TITLE} description={CREDITS.DESCRIPTION}>
+  <TopLayout>
+    <div class="animate page-heading">
+      {CREDITS.TITLE}
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <h3 class = "animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none"> Resources Used to Build This Site</h3>
+    <div>
+  <ul>
+    <li><a href="https://leerob.com/beliefs">Inspired by Lee Robinson</a></li>
+  <li><a href="https://astro.build">Astro / Currently building with Astro</a>
+    <ul><li>Using Mark Horn's <a href="https://github.com/markhorn-dev/astro-sphere">Astro Sphere</a></li></ul>
+  </li>
+  <li><a href="https://www.freecodecamp.org/news/learn-eleventy/">Previously builty with 11ty</a></li>
+  <li><a href="https://codepen.io/oliviale/pen/dyydRqJ">Olivia Ng's Just Bullet Journal Things</a></li>
+  <li><a href="https://ohhelloana.blog">Oh Hello Ana Blog</a></li>
+  <li><a href="https://cavacado.neocities.org/posts/020221/">Cavacado</a></li>
+</ul>
+</div>
+  </BottomLayout>
+</PageLayout>
