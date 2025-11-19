@@ -1,7 +1,7 @@
 ---
 title: "JMPNS Web Overhaul"
 summary: "Improving a website for better navigation"
-date: "December 19 2023"
+date: "Dec 19 2023"
 draft: false
 tags:
 - UX

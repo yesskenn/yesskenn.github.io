@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "sans": ["Atkinson", ...defaultTheme.fontFamily.sans],
+        "sans": ["Work Sans", ...defaultTheme.fontFamily.sans],
       },
       typography: {
         DEFAULT: {

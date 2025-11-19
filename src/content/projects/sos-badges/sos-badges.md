@@ -1,7 +1,7 @@
 ---
 title: "Secretary of State Badges"
 summary: "Badges for an Elections Event"
-date: "March 20 2024"
+date: "Mar 20 2024"
 draft: false
 tags:
 - Design
@@ -28,10 +28,10 @@ It was really important to keep these from getting too wild, as this was still a
 In total, I created 9 different badges and 4 parking passes with interesting, yet not-too-crazy colors, and and cute patterns that would be fun to wear but not too distracting.  
 It was truly a balancing act.
 
-![Badge Mockups](/vertical-id-cards-01-1024x683.png)
+![Badge Mockups](./vertical-id-cards-01-1024x683.png)
 
-![Badge Mockups](/id-card-01-1024x683.png)
+![Badge Mockups](./id-card-01-1024x683.png)
 
-![Badge Mockups](/2022-Gen.Election-Badges-mockups-15-614x1024.png)
+![Badge Mockups](./2022-Gen.Election-Badges-mockups-15-614x1024.png)
 
-![Badge Mockups](/2022-Gen.Election-Badges-mockups12-13-614x1024.png)
+![Badge Mockups](./2022-Gen.Election-Badges-mockups12-13-614x1024.png)
