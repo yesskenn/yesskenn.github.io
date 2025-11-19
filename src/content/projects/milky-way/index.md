@@ -1,7 +1,7 @@
 ---
 title: "Milky Way Branding"
 summary: "Playing with APIs and reduced test cases"
-date: "January 09 2024"
+date: "Jan 09 2024"
 draft: false
 tags:
 - Design
@@ -23,14 +23,14 @@ Brief Branding Challenge proposed by The Brief Collective. The brief called for 
 
 To do this I used Adobe Illustrator to create an initial mark, decide on a color palette that reminded me of bubble-gum ice cream, and went to town putting together patterns and type on various art boards. Mockups were downloaded from Freepik and tested in Photoshop to see what the design might look like in a real-life scenario. It is important to consider all angles and views.
 
-![Coasters with Milky Way brand illustrations](/mk-coaster-mockup-copy.png)
+![Coasters with Milky Way brand illustrations](./mk-coaster-mockup-copy.png)
 
-![Milky Way logo](/mk-primary-logo-01.png)
+![Milky Way logo](./mk-primary-logo-01.png)
 
-![Patterns](/mk-pattern2_Artboard-9_Artboard-9.png)
+![Patterns](./mk-pattern2_Artboard-9_Artboard-9.png)
 
-![Milky Way Ice Cream Packaging](/mk-icecream-packaging-ccc.png)
+![Milky Way Ice Cream Packaging](./mk-icecream-packaging-ccc.png)
 
-![Milky Way Branded Meny](/mk-menu-again.png)
+![Milky Way Branded Meny](./mk-menu-again.png)
 
-![More Milky Way Brand Patterns](/mk-mw-pattern_Artboard-8.png)
+![More Milky Way Brand Patterns](./mk-mw-pattern_Artboard-8.png)

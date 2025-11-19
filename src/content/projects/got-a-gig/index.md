@@ -42,8 +42,8 @@ Ensuring seamless usability across devices, from desktop to tablet.
 
 Providing easy access to information about repairs, rentals, and services.
 
-![Main page mockup](/got-a-gig-hero-mockup-1024x791.png)
+![Main page mockup](./got-a-gig-hero-mockup-1024x791.png)
 
-![Before the redesign](/before-about-mockups-1024x791.png)
+![Before the redesign](./before-about-mockups-1024x791.png)
 
-![After the redesign](/after-mockups-1024x791.png)
+![After the redesign](./got-a-gig-after-mockups-1024x791.png)

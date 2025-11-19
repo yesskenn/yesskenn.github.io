@@ -1,7 +1,7 @@
 ---
 title: "Web Development"
 summary: "Playing with APIs and reduced test cases"
-date: "January 23 2024"
+date: "Jan 23 2024"
 draft: false
 tags:
 - CodePen
@@ -24,11 +24,11 @@ I enjoy solving problems as I code, (and figuring things out after I've had a ha
 
 [View Project](https://yessikenney.netlify.app/star-wars-intro/)
 
-![Star Wars Page](/starships2.webp)
+![Star Wars Page](./starships2.webp)
 
 * * *
 
-![Fake Survey I Made Up](/survey-mockup-edited.webp)
+![Fake Survey I Made Up](./survey-mockup-edited.webp)
 
 ### Responsive Form
 
