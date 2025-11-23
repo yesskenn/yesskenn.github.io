@@ -8,33 +8,104 @@
 
 @layer base {
   @font-face {
-    font-family: "Atkinson";
-    src: url("/fonts/atkinson-regular.woff") format("woff");
+    font-family: "Work Sans";
+    src: url("/fonts/WorkSans-Regular.woff2") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Work Sans";
+    src: url("/fonts/WorkSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+    @font-face {
+    font-family: "Work Sans";
+    src: url("/fonts/WorkSans-SemiBold.woff2") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    }
+      @font-face {
+    font-family: "Work Sans";
+    src: url("/fonts/WorkSans-Bold.woff2") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+      }
+  @font-face {
+    font-family: "Work Sans";
+    src: url("/fonts/WorkSans-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+    @font-face {
+    font-family: "Work Sans";
+    src: url("/fonts/WorkSans-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Space Mono";
+    src: url("/fonts/SpaceMono-Regular.woff2") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+   @font-face {
+    font-family: "Space Mono";
+    src: url("/fonts/SpaceMono-Italic.woff2") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Space Mono";
+    src: url("/fonts/SpaceMono-Bold.woff2") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Space Mono";
+    src: url("/fonts/SpaceMono-BoldItalic.woff2") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+   @font-face {
+    font-family: "Gorgias";
+    src: url("/fonts/Gorgias-Regular.ttf") format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Atkinson";
-    src: url("/fonts/atkinson-bold.woff") format("woff");
-    font-weight: 700;
+    font-family: "Deseo";
+    src: url("/fonts/DeseoMedium-Regular.otf") format("opentype");
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
+
 }
 
 html {
   overflow-y: scroll;
   color-scheme: light;
-  background-color: white;
-  font-family: "Atkinson", sans-serif;
+  background-color: #FDFCFA;
+  font-family: "Work Sans", sans-serif;
 
 }
 
 html.dark {
   color-scheme: dark;
-  background-color: black;
+  background-color: #111111;
 }
 
 html,

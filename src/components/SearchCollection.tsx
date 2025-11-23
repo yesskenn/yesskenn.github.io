@@ -97,8 +97,8 @@ export default function SearchCollection({ entry_name, data, tags }: Props) {
                     class={cn(
                       "w-full px-2 py-1 rounded",
                       "flex gap-2 items-center",
-                      "bg-black/5 dark:bg-white/10",
-                      "hover:bg-black/10 hover:dark:bg-white/15",
+                      "bg-[#D8D8D8]/60 dark:bg-white/10",
+                      "hover:bg-[#4A5A72]/10 hover:dark:bg-white/15",
                       "transition-colors duration-300 ease-in-out",
                       filter().has(tag) && "text-black dark:text-white"
                     )}

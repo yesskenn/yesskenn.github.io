@@ -44,21 +44,21 @@ export const LINKS: Links = [
     HREF: "/", 
   },
   { 
-    TEXT: "Work", 
-    HREF: "/work", 
-  },
-  { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
-  },
-  { 
     TEXT: "Projects", 
     HREF: "/projects", 
   },
-   { 
+    { 
+    TEXT: "Blog", 
+    HREF: "/blog", 
+  },
+    { 
+    TEXT: "Work", 
+    HREF: "/work", 
+  },
+     { 
     TEXT: "Credits", 
     HREF: "/credits", 
-  },
+  }
 ]
 
 // Socials

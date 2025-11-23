@@ -1,8 +1,8 @@
 
   function generateParticles(n) {
-    let value = `${getRandom(2560)}px ${getRandom(2560)}px #000`;
+    let value = `${getRandom(2560)}px ${getRandom(2560)}px #111`;
     for (let i = 2; i <= n; i++) {
-      value += `, ${getRandom(2560)}px ${getRandom(2560)}px #000`;
+      value += `, ${getRandom(2560)}px ${getRandom(2560)}px #111`;
     }
     return value;
   }
