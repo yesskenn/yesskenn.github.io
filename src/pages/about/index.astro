@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import { ABOUT } from "@consts"
+
+
+---
+
+<PageLayout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>
+   <TopLayout>
+    <div class="animate page-heading">
+      <h1 class="text-3xl font-semibold text-black dark:text-white mt-2">
+        {ABOUT.TITLE}
+      </h1>
+      <div class="mt-1">
+        {ABOUT.DESCRIPTION}
+      </div>
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <h3 class = "animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none"> </h3>
+    <div>
+           <!-- About Section -->
+      <section class="animate">
+        <article>
+          <p><strong>I am a (perpetually in progress) creative web developer with a strong web systems and technical-ops focus. <br/>
+            I build accessible websites that are thoughtfully put together from the ground-up using Drupal, Sitecore, WordPress and other CMS platforms. I handle everything from content and workflows to accessibility, troubleshooting, user support.</strong></p>
+          <p> The small details matter; I tend to romanticize code and I love aesthetics that make me feel something. I also want things to just make sense for everyone else.<br>When I'm not making things on the internet, I'm probably organizing my notes, tweaking a color palette, and being inspired by streetlights, flowers, and cute cartoons or video games. I also enjoy reading, playing Sudoku, and loafing with my family.  
+          </p>
+          <h3><b>BEFORE</b></h3>
+          <p> My path hasn't ever been linear. I’ve developed patience and empathy through roles such as: interviewing for voter polls and health surveys, supporting youth in completing undercover tobacco compliance checks, serving tables, working in a bakery, supporting college students as a teaching assistant, and guiding people through their tech frustrations as an Apple advisor. These experiences taught me how to solve problems with care. </p>
+          <p>Overtime, I became the go-to for web updates, content fixes, Spanish support, and tech troubleshooting. I’m a problem-solver who brings calm, order, and care into messy systems (or at least I try to be cool, calm, and collected). </p>
+         <h3><b><i>NOW</i></b></h3>
+          <p>My obsession with  pixel-pefect detail means your website will be meticulously crafted with a focus on accessibility and usability.   Currently, I'm working as a Web Analyst at Caltrans, honing my skills to deliver better digital experiences.</p>
+          <p>
+           If you want  a website that's intuitive, well-designed, and easy to maintain, let's connect: hi@yessikenney.com</p>
+ 
+</div>
+  </BottomLayout>
+</PageLayout>
