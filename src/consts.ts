@@ -13,16 +13,20 @@ export const WORK: Page = {
   DESCRIPTION: "Places I have worked.",
 }
 
+export const SERVICES: Page = {
+  TITLE: "Services",
+  DESCRIPTION: "How I Can Help.",
+}
 // Blog Page
 export const BLOG: Page = {
   TITLE: "Blog",
-  DESCRIPTION: "Writing.",
+  DESCRIPTION: "Writing and thoughts on structure, learning, UX, accessibility, coding, and more.",
 }
 
 // Projects Page 
 export const PROJECTS: Page = {
   TITLE: "Projects",
-  DESCRIPTION: "Recent projects.",
+  DESCRIPTION: "Recent projects.  A mix of designs, code snippets, accessibility improvements, and system-level fixes.",
 }
 
 // Search Page
@@ -31,6 +35,10 @@ export const SEARCH: Page = {
   DESCRIPTION: "Search all posts and projects by keyword.",
 }
 
+export const ABOUT: Page = {
+  TITLE: "About",
+  DESCRIPTION: "How and Why I Do What I Do.",
+}
 
 // Credits Page
 export const CREDITS: Page = {
@@ -48,16 +56,16 @@ export const LINKS: Links = [
     HREF: "/projects", 
   },
     { 
+    TEXT: "Services", 
+    HREF: "/services", 
+  },
+     { 
     TEXT: "Blog", 
     HREF: "/blog", 
   },
-    { 
-    TEXT: "Work", 
-    HREF: "/work", 
-  },
      { 
-    TEXT: "Credits", 
-    HREF: "/credits", 
+    TEXT: "About", 
+    HREF: "/about", 
   }
 ]
 
