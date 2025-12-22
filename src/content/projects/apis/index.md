@@ -11,7 +11,7 @@ tags:
 
 ## USING APIs
 
-Figuring out how to work with and dress up data that's not mine. 
+Figuring out how to work with and dress up data that's not mine.
 
 ### Star Wars API Project
 
@@ -25,7 +25,6 @@ Figuring out how to work with and dress up data that's not mine.
 
 * * *
 
-
 ### Responsive Form
 
 - Challenge: Build a functional and responsive questionnaire form based on market research surveys.
@@ -34,4 +33,3 @@ Figuring out how to work with and dress up data that's not mine.
 
 [View Project](https://codepen.io/yessi916/pen/YzqYbeX)
 ![Fake Survey I Made Up](./survey-mockup-edited.webp)
-
