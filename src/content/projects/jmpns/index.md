@@ -5,7 +5,6 @@ date: "Dec 19 2023"
 draft: false
 tags:
 - UX
-- UI
 - Wix
 - Research
 - Adobe XD
@@ -70,8 +69,8 @@ For the best outcome, a designer should be able to think about who will be using
 
 In a lot of instances, the final product turned out just like I imagined it. In others, it's totally different and for the better. In many ways, I would do it all over again. It's a lot easier to find information as a parent, potential parent, or random government worker. The look is also a lot cleaner than it was before. If I were to work on this again, today, I would continue fine-tuning the visual elements - making sure there are no tense tight spaces- pay more attention to how the content and layout work together, and keep tweaking to meet accessibility standards.
 
-![Hi Fidelity Mockup](/jmpns-hifi-mockups-1024x1024.png)
+![Hi Fidelity Mockup](./jmpns-hifi-mockups-1024x1024.png)
 
-![Screenshot of JMPNS website main page, showcasing a header and sslideshow](/jmpns-web-1024x485.png)
+![Screenshot of JMPNS website main page, showcasing a header and sslideshow](./jmpns-web-1024x485.png)
 
-![Another mockup](/jmpnsmockup-1024x1024.png)
+![Another mockup](./jmpnsmockup-1024x1024.png)

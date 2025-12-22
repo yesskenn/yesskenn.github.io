@@ -6,7 +6,6 @@ draft: false
 tags:
 - WordPress
 - Multi-Media Marketing
-- Redesign
 - UX
 ---
 
