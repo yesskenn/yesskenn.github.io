@@ -4,7 +4,6 @@ summary: "Badges for an Elections Event"
 date: "Mar 20 2024"
 draft: false
 tags:
-- Design
 - Branding
 - Civic Design
 ---
