@@ -1,16 +1,12 @@
 ---
-title: "New Build or Makeover"
-summary: "Starting from the bottom or refining the structure."
+title: "New Build / Makeover"
+summary: "Starting from the bottom or refining the structure to refresh your online presence."
 date: "Dec 05 2025"
 draft: false
 tags:
 - Services
 - Web Systems
 ---
-
-We can build something new to refresh your online presence. Or if you need a refresh for a messy, outdated, or broken website so that it works and doesn't scare users away.
-
-***
 
 ## INCLUDES
 
@@ -21,7 +17,7 @@ We can build something new to refresh your online presence. Or if you need a ref
 
 ### BEST FOR
 
-- Small businesses, non profits, old DIY sites
+- Small businesses, non profits, old DIY sites, anyone who needs to work on their messy, outdated website so that it doesn't scare users away.
 
 ### PRICING
 

@@ -47,20 +47,20 @@ function formatWorkDate(input: Date | string) {
     Partnering with individuals, small teams, public agencies, and organizations to work towards a solid web presence. 
  Whether you're building from scratch or refining what's already there, tell me where you’re at and I’ll handle the rest.</p>
 
-           <p class="font-regular text-black dark:text-white"> These are typical deliverables, with the flexibility to add or modify services based on your needs.   
+           <p class="font-medium text-black dark:text-white pb-3"> These are typical deliverables, with the flexibility to add or modify services based on your needs.   
 
 </p>
  
-
+<hr class="pb-4"/>
     <ul>
       { 
         services.map((entry) => (
           <li class="animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
             
-            <div class="text-black dark:text-white font-semibold">
-              {entry.data.title}
+            <div class="text-black text-2xl dark:text-white font-bold">
+             {entry.data.title}
             </div>
-            <div class="text-sm font-semibold">
+            <div class="text-sm font-semibold pb-4">
               {entry.data.summary}
             </div>
             <article class="prose dark:prose-invert">
