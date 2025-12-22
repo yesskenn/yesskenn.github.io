@@ -12,6 +12,7 @@ tags:
 * * *
 
 ## OVERVIEW
+
 Smaller code projects to explore JS concepts.
 
 * * *
