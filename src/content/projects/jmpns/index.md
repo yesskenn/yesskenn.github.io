@@ -9,6 +9,7 @@ tags:
 - Research
 - Adobe XD
 demoUrl: "https://jmpns.org"
+repoUrl: "https://jmpns.org"
 ---
 
 ## JMPNS WEBSITE REDESIGN
