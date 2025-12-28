@@ -1,6 +1,6 @@
 ---
 title: "Milky Way Branding"
-summary: "Playing with APIs and reduced test cases"
+summary: "Playful branding for an ice cream shop"
 date: "Jan 09 2024"
 draft: false
 tags:
@@ -9,7 +9,6 @@ tags:
 - Logo Design
 - Illustration
 - Visual Design
-- Packaging
 ---
 
 
