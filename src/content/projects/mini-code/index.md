@@ -1,6 +1,6 @@
 ---
 title: "Mini Web Apps"
-summary: "Web Development 1"
+summary: "Web Development"
 date: "Dec 21 2025"
 draft: false
 tags:
@@ -19,7 +19,7 @@ Exploring JavaScript
 
 ### Etch A Sketch
 
-[Live Demo](https://yessikenney.com/etch-a-sketch/) [Github Repo](https://github.com/yesskenn/etch-a-sketch)
+[Live Demo](https://yessikenney.com/etch-a-sketch/) | [Github Repo](https://github.com/yesskenn/etch-a-sketch)
 Interactive drawing grid inspired by an Etch-A-Sketch, taking it back.
 
 ### Rock Paper Scissors

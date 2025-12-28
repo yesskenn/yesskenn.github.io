@@ -8,7 +8,7 @@ tags:
 - Wix
 - Research
 - Adobe XD
-demoURL: https://jmpns.org
+demoUrl: "https://jmpns.org"
 ---
 
 ## JMPNS WEBSITE REDESIGN
