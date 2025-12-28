@@ -1,6 +1,6 @@
 ---
 title: "Playing with APIs"
-summary: "Web Development 2"
+summary: "Web Development"
 date: "Jan 23 2024"
 draft: false
 tags:
