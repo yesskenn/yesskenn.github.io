@@ -8,8 +8,8 @@ tags:
 - Sitecore
 - Web Content
 - Civic Design
-demoUrl: "https:://www.dot.ca.gov/programs/rail"
-repoUrl: "https:://www.dot.ca.gov/programs/rail"
+demoUrl: "https://www.dot.ca.gov/programs/rail"
+repoUrl: "https://www.dot.ca.gov/programs/rail"
 ---
 
 ## CALTRANS WEBPAGE REDESIGN
