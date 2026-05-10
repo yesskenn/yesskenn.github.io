@@ -1,8 +1,9 @@
-import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, fontProviders } from "astro/config";
 
 import { SITE } from "./src/consts";
 import sitemap from "@astrojs/sitemap";
+
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
