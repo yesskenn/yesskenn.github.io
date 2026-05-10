@@ -1,43 +1,16 @@
 ---
-import PageLayout from "@layouts/PageLayout.astro"
-import TopLayout from "@layouts/TopLayout.astro";
-import BottomLayout from "@layouts/BottomLayout.astro";
-import TwinklingStars from "@components/TwinklingStars.astro"
-import MeteorShower from "@components/MeteorShower.astro"
-
+import Layout from "@/layouts/Layout.astro";
+import { SITE } from "@/consts";
 ---
- <!-- Light Mode: Particles -->
-  <div class='absolute inset-0 block dark:hidden'>
-    <div id='particles1' class='fixed inset-0'></div>
-    <div id='particles2' class='fixed inset-0'></div>
-    <div id='particles3' class='fixed inset-0'></div>
-  </div>
 
-  <!-- Dark Theme: Stars -->
-  <div class='absolute inset-0 bg-black hidden dark:block'>
-    <div id='stars1' class='fixed inset-0'></div>
-    <div id='stars2' class='fixed inset-0'></div>
-    <div id='stars3' class='fixed inset-0'></div>
-  </div>
-
-  <!-- Dark Theme: Twinkling Stars / Metors -->
-  <div id="galaxy" class="fixed inset-0">
-    <div class="hidden dark:block">
-      <TwinklingStars/>
-      <MeteorShower/>
-    </div>
-  </div>
-
-  <script is:inline src="/js/bg.js"></script>
-<PageLayout>
-  <TopLayout>
-    <div class="animate">
-      <h1 class="page-heading">404. PAGE LOST IN THE SAUCE.</h1>
-    </div>
-  </TopLayout>
-  <BottomLayout>
-    <article class="animate">
-      
-    </article>
-  </BottomLayout>
-</PageLayout>
+<Layout title={SITE.TITLE} description={SITE.DESCRIPTION}>
+    <main class="min-h-screen flex items-center flex-col gap-4 justify-center">
+        <h1 class="heading text-4xl uppercase">404</h1>
+        <p class="text-secondary">
+            Lost in the sauce.
+        </p>
+        <p>      What you seek never existed, or perhaps has ceased to exist.
+</p>
+        <a href="/" class="cursor-pointer underline">&larr; Go Back</a>
+    </main>
+</Layout>

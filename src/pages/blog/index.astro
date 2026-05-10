@@ -1,46 +1,49 @@
 ---
-import { getCollection } from "astro:content";
-import PageLayout from "@layouts/PageLayout.astro";
-import TopLayout from "@layouts/TopLayout.astro";
-import BottomLayout from "@layouts/BottomLayout.astro";
-import SearchCollection from "@components/SearchCollection";
-import { BLOG } from "@consts";
+import Layout from "@/layouts/Layout.astro";
+import Card from "@/components/Card.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+import { BLOG } from "@/consts";
 
-const posts = (await getCollection("blog"))
-  .filter((post) => !post.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const data = (await getCollection("blog"))
+    .filter((post) => !post.data.draft)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort(
-  (a, b) => a.localeCompare(b),
-);
+type Acc = {
+    [year: string]: CollectionEntry<"blog">[];
+};
 
-const estimated_initial_size =
-  28 + posts.length * 158 + (posts.length - 1) * 12;
+const posts = data.reduce((acc: Acc, post) => {
+    const year = post.data.date.getFullYear().toString();
+    if (!acc[year]) {
+        acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+}, {});
+
+const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
 ---
 
-<PageLayout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
-  <TopLayout>
-    <div class="animate">
-      <h1 class="text-3xl font-semibold text-black dark:text-white mt-2">
-        {BLOG.TITLE}
-      </h1>
-      <div class="mt-1">
-        {BLOG.DESCRIPTION}
-      </div>
-    </div>
-  </TopLayout>
-  <BottomLayout>
-    <div
-      id="search-collection-wrapper"
-      class="animate"
-      style={{ minHeight: `${estimated_initial_size}px` }}
-    >
-      <SearchCollection
-        client:load
-        entry_name={"posts"}
-        tags={tags}
-        data={posts}
-      />
-    </div>
-  </BottomLayout>
-</PageLayout>
+<Layout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
+    <section id="Blog" class="container mx-auto px-6 pt-18">
+        <h2 class="heading text-3xl md:text-9xl uppercase mr-4 md:mr-8 my-8">
+            Blog
+        </h2>
+        <section>
+            {
+                years.map((year) => (
+                    <section class="animate space-y-4">
+                        <h4 class="heading text-2xl lg:text-4xl">{year}</h4>
+                        <div>
+                            <ul class="not-prose flex flex-col gap-4">
+                                {posts[year].map((post) => (
+                                    <Card entry={post} />
+                                ))}
+                            </ul>
+                        </div>
+                    </section>
+                ))
+            }
+        </section>
+    </section>
+</Layout>
