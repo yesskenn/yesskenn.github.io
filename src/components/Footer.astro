@@ -1,109 +1,64 @@
 ---
-import { SITE, SOCIALS } from "@consts"
-import Container from "@components/Container.astro"
+import { SITE, SOCIALS } from "@/consts";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+const Projects: CollectionEntry<"projects">[] = (
+  await getCollection("projects")
+).slice(0, 3);
 ---
 
-<footer class="relative bg-white dark:bg-black">
-  <div class="animate">
-    <section class="py-5">
-      <Container size="md">
-        <div class="flex items-center justify-center sm:justify-end">
-          <button id="back-to-top" aria-label="Back to top of page" class="group flex w-fit p-1.5 gap-1.5 text-sm items-center border rounded hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="stroke-current group-hover:stroke-black group-hover:dark:stroke-white rotate-90">
-              <line x1="19" y1="12" x2="5" y2="12" class="scale-x-0 group-hover:scale-x-100 translate-x-3 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
-              <polyline points="12 19 5 12 12 5" class="translate-x-1 group-hover:translate-x-0 transition-all duration-300 ease-in-out" />
-            </svg>
-            <div class="w-full group-hover:text-black group-hover:dark:text-white transition-colors duration-300 ease-in-out">
-              Back to top
-            </div>
-          </button>
-        </div>
-      </Container>
-    </section>
-  
-    <section class=" py-5 overflow-hidden whitespace-nowrap border-t border-black/10 dark:border-white/25">
-      <Container size="md">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div class="flex flex-col items-center sm:items-start">
-            <a href="/" class="flex gap-1 w-fit font-semibold text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-              <svg class="size-6 fill-current">
-                <use href="./brand.svg"/>
-              </svg>
-              {SITE.TITLE}
-            </a>
-          </div>
-          <div class="flex gap-2 justify-center sm:justify-end items-center">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-700"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-800"></span>
-            </span>
-            All systems normal
-          </div>
-        </div>
-      </Container>
-    </section>
-  
-    <section class=" py-5 overflow-hidden whitespace-nowrap border-t border-black/10 dark:border-white/25">
-      <Container size="md">
-        <div class="h-full grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div class="order-2 sm:order-1 flex flex-col items-center justify-center sm:items-start">
-            <div class="credits">
-              <a href="/credits/credits" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-                Credits
-              </a>
-            </div>
-            <div class="legal">
-              <a href="/legal/terms" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-                Terms
-              </a> |
-              <a href="/legal/privacy" class="text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-                Privacy
-              </a>
-            </div>
-            <div class="text-sm mt-2">
-              &copy; 2025 | All rights reserved | Web Design + Development by Yessi Kenney ✨
-            </div>
-          </div>
-  
-          <div class="order-1 sm:order-2 flex justify-center sm:justify-end">
-            <div class="flex flex-wrap gap-1 items-center justify-center">
-              {
-                SOCIALS.map((SOCIAL) => (
-                  <a 
-                    href={SOCIAL.HREF} 
-                    target="_blank" 
-                    aria-label={`${SITE.TITLE} on ${SOCIAL.NAME}`} 
-                    class="group size-10 rounded-full p-2 items-center justify-center hover:bg-brand-darkOceanTeal/100 dark:hover:bg-white/20  blend"
-                  >
-                    <svg class="size-full fill-brand-darkOceanTeal dark:fill-brand-periWinks   group-hover:fill-[#F5F5F5] group-hover:dark:fill-white blend">
-                      <use href={`/social.svg#${SOCIAL.ICON}`} />
-                    </svg>
-                  </a>
-                ))
-              }
-              </div>
-          </div>
-        </div>
-      </Container>
-    </section>
+<footer class="bg-primary container mx-auto rounded-t-[80px] p-10 space-y-8">
+  <div
+    class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6"
+  >
+    <h2 class="text-5xl lg:text-9xl uppercase">{SITE.TITLE}</h2>
+    <p class="text-2xl lg:text-3xl max-w-[760px]">
+Chaotic neutral for accessible digital experiences. </p>
   </div>
-
+  <div class="flex flex-col sm:flex-row sm:flex-wrap justify-between gap-10">
+    <div>
+      <h3 class="mb-2 text-xl">Contact</h3>
+      <ul>
+        <li><a href="mailto:hi@yessikenney.com">{SITE.EMAIL}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="mb-2 text-xl">Navigation</h3>
+      <ul class="space-y-1 text-secondary">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="mb-2 text-xl">Socials</h3>
+      <ul class="space-y-1 text-secondary">
+        {
+          SOCIALS.map((link) => (
+            <li>
+              <a href={link.HREF}>{link.NAME}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div>
+      <h3 class="mb-2 text-xl">Projects</h3>
+      <ul class="space-y-1 text-secondary">
+        {
+          Projects.map((project) => (
+            <li>
+                <a href=`/projects/${project.id}`>{project.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  <span class="block text-center text-sm opacity-70">
+    © {SITE.TITLE}. Built with Astro
+  </span>
 </footer>
-
-<script is:inline>
-  function goBackToTop(event) {
-    event.preventDefault()
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    })
-  }
-
-  function initializeBackToTop() {
-    const backToTop = document.getElementById("back-to-top")
-    backToTop?.addEventListener("click", goBackToTop)
-  }
-
-  document.addEventListener("astro:after-swap", initializeBackToTop)
-  initializeBackToTop()
-</script>

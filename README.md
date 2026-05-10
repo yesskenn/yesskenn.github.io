@@ -1,89 +1,88 @@
-![Astro Sphere Lighthouse Score](_astrosphere.jpg)
+# Monolume
 
-Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on my personal website.
+Monolume is a clean, modern portfolio theme built with Astro.
+It’s designed for developers, designers, and freelancers who want to showcase their work with style
 
-It is primarily Astro, Tailwind and Typescript, with a very small amount of SolidJS for stateful components.
+## Demo
 
-## 🚀 Deploy your own
+[Live Preview](https://monolume.vercel.app)
 
-[![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
+✨ Features
 
-## 📋 Features
+- Minimal, bold typography
+- Responsive & mobile-friendly
+- Work/projects showcase layout
+- Blog support
+- Contact form
+- SEO-friendly
+- Built with Astro + Tailwind CSS (easy to customize)
 
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
-- ✅ Searchable content (posts and projects)
-- ✅ Code Blocks - copy to clipboard
+## Tech Stack
 
-## 💯 Lighthouse score
-![Astro Sphere Lighthouse Score](_lighthouse.png)
+- [Astro](https://astro.build/) – Static site builder
+- [TypeScript](https://www.typescriptlang.org/) – Type-safe development
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling
 
-## 🕊️ Lightweight
-All pages under 100kb (including fonts)
+## 🚀 Project Structure
 
-## ⚡︎ Fast
-Rendered in ~40ms on localhost
+Inside of your Astro project, you'll see the following folders and files:
 
-## 📄 Configuration
+```text
 
-The blog posts on the demo serve as the documentation and configuration.
+├── public/
+├── src/
+│   ├── components/
+    │   ├── About.astro
+│   │   ├── Card.astro
+│   │   ├── Contact.astro
+│   │   ├── Footer.astro
+│   │   ├── FormattedDate.astro
+│   │   ├── Head.astro
+│   │   ├── Header.astro
+│   │   ├── Hero.astro
+│   │   ├── Posts.astro
+│   │   └── Projects.astro
+│   ├── content/
+│   │   ├── blog/
+│   │   └── projects/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   ├── 404.astro
+│   │   ├── about.astro
+│   │   ├── blog
+│   │   │   ├── [...id].astro
+│   │   │   └── index.astro
+│   │   ├── contact.astro
+│   │   ├── index.astro
+│   │   └── projects
+│   │       ├── [...id].astro
+│   │       └── index.astro
+│   └── styles/
+│       └── global.css
+    ├── consts.ts
+│   ├── content.config.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-## 💻 Commands
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+
+## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `pnpm install`         | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run dev:network`     | Starts dev server on local network               |
-| `npm run sync`            | Generates TypeScript types for all Astro modules.|
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run preview:network` | Starts preview server on local network           |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-| `npm run lint`            | Run ESLint                                       |
-| `npm run lint:fix`        | Auto-fix ESLint issues                           |
+## ❤️ Like this theme?
 
-## 🗺️ Roadmap
-
-A few features I plan to implement
-- ⬜ Article Pages - Table of Contents
-- ⬜ Article Pages - Share on social media
-
-## ✨ Acknowledgement
-
-Theme inspired by [Paco Coursey](https://paco.me/), [Lee Robinson](https://leerob.io/) and [Hayden Bleasel](https://www.haydenbleasel.com/)
-
-
-## 🏛️ License
-
-MIT
-
-
-# 1.0.1 Update
-
-Added ability to run dev and preview on local network.
-added npm run dev:network
-added npm run preview:network
-
-Added slightly more particle density in both light and dark mode.
-
-Added subtle dark mode star and meteor animations.
-
-Removed eslint config
-
+If you found this theme useful, check out more free and premium themes at  
+👉 https://themes.mhsh.in

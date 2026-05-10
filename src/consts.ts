@@ -1,93 +1,45 @@
-import type { Site, Page, Links, Socials } from "@types"
-
-// Global
-export const SITE: Site = {
+export const SITE = {
+  URL: "https://yessikenney.com",
   TITLE: "Yessi Kenney",
-  DESCRIPTION: "Web Design and Development",
-  AUTHOR: "Yessi Kenney",
-}
+  DESCRIPTION:
+    "A front-end developer with a strong focus on building intuitive and accessible web experiences.",
+  EMAIL: "hi@yessikenney.com",
+};
 
-// Work Page
-export const WORK: Page = {
-  TITLE: "Work",
-  DESCRIPTION: "Places I have worked.",
-}
+export const HOME = {
+  TITLE: "Home",
+  DESCRIPTION:
+    "A personal site about coding, building projects, and figuring things out",
+};
 
-export const SERVICES: Page = {
-  TITLE: "Services",
-  DESCRIPTION: "How I Can Help.",
-}
-// Blog Page
-export const BLOG: Page = {
+export const BLOG = {
   TITLE: "Blog",
-  DESCRIPTION: "Writing and thoughts on structure, learning, UX, accessibility, coding, and more.",
-}
+  DESCRIPTION:
+    "A collection of articles on programming, projects and other stuff",
+};
 
-// Projects Page 
-export const PROJECTS: Page = {
+export const PROJECTS = {
   TITLE: "Projects",
-  DESCRIPTION: "Recent projects.  A mix of designs, code snippets, accessibility improvements, and system-level fixes.",
-}
+  DESCRIPTION:
+    "A collection of my projects with links to repositories and live demos.",
+};
+export const SERVICES = {
+  TITLE: "Services",
+  DESCRIPTION:
+    "A collection of my services that I offer.",
+};
 
-// Search Page
-export const SEARCH: Page = {
-  TITLE: "Search",
-  DESCRIPTION: "Search all posts and projects by keyword.",
-}
-
-export const ABOUT: Page = {
-  TITLE: "About",
-  DESCRIPTION: "How and Why I Do What I Do.",
-}
-
-// Credits Page
-export const CREDITS: Page = {
-  TITLE: "Credits",
-  DESCRIPTION: "Resources and tools used to build this site.",
-}
-// Links
-export const LINKS: Links = [
-  { 
-    TEXT: "Home", 
-    HREF: "/", 
+export const SOCIALS = [
+  {
+    NAME: "Behance",
+    HREF: "hhttps://www.behance.net/ysnraya",
   },
-  { 
-    TEXT: "Projects", 
-    HREF: "/projects", 
+  {
+    NAME: "Linkedin",
+    HREF: "https://linkedin.com/in/yessirpk",
   },
-    { 
-    TEXT: "Services", 
-    HREF: "/services", 
-  },
-     { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
-  },
-     { 
-    TEXT: "About", 
-    HREF: "/about", 
-  }
-]
-
-// Socials
-export const SOCIALS: Socials = [
-  { 
-    NAME: "Email",
-    ICON: "email", 
-    TEXT: "hi@yessikenney.com",
-    HREF: "mailto:hi@yessikenney.com",
-  },
-  { 
+  {
     NAME: "Github",
-    ICON: "github",
-    TEXT: "yesskenn",
-    HREF: "https://github.com/yesskenn"
+    HREF: "https://github.com/yesskenn",
   },
-  { 
-    NAME: "LinkedIn",
-    ICON: "linkedin",
-    TEXT: "Yessi Kenney",
-    HREF: "https://www.linkedin.com/in/yessirpk/",
-  },
-]
-
+];

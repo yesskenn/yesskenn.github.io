@@ -1,103 +1,120 @@
 ---
-import { SITE, LINKS } from "@consts"
-import { cn } from "@lib/utils"
-const { pathname } = Astro.url
-const subpath = pathname.match(/[^/]+/g)
-import Container from "@components/Container.astro"
+import { SITE } from "@/consts";
+
+const links = [
+    { name: "Home", href: "/", target: "_self" },
+    { name: "About", href: "/about", target: "_self" },
+    { name: "Projects", href: "/projects", target: "_self" },
+    { name: "Services", href: "/services", target: "_self" },
+    { name: "Blog", href: "/blog", target: "_self" },
+    { name: "Contact", href: "/contact", target: "_self" },
+];
 ---
 
-<header id="header" class="fixed top-0 w-full h-16 z-50 ">
-  <Container size="md">
-    <div class="relative h-full w-full">
-      <div class="absolute left-0 top-1/2 -translate-y-1/2 flex gap-1 font-semibold">
-        <a href="/" class="flex gap-1 text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-          <svg class="size-6 fill-current">
-            <use href="/public/brand.svg"></use>
-          </svg>
-          <div>
-            {SITE.TITLE}
-          </div>
-        </a>
-      </div>
-
-    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-      <nav class="hidden md:flex items-center justify-center text-sm gap-1">
-        {
-          LINKS.map((LINK) => (
-            <a href={LINK.HREF} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", pathname === LINK.HREF || "/" + subpath?.[0] === LINK.HREF ? "bg-black dark:bg-white text-white dark:text-black font-spacemono" : "hover:bg-brand-lighterGry dark:hover:bg-white/20 hover:text-black hover:font-bold dark:hover:text-white dark:hover:font-bold")}>
-              {LINK.TEXT}
-            </a>
-          ))
-        }
-      </nav>
+<header class="fixed top-0 w-full z-50">
+    <div class="container mx-auto flex items-center justify-between p-6">
+        <a href="/" class="font-bold font-space text-4xl"
+            >{SITE.TITLE.toUpperCase().charAt(0)}.</a
+        >
+        <nav class="space-x-3 text-secondary hidden md:block">
+            {
+                links.map((link) => (
+                    <a
+                        href={link.href}
+                        class="font-bold hover:border-b-2 hover:border-solid hover:border-secondary pb-0.5"
+                    >
+                        {link.name}
+                    </a>
+                ))
+            }
+        </nav>
+        <button
+            id="menu-toggle"
+            class="hamburger focus:outline-none flex md:hidden"
+            aria-label="Toggle navigation"
+        >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
     </div>
-
-    <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
-      <a href="/search" aria-label={`Search blog posts and projects on ${SITE.TITLE}`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-brand-lighterGry dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out", pathname === "/search" || "/" + subpath?.[0] === "/search" ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
-        <svg class="size-full">
-          <use href="/ui.svg#search"></use>
-        </svg>
-      </a>
-
-      <a href="/rss.xml" target="_blank" aria-label={`Rss feed for ${SITE.TITLE}`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-brand-lighterGry dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
-        <svg class="size-full">
-          <use href="/ui.svg#rss"></use>
-        </svg>
-      </a>
-
-      <button id="header-theme-button" aria-label={`Toggle light and dark theme`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-brand-lighterGry dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
-        <svg class="size-full block dark:hidden">
-          <use href="/ui.svg#sun"></use>
-        </svg>
-        <svg class="size-full hidden dark:block">
-          <use href="/ui.svg#moon"></use>
-        </svg>
-      </button>
-
-      <button id="header-drawer-button" aria-label={`Toggle drawer open and closed`} class={cn("flex md:hidden", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-brand-lighterGry dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
-        <svg id="drawer-open" class="size-full">
-          <use href="/ui.svg#menu"></use>
-        </svg>
-        <svg id="drawer-close" class="size-full">
-          <use href="/ui.svg#x"></use>
-        </svg>
-      </button>
+    <div
+        id="menu-mobile"
+        class="hidden md:hidden space-x-3 text-secondary bg-background backdrop-blur-2xl w-screen p-4"
+    >
+        <nav class="flex flex-col gap-4 text-2xl">
+            {
+                links.map((link) => (
+                    <a
+                        href={link.href}
+                        class="hover:border-b-2 hover:border-dashed hover:border-secondary pb-0.5"
+                    >
+                        {link.name}
+                    </a>
+                ))
+            }
+        </nav>
     </div>
-  </div>
-  </Container>
 </header>
 
 <style>
-  #header-drawer-button > #drawer-open {
-    @apply block;
-  }
+    .hamburger {
+        gap: 5px;
+        cursor: pointer;
+        position: relative;
+        width: 24px;
+        height: 21px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+    }
 
-  #header-drawer-button > #drawer-close {
-    @apply hidden;
-  }
+    .hamburger-line {
+        width: 24px;
+        height: 3px;
+        background-color: var(--color-secondary, #000000);
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 0;
+    }
 
-  #header-drawer-button.open > #drawer-open {
-    @apply hidden;
-  }
+    .hamburger-line:nth-child(1) {
+        top: 0;
+    }
 
-  #header-drawer-button.open > #drawer-close {
-    @apply block;
-  }
+    .hamburger-line:nth-child(2) {
+        top: 9px;
+    }
+
+    .hamburger-line:nth-child(3) {
+        top: 18px;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(1) {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(2) {
+        display: none;
+        opacity: 0;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 9px;
+    }
 </style>
 
-<script is:inline>
-  function toggleDrawer() {
-    const drawer = document.getElementById("drawer")
-    const drawerButton = document.getElementById("header-drawer-button")
-    drawer?.classList.toggle("open")
-    drawerButton?.classList.toggle("open")
-  }
-
-  function initializeDrawerButton() {
-    const drawerButton = document.getElementById("header-drawer-button")
-    drawerButton?.addEventListener("click", toggleDrawer)
-  }
-
-  document.addEventListener("astro:after-swap", initializeDrawerButton)
-  initializeDrawerButton()
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuMobile = document.getElementById("menu-mobile");
+        const toggle = document.getElementById("menu-toggle");
+        toggle?.addEventListener("click", () => {
+            menuMobile?.classList.toggle("hidden");
+            toggle.classList.toggle("active");
+            const expanded = toggle.classList.contains("active");
+            toggle.setAttribute("aria-expanded", String(expanded));
+        });
+    });
 </script>
