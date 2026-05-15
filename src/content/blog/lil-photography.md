@@ -1,14 +1,14 @@
 ---
 title: "Extreme Selfies - How I Shot Self-Portraits"
-description: "Experimenting with new ways to take photos" 
+description: "Experimenting with new ways to take photos." 
 date: "2022-07-12"
 tags: 
   - photography
-  - potraits
+  - portraits
   - self-portraits
   - selfies
   - camera
-  - phototips
+  - photo tips
 ---
 
 Inspired by the photographer Marina Williams, I decided to take some new self-portraits to use as my default photo for my accounts. I'm actually really happy with the one I currently use, but it's 2 years old and I just wanted something fresh. Marina Williams is a really popular photographer not only because of her amazing pictures and editing style but because of how she's been able to connect with people through social media by sharing what she knows. Marina actually has a free guide available for download specifically for those looking to learn how to take self-portraits (You can download it by signing up for her [**mailing list**](https://www.marinawilliamseducation.com/learn)). I opted out of using it for this photoshoot because I wanted to go through the trial and error myself, but I will definitely use it next time.

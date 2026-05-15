@@ -1,6 +1,6 @@
 ---
 title: "Articulating Design Decisions"
-description: "Absorbing the words of someonen else to become wiser in communicating in design."
+description: "Absorbing someone else's words to become wiser in communicating about design."
 date: "2024-02-26"
 tags: 
   - books

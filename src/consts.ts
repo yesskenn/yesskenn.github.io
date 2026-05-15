@@ -2,20 +2,20 @@ export const SITE = {
   URL: "https://yessikenney.com",
   TITLE: "Yessi Kenney",
   DESCRIPTION:
-    "A front-end developer with a strong focus on building intuitive and accessible web experiences.",
+    "Creative front-end developer and web designer merging accessibility and good visual design for nonprofits, public agencies, and growing organizations. Based in Sacramento, available remotely.",
   EMAIL: "hi@yessikenney.com",
 };
 
 export const HOME = {
   TITLE: "Home",
   DESCRIPTION:
-    "A personal site about coding, building projects, and figuring things out",
+    "Creating user-centered digital experiences.",
 };
 
 export const BLOG = {
   TITLE: "Blog",
   DESCRIPTION:
-    "A collection of articles on programming, projects and other stuff",
+    "Thoughts and musings on web, accessibility, design, and more.",
 };
 
 export const PROJECTS = {
@@ -26,7 +26,7 @@ export const PROJECTS = {
 export const SERVICES = {
   TITLE: "Services",
   DESCRIPTION:
-    "A collection of my services that I offer.",
+    "Web and design offerings.",
 };
 
 export const SOCIALS = [

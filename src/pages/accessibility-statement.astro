@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { SITE } from "@/consts";
+---
+
+<Layout title={SITE.TITLE} description={SITE.DESCRIPTION}>
+    <main class="min-h-screen flex items-center flex-col gap-4 justify-center">
+        <h1 class="heading text-4xl uppercase">Accessibility Statement</h1>
+
+                    <div class="text-lg md:text-lg container text-secondary space-y-4">
+
+        <p class="text-secondary">
+            I really care about creating usable and accessible digital spaces, so it'd be weird if I didn't do the same in this space. 
+        </p>
+        <p> Accessibility is considered through the design and development process, with the goal of meeting WCAG 2.2 standards and regularly improving things like contrast, structure, keyboard, navigation, readability, and overall usability. 
+        </p>
+
+        <p>If you experience any barriers or come across anything weird while using this site, please let me know. I'll do my best to handle it as soon as possible. I'm always trying to improve. </p>
+
+        <p>Contact: <a href="mailto:hi@yessikenney.com">hi@yessikenney.com</a></p> 
+        </div>
+        <hr/>
+        <p>Practice makes progress.</p>
+        <a href="/" class="cursor-pointer underline">&larr; Go Back</a>
+    </main>
+</Layout>
