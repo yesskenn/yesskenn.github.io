@@ -6,11 +6,7 @@ const Projects: CollectionEntry<"projects">[] = (
   await getCollection("projects")
 ).slice(0, 3);
 ---
-<footer class="container mx-auto border-t rounded-t-xl p-10
-text-white
- dark:bg-[#4a5a72]
-  border-[#aab6ca]/40
-  dark:border-[#4a5a72]/22">
+<footer class="container mx-auto border-t rounded-t-xl p-10">
 
 
   <div class="container mx-auto px-6 space-y-8">
@@ -31,7 +27,7 @@ text-white
 
     <div>
       <h3 class="mb-2 text-xl">Navigation</h3>
-      <ul class="space-y-1">
+      <ul class="space-y-1 text-secondary">
         <li><a href="/">Home</a></li>
         <li><a href="/projects">Projects</a></li>
         <li><a href="/services">Services</a></li>

@@ -1,0 +1,37 @@
+---
+const { entry } = Astro.props;
+---
+
+<li class="border-b border-current/10 py-8 px-8">
+  <p class="text-sm opacity-60 mb-2">
+    {entry.data.date.toLocaleDateString()}
+  </p>
+<a
+    class="group relative flex flex-col md:flex-row items-center justify-between gap-4 md:gap-10 mb-6 pb-6 cursor-pointer"
+    href={`/${entry.collection}/${entry.id}`}
+>
+    
+  
+    <h3 class="text-2xl text-white font-semibold hover:opacity-70 transition-opacity">
+      {entry.data.title}
+    </h3>
+ 
+
+  <p class="hover:opacity-80 leading-relaxed">
+    {entry.data.description}
+  </p>
+</a>
+  {entry.data.tags && (
+    <div class="flex flex-wrap gap-2 mt-5">
+      {entry.data.tags.map((tag) => (
+        <span
+          class="text-xs uppercase tracking-wide
+          px-3 py-1 rounded-full
+          border border-current/15"
+        >
+          {tag}
+        </span>
+      ))}
+    </div>
+  )}
+</li>
