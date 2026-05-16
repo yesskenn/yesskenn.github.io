@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import PostsCard from "@/components/PostsCard.astro";
 import Card from "@/components/Card.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 import { BLOG } from "@/consts";
@@ -37,7 +38,7 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
                         <div>
                             <ul class="not-prose flex flex-col gap-4">
                                 {posts[year].map((post) => (
-                                    <Card entry={post} />
+                                    <PostsCard entry={post} />
                                 ))}
                             </ul>
                         </div>
