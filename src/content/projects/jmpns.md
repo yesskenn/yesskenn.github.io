@@ -48,8 +48,8 @@ UX Designer
 
 ## Reflection
 
-This is earlier work. The visual execution is more amateur than what I'd produce today, and my accessibility approach has developed since. What I'd do differently today: pay more attention to spacing, content layout, make sure the visuals passed contrast checkers, and deeper accessibility testing throughout. 
-This project shows a design thinking process from the start and I made decisions based on user research (personas, card sorting, wireframes, IA). I can only continue to learn and improve.
+This project represents my design thinking process end to end — research, personas, wireframes, iteration, and launch. My accessibility standards have continued to develop since, and that growth is reflected in every project that has followed. What I'd do differently today: pay more attention to spacing, content layout, make sure the visuals passed contrast checkers, and deeper accessibility testing throughout. 
+
 
 ## Links
 
