@@ -1,6 +1,6 @@
 ---
 title: "Serene Strides"
-description: "Giving an equine-assisted social-emotional learning nonprofit a digital presence as intentional as their work."
+description: "Rebuilding a nonprofit's digital presence through accessible front-end design, streamlined navigation, and a cohesive visual system."
 liveUrl: https://serenestrides.org
 githubUrl: https://serenestrides.org
 image: {

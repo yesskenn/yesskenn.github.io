@@ -23,11 +23,7 @@ export const PROJECTS = {
   DESCRIPTION:
     "A collection of my projects with links to repositories and live demos.",
 };
-export const SERVICES = {
-  TITLE: "Services",
-  DESCRIPTION:
-    "Web and design offerings.",
-};
+
 
 export const SOCIALS = [
   {

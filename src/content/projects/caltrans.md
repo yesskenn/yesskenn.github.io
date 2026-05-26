@@ -1,6 +1,6 @@
 ---
 title: "Caltrans / Web and Digital Compliance"
-description: "Managing accessible, compliant web content at the scale and stakes of a California state agency."
+description: "Managing accessible, compliant web systems at the scale and operational complexity of a California state agency."
 liveUrl: https://www.dot.ca.gov/programs/rail
 githubUrl: https://github.com/yesskenn
 image: {

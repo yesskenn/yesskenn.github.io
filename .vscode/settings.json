@@ -1,5 +1,10 @@
 {
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
-  }
+  },
+  "cSpell.words": [
+    "findability",
+    "JMPNS"
+  ],
+  "liveServer.settings.port": 5501
 }
