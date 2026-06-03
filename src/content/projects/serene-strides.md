@@ -11,7 +11,7 @@ alt:  "Serene Strides thumbnail"
 
 ## Overview
 
-Serene Strides offers equine-assisted social and emotional learning programs. It's meaningful, specialized work that deserving a website to match. What they had was outdated, visually inconsistent, and needed to meet basic accessibility standards.
+Serene Strides offers equine-assisted social and emotional learning programs. It's meaningful, specialized work that is deserving of a website to match. What they had was outdated, visually inconsistent, and needed to meet basic accessibility standards.
 
 ## My Role
  
