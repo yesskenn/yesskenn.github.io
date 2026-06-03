@@ -1,75 +1,33 @@
-# Monolume
+# BY YESSI KENNEY
 
-Monolume is a clean, modern portfolio theme built with Astro.
-It’s designed for developers, designers, and freelancers who want to showcase their work with style
+A central hub for selected case studies / professional work meant to show how accessibility, content strategy, and front-end development work together to create more usable experiences. 
 
-## Demo
+## Live Preview
 
-[Live Preview](https://monolume.vercel.app)
+[Live Preview](https://yessikenney.com)
 
-✨ Features
+## Features
 
-- Minimal, bold typography
-- Responsive & mobile-friendly
-- Work/projects showcase layout
-- Blog support
-- Contact form
-- SEO-friendly
-- Built with Astro + Tailwind CSS (easy to customize)
+- Accessible and responsive design
+- Project case studies with design and development context
+- Content management through Markdown
+- Public deployment for sharing and review
+  
+## Built With 
 
-## Tech Stack
+- Built with Astro + Tailwind CSS 
+- Monolume theme
+- HTML
+- CSS
+- Markdown
+
+### Resources
 
 - [Astro](https://astro.build/) – Static site builder
 - [TypeScript](https://www.typescriptlang.org/) – Type-safe development
 - [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-
-├── public/
-├── src/
-│   ├── components/
-    │   ├── About.astro
-│   │   ├── Card.astro
-│   │   ├── Contact.astro
-│   │   ├── Footer.astro
-│   │   ├── FormattedDate.astro
-│   │   ├── Head.astro
-│   │   ├── Header.astro
-│   │   ├── Hero.astro
-│   │   ├── Posts.astro
-│   │   └── Projects.astro
-│   ├── content/
-│   │   ├── blog/
-│   │   └── projects/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   ├── pages/
-│   │   ├── 404.astro
-│   │   ├── about.astro
-│   │   ├── blog
-│   │   │   ├── [...id].astro
-│   │   │   └── index.astro
-│   │   ├── contact.astro
-│   │   ├── index.astro
-│   │   └── projects
-│   │       ├── [...id].astro
-│   │       └── index.astro
-│   └── styles/
-│       └── global.css
-    ├── consts.ts
-│   ├── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
+#### 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -82,7 +40,9 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## ❤️ Like this theme?
+## License
 
-If you found this theme useful, check out more free and premium themes at  
-👉 https://themes.mhsh.in
+Content, project documentation, and case studies are copyright © Yessi Kenney.
+The underlying Monolume theme remains subject to its original license. 
+
+## ❤️ 
