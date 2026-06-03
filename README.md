@@ -4,7 +4,7 @@ A central hub for selected case studies / professional work meant to show how ac
 
 ## Live Preview
 
-[Live Preview](https://yessikenney.com)
+[YESSIKENNEY.COM](https://yessikenney.com)
 
 ## Features
 
