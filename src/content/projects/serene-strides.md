@@ -31,14 +31,11 @@ I came in as the sole designer, content strategist, and implementation lead. My 
 
 ## Skill Stack
 
-- Accessible WordPress site
-- Brand system 
-- Style guide creation 
+- WCAG
+- WordPress
 - Canva
-- Social media management (Instagram and Facebook)
-- Photo editing in Lightroom
-- Nonprofit client management
-
+- Social media
+- Lightroom
 
 ## Links
 
