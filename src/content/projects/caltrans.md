@@ -22,7 +22,7 @@ I led a full end-to-end redesign of the public-facing pages for the Division of 
 
 ## Outcome
 
-Operating as an embedded accessibility and content systems owner in a large state agency and holding standards across a whole division's output. 
+This project is an accumulation of how I worked as an accessibility and content systems owner in a large state agency and held standards across a whole division's output. 
 In an earlier role at Caltrans, I built accessible, interactive forms with JavaScript logic. This is where I picked up my foundation for accessibility, which I now carry through every project after.
 
 ## Skill Stack
