@@ -15,29 +15,15 @@ James Marshall Parent Nursery School (JMPNS) had a website that wasn't serving t
 
 ## My Role
 
-UX Designer 
+I ran this project from start to finish as the UX designer: discovery, architecture, design, and delivery. 
 
 ## Process
 
-### Research and Discovery 
-
-- Conducted a full content inventory of the existing site to document what existed and what was missing
-- Analyzed competitor and aspirational preschool websites to get a sense of what a successful site in this space looked like 
-- Interviewed the director to get a sense of who was using the site other than the parents
-- Developed user personas and scenario mapping to ground design decisions in real user context
-
-### Design / Build
-
-- Created low-fidelity wireframes to test layout and flow 
-- Iterate based on feedback, then develop high-fidelity mockups
-- Built interactive prototypes for stakeholder review
-- Delivered the final redesigned site in Wix for a cleaner, more cohesive visual identity applied throughout
+I conducted a full content inventory, analyzed comparable preschool sites to understand what successful ones had in common, and interviewed the director to find out who was actually using the site beyond the parents (community members, prospective families, and local partners all had different needs). From those insights, I built user personas and and scenario maps to ground the layout decisions in real behavior. I tested low-fidelity wireframes before I developed the high-fidelity mockups, which meant stakeholder feedback shaped the structure. 
 
 ## Outcome
 
-- Improved navigation and content findability for parents, prospective families, and community members
-- Cleaner visual presentation that better reflected the organization's character
-- Mobile-friendly experience replacing a layout that wasn't responsive
+The final deliverable was a redesigned Wix site with improved navigation, clear information hierarchy, and a mobile-responsible layout that worked on devices that the audience actually used. 
 
 ## Skill Stack
 
@@ -46,9 +32,9 @@ UX Designer
 - Wireframing
 - Wix
 
-## Reflection
+## What I'd Do Differently
 
-This project represents my design thinking process end to end — research, personas, wireframes, iteration, and launch. My accessibility standards have continued to develop since, and that growth is reflected in every project that has followed. What I'd do differently today: pay more attention to spacing, content layout, make sure the visuals passed contrast checkers, and deeper accessibility testing throughout. 
+My accessibility standards have continued to develop since this project. Today, I would integrate contrast checking and accessibility throughout the design process. I would also be more rigorous with spacing and content density decisions earlier in the wireframing. 
 
 
 ## Links
