@@ -3,8 +3,12 @@
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "cSpell.words": [
+    "Canva",
     "findability",
-    "JMPNS"
+    "JMPNS",
+    "Lightroom",
+    "Smartsheet",
+    "WCAG"
   ],
   "liveServer.settings.port": 5501
 }

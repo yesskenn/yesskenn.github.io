@@ -11,18 +11,17 @@ alt:  "Serene Strides thumbnail"
 
 ## Overview
 
-Serene Strides offers equine-assisted social and emotional learning programs. It's meaningful, specialized work that is deserving of a website to match. What they had was outdated, visually inconsistent, and needed to meet basic accessibility standards.
+Serene Strides offers equine-assisted social and emotional learning programs. It's meaningful, specialized work that is deserving of a website to match. They needed their site to be visually consistent and meet basic accessibility standards.
 
 ## My Role
  
-Solo designer, content strategist, and ongoing digital support. This is an active client relationship. 
+I came in as the sole designer, content strategist, and implementation lead. My first decision was to treat accessibility as part of the architecture and not just an afterthought. WCAG compliance was baked into every color choice, component build, and content structure. 
 
 ## Process
 
-- Audited the existing site for accessibility gaps, content quality, and visual consistency
-- Rebuilt the site in WordPress with accessibility compliance as a foundational requirement, not an afterthought
+- I conducted a full site audit and looked for accessibility gaps, content quality, and visual consistency
 - Developed a brand style guide covering typography, color palette, tone of voice 
-- Researched equine-assisted learning to write and shape page content accurately, using AI tools to support drafting with careful editorial review ('m not an equine programs expert, but I wanted to make sure that users had accurate and clear information.)
+- Researched equine-assisted learning to write and shape page content accurately, using AI tools to support drafting with careful editorial review (I'm not an equine programs expert, but I wanted to make sure that users had accurate and clear information.)
 - Took over social media content creation, developing posts against newly-created content pillars, writing CTAs, and creatively editing limited source photography to maintain visual brand consistency
 
 ## Outcome
@@ -32,9 +31,8 @@ Solo designer, content strategist, and ongoing digital support. This is an activ
 
 ## Skill Stack
 
-- WordPress
-- Accessibility (WCAG)
-- Brand identity 
+- Accessible WordPress site
+- Brand system 
 - Style guide creation 
 - Canva
 - Social media management (Instagram and Facebook)
