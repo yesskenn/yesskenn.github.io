@@ -21,17 +21,18 @@
     --color-background: #EEECDE; /* warm cream */
     --color-foreground: #111111;
     --color-surface: #ffffff;
-    --color-primary: #A99BB3; /* deep teal */
+    --color-primary: #A99BB3; /* lilac */
+    --color-tertiary: #ba9bc9;
     --color-secondary: #4A5A72; /* steel blue */
     --color-muted: #245d63; /* soft lavender-gray */
   } 
  .dark {
     /*DARK MODE */
     --color-background: #111111; /* base */
-    --color-foreground: #f6eadb; /* warm cream text */
+    --color-foreground: #EEECDE; /* warm cream text */
     --color-surface: #A99BB3;
     --color-primary: #4a5a72 ; /* cute jeans */
-    --color-secondary: #f6ecdf; /* original: f5e6d3 warm creamn*/
+    --color-secondary: #EEECDE; /* original: f5e6d3 warm creamn*/
     --color-tertiary: #ba9bc9;
     --color-muted: #9197ae; /* dusty lilac */
   }
