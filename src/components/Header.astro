@@ -2,26 +2,20 @@
 import { SITE } from "@/consts";
 
 const links = [
-    { name: "Home", href: "/", target: "_self" },
-    { name: "About", href: "/about", target: "_self" },
-    { name: "Projects", href: "/projects", target: "_self" },
-    { name: "Blog", href: "/blog", target: "_self" },
-    { name: "Contact", href: "/contact", target: "_self" },
+  { name: "About", href: "/about", target: "_self" },
+  { name: "Projects", href: "/projects", target: "_self" },
+  { name: "Blog", href: "/blog", target: "_self" },
+  { name: "Contact", href: "/contact", target: "_self" },
 ];
 ---
 
-<header class="fixed top-0 w-full z-50">
-
-<button id="theme-toggle" arialabel="Toggle dark mode"class="fixed bottom-6 right-6 border border-white/10 bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-moon-icon lucide-sun-moon"><path d="M12 2v2"/><path d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"/><path d="M16 12a4 4 0 0 0-4-4"/><path d="m19 5-1.256 1.256"/><path d="M20 12h2"/></svg>
-</button>
+<!-- prettier-ignore -->
+<header class="top-0 w-full z-50">
 
 
-    <div class="container mx-auto flex items-center justify-between p-6">
-        <a href="/" class="font-bold font-space text-4xl"
-            >{SITE.TITLE.toUpperCase().charAt(0)}.</a
-        >
-        <nav class="space-x-3 text-secondary hidden md:block">
+    <div class="container mx-auto flex items-center justify-around gap-10 p-6">
+        <a href="/" class="font-bold font-space text-4xl">{SITE.TITLE.toUpperCase().charAt(0)}/K</a>
+        <nav class="space-x-12 text-secondary hidden md:block">
             {
                 links.map((link) => (
                     <a
@@ -33,6 +27,7 @@ const links = [
                 ))
             }
         </nav>
+        
         <button
             id="menu-toggle"
             class="hamburger focus:outline-none flex md:hidden"
@@ -42,6 +37,9 @@ const links = [
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
         </button>
+        <button id="theme-toggle" aria-label="Toggle dark mode" class="border border-white/10 bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-moon-icon lucide-sun-moon"><path d="M12 2v2"/><path d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"/><path d="M16 12a4 4 0 0 0-4-4"/><path d="m19 5-1.256 1.256"/><path d="M20 12h2"/></svg>
+</button>
     </div>
     <div
         id="menu-mobile"
@@ -65,81 +63,79 @@ const links = [
 </header>
 
 <style>
-    .hamburger {
-        gap: 5px;
-        cursor: pointer;
-        position: relative;
-        width: 24px;
-        height: 21px;
-        padding: 0;
-        border: 0;
-        background: transparent;
-    }
+  .hamburger {
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 21px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
 
-    .hamburger-line {
-        width: 24px;
-        height: 3px;
-        background-color: var(--color-secondary, #000000);
-        transition: all 0.3s ease;
-        position: absolute;
-        left: 0;
-    }
+  .hamburger-line {
+    width: 24px;
+    height: 3px;
+    background-color: var(--color-secondary, #000000);
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+  }
 
-    .hamburger-line:nth-child(1) {
-        top: 0;
-    }
+  .hamburger-line:nth-child(1) {
+    top: 0;
+  }
 
-    .hamburger-line:nth-child(2) {
-        top: 9px;
-    }
+  .hamburger-line:nth-child(2) {
+    top: 9px;
+  }
 
-    .hamburger-line:nth-child(3) {
-        top: 18px;
-    }
+  .hamburger-line:nth-child(3) {
+    top: 18px;
+  }
 
-    .hamburger.active .hamburger-line:nth-child(1) {
-        transform: rotate(45deg);
-        top: 9px;
-    }
+  .hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
 
-    .hamburger.active .hamburger-line:nth-child(2) {
-        display: none;
-        opacity: 0;
-    }
+  .hamburger.active .hamburger-line:nth-child(2) {
+    display: none;
+    opacity: 0;
+  }
 
-    .hamburger.active .hamburger-line:nth-child(3) {
-        transform: rotate(-45deg);
-        top: 9px;
-    }
+  .hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const menuMobile = document.getElementById("menu-mobile");
-        const toggle = document.getElementById("menu-toggle");
-        toggle?.addEventListener("click", () => {
-            menuMobile?.classList.toggle("hidden");
-            toggle.classList.toggle("active");
-            const expanded = toggle.classList.contains("active");
-            toggle.setAttribute("aria-expanded", String(expanded));
-        });
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuMobile = document.getElementById("menu-mobile");
+    const toggle = document.getElementById("menu-toggle");
+    toggle?.addEventListener("click", () => {
+      menuMobile?.classList.toggle("hidden");
+      toggle.classList.toggle("active");
+      const expanded = toggle.classList.contains("active");
+      toggle.setAttribute("aria-expanded", String(expanded));
     });
-
-const button = document.getElementById("theme-toggle");
-
-  button.addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark");
-
-    localStorage.setItem(
-      "theme",
-      document.documentElement.classList.contains("dark")
-        ? "dark"
-        : "light"
-    );
   });
+
+  const darkModeBtn = document.getElementById("theme-toggle");
+  if (darkModeBtn !== null) {
+    darkModeBtn.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+
+      localStorage.setItem(
+        "theme",
+        document.documentElement.classList.contains("dark") ? "dark" : "light",
+      );
+    });
+  }
 
   if (localStorage.getItem("theme") === "dark") {
     document.documentElement.classList.add("dark");
   }
-
 </script>

@@ -3,6 +3,7 @@
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "cSpell.words": [
+    "Behance",
     "Canva",
     "findability",
     "JMPNS",
@@ -10,5 +11,10 @@
     "Smartsheet",
     "WCAG"
   ],
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "terminal.integrated.suggest.enabled": false,
+  "editor.inlineSuggest.suppressSuggestions": false,
+  "editor.wordWrap": "on",
+  "js/ts.suggest.enabled": true,
+  "editor.inlineSuggest.enabled": false
 }
