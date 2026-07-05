@@ -10,19 +10,18 @@ const Projects: CollectionEntry<"projects">[] = (
 
 
   <div class="container mx-auto px-6 space-y-8">
-  <div
-    class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+  <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
     <h2 class="text-5xl lg:text-9xl uppercase">{SITE.TITLE}</h2>
     <p class="text-2xl lg:text-3xl max-w-[760px]"> Designing and building accessible web systems. Chaotically. Intuitively.</p>
   </div>
-  <div class="flex flex-col sm:flex-row sm:flex-wrap justify-between gap-10">
+
+  <div class="flex flex-col sm:flex-row sm:flex-wrap justify-between gap-12">
     <div>
       <h3 class="mb-2 text-xl">Contact</h3>
       <ul>
         <li><a href="mailto:hi@yessikenney.com">{SITE.EMAIL}</a></li>
       </ul>
 
-      <div class="pt-18"><h3 class="mb-2 text-xl"><a href="/accessibility-statement">Accessibility Statement</a><h3></div>
     </div>
 
     <div>
@@ -36,6 +35,7 @@ const Projects: CollectionEntry<"projects">[] = (
         <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
+
     <div>
       <h3 class="mb-2 text-xl">Socials</h3>
       <ul class="space-y-1 text-secondary">
@@ -48,29 +48,35 @@ const Projects: CollectionEntry<"projects">[] = (
         }
       </ul>
     </div>
+
     <div>
       <h3 class="mb-2 text-xl">Projects</h3>
       <ul class="space-y-1 text-secondary">
         {
-          Projects.map((project) => (
+          Projects.map((project) => ( 
             <li>
-                <a href=`/projects/${project.id}`>{project.data.title}</a>
+                <a href=`/projects/${project.id}`>{project.data.title.slice(0,15)}</a>
             </li>
           ))
         }
       </ul>
     </div>
-    <nav class="a11y-webring-club" aria-labelledby="a11y-webring-club">
-  <h2 id="a11y-webring-club">a11y-webring.club</h2>
-  <p>This site is a member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a>.</p>
-  <ul>
-    <li><a rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/prev">Previous website</a></li>
-    <li><a rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/random">Random website</a></li>
-    <li><a rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/next">Next website</a></li>
-  </ul>
-</nav>
+  
+  <div>
+    <h3 class="mb-2 text-xl">Accessibility<h3>
+    <a href="/accessibility-statement">Accessibility Statement</a>
+    <h4 class="a11y-webring-club" aria-labelledby="a11y-webring-club" id="a11y-webring-club">Member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a></h4>
+    
+    <ul class="flex flex-wrap gap-3 list-none p-0 m-0">
+      <li><a class="hover:underline" rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/prev">Previous</a></li>
+      <li><a class="hover:underline" rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/random">Random</a></li>
+      <li><a class="hover:underline" rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/next">Next </a></li>
+    </ul>
+  </h4>
   </div>
-  <span class="block text-center text-sm opacity-70">
+  <div>
+  <span class="block text-center text-sm">
     © {SITE.TITLE}. Built with Astro. And care and caffeine and cozy vibes. 
   </span>
+  </div>
 </footer>

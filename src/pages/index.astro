@@ -7,7 +7,6 @@ import Contact from "@/components/Contact.astro";
 import Card from "@/components/Card.astro";
 import PostPreview from "@/components/PostPreview.astro";
 
-
 import { getCollection, type CollectionEntry } from "astro:content";
 import { BLOG } from "@/consts";
 
@@ -16,51 +15,54 @@ import Hero from "@/components/Hero.astro";
 import { HOME } from "@/consts";
 
 const data = (await getCollection("blog"))
-    .filter((post) => !post.data.draft)
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 type Acc = {
-    [year: string]: CollectionEntry<"blog">[];
+  [year: string]: CollectionEntry<"blog">[];
 };
 
 const posts = data.reduce((acc: Acc, post) => {
-    const year = post.data.date.getFullYear().toString();
-    if (!acc[year]) {
-        acc[year] = [];
-    }
-    acc[year].push(post);
-    return acc;
+  const year = post.data.date.getFullYear().toString();
+  if (!acc[year]) {
+    acc[year] = [];
+  }
+  acc[year].push(post);
+  return acc;
 }, {});
 
 const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
 ---
 
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
-    <Hero />
-    <Projects />
-    	
-    <section id="Blog" class="container mx-auto px-6 pt-18 flex justify-center">
-        <h2 class="heading text-5xl md:text-8xl uppercase mr-4 md:mr-8 my-8">
+  <Hero />
+  <Projects />
+
+  <section id="Blog" class="container mx-auto w-full px-6">
+    <div class="mb-12 overflow-hidden">
+      <div class="flex">
+        <div class="flex-end flex shrink-0 gap-10 whitespace-nowrap">
+          <h2 class="heading mr-4 -mb-2 text-3xl uppercase md:mr-8 md:text-9xl">
             Blog
-        </h2>
-          <section>
+          </h2>
+          <section class="">
             {
-                years.map((year) => (
-                    <section class="animate space-y-4">
-                        <h4 class="heading text-2xl lg:text-4xl">{year}</h4>
-                        <div>
-                            <ul class="not-prose flex flex-col gap-4">
-                                {posts[year].map((post) => (
-                                    <PostPreview entry={post} />
-                                ))}
-                            </ul>
-                        </div>
-                    </section>
-                ))
+              years.map((year) => (
+                <section class="animate space-y-4">
+                  <h3 class="heading text-2xl lg:text-4xl">{year}</h3>
+                  <div>
+                    <ul class="not-prose flex flex-col gap-4">
+                      {posts[year].map((post) => (
+                        <PostPreview entry={post} />
+                      ))}
+                    </ul>
+                  </div>
+                </section>
+              ))
             }
-        </section>
-
-	
-
-    </section>
-</Layout>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section></Layout
+>

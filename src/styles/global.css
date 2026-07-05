@@ -24,7 +24,8 @@
     --color-primary: #A99BB3; /* lilac */
     --color-tertiary: #ba9bc9;
     --color-secondary: #4A5A72; /* steel blue */
-    --color-muted: #245d63; /* soft lavender-gray */
+    --color-muted: #303b4a;
+   /* --color-muted: #245d63; /* soft lavender-gray */
   } 
  .dark {
     /*DARK MODE */
@@ -32,7 +33,7 @@
     --color-foreground: #EEECDE; /* warm cream text */
     --color-surface: #A99BB3;
     --color-primary: #4a5a72 ; /* cute jeans */
-    --color-secondary: #EEECDE; /* original: f5e6d3 warm creamn*/
+    --color-secondary: #EEECDE; /* original: f5e6d3 warm cream*/
     --color-tertiary: #ba9bc9;
     --color-muted: #9197ae; /* dusty lilac */
   }
@@ -67,9 +68,7 @@ footer a {
   color: var(--color-foreground);
 }
 
-#hero-link {
-  color: #EEECDE;
-}
+
 
 footer {
 background-color: #a99bb3;
