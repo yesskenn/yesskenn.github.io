@@ -1,10 +1,10 @@
 # BY YESSI KENNEY
 
-A central hub for selected case studies / professional work meant to show how accessibility, content strategy, and front-end development work together to create more usable experiences. 
+A central hub for selected case studies / professional work meant to show how accessibility, content strategy, and front-end development work together to create more usable experiences.
 
-## Live Preview
+## Live
 
-[YESSIKENNEY.COM](https://yessikenney.com)
+[HTTPS://YESSIKENNEY.COM](https://yessikenney.com)
 
 ## Features
 
@@ -12,11 +12,11 @@ A central hub for selected case studies / professional work meant to show how ac
 - Project case studies with design and development context
 - Content management through Markdown
 - Public deployment for sharing and review
-  
-## Built With 
 
-- Built with Astro + Tailwind CSS 
-- Monolume theme
+## Built With
+
+- Built with Astro + Tailwind CSS
+- Based on Monolume theme
 - HTML
 - CSS
 - Markdown
@@ -43,6 +43,6 @@ All commands are run from the root of the project, from a terminal:
 ## License
 
 Content, project documentation, and case studies are copyright © Yessi Kenney.
-The underlying Monolume theme remains subject to its original license. 
+The underlying Monolume theme remains subject to its original license.
 
-## ❤️ 
+## ❤️
