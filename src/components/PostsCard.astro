@@ -2,36 +2,31 @@
 const { entry } = Astro.props;
 ---
 
-<li class="border-b border-current/10 py-8 px-8">
-  <p class="text-sm opacity-60 mb-2">
+<li class="border-b border-current/10 px-8 py-8">
+  <p class="mb-2 text-sm opacity-60">
     {entry.data.date.toLocaleDateString()}
   </p>
-<a
-    class="group relative flex flex-col md:flex-row items-center justify-between gap-4 md:gap-10 mb-6 pb-6 cursor-pointer"
+  <a
+    class="group relative mb-6 flex flex-col items-center justify-between gap-4 pb-6 md:flex-row md:gap-10"
     href={`/${entry.collection}/${entry.id}`}
->
-    
-  
-    <h3 class="text-2xl font-semibold hover:opacity-80 transition-opacity">
+  >
+    <h3 class="text-2xl font-semibold transition-opacity hover:opacity-80">
       {entry.data.title}
     </h3>
- 
 
-  <p class="text-secondary opacity-70 hover:opacity-80 leading-relaxed">
-    {entry.data.description}
-  </p>
-</a>
-  {entry.data.tags && (
-    <div class="flex flex-wrap gap-2 mt-5">
-      {entry.data.tags.map((tag) => (
-        <span
-          class="text-xs uppercase tracking-wide
-          px-3 py-1 rounded-full
-          border border-current/15"
-        >
-          {tag}
-        </span>
-      ))}
-    </div>
-  )}
+    <p class="leading-relaxed text-secondary opacity-70 hover:opacity-80">
+      {entry.data.description}
+    </p>
+  </a>
+  {
+    entry.data.tags && (
+      <div class="mt-5 flex flex-wrap gap-2">
+        {entry.data.tags.map((tag: any) => (
+          <span class="inline-flex items-center justify-center rounded-4xl px-8 py-4 uppercase outline-1 outline-secondary">
+            {tag}
+          </span>
+        ))}
+      </div>
+    )
+  }
 </li>

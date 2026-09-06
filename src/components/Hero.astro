@@ -4,22 +4,22 @@ import { SITE } from "@/consts";
 
 <!-- prettier-ignore -->
 <section
-    class="grid grid-cols-1 lg:grid-cols-2 items-center container mx-auto min-h-screen p-6 md:gap-16 gap-8 pt-18"
+    class="grid grid-cols-1 lg:grid-cols-2 items-center container mx-auto min-h-screen p-6 md:gap-12 gap-8 pt-18"
 >
-    <h1 class="sm:text-center sm:align-center md:text-center text-[clamp(3rem,10vw,6rem)] uppercase">
+    <h1 class="sm:text-center sm:align-center md:text-center text-[clamp(3rem,10vw,4rem)] font-black uppercase">
         {SITE.TITLE}
     </h1>
-    <div class="space-y-8">
+    <div class="space-y-2">
     
-        <p class="text-xl text-secondary ">Designing and building accessible web systems.</p>
+        <p class="sm:text-center sm:align-center md:text-left text-[clamp(1rem,6vw,2rem)] font-bold py-2 text-secondary ">Designing and building accessible web systems.</p>
 
-        <div class="flex flex-col md:flex-row gap-2.5">
+        <div class="flex flex-col align-center md:flex-row gap-2.5">
             <a
-                class="w-full sm:w-auto flex items-center justify-center bg-primary text-foreground rounded-2xl py-3 px-6 sm:py-4 sm:px-10 cursor-pointer hover:bg-background hover:outline hover:outline-1 hover:outline-dashed hover:outline-secondary hover:text-foreground transition"
+                class="w-full sm:w-auto flex items-center justify-center bg-primary text-foreground rounded-2xl py-3 px-6 sm:py-4 sm:px-10 hover:bg-background hover:outline hover:outline-1 hover:outline-solid hover:outline-secondary hover:text-foreground transition"
                 href="/projects">View Projects</a
             >
             <a
-                class="w-full sm:w-auto flex items-center justify-center bg-foreground text-background rounded-2xl py-3 px-6 sm:py-4 sm:px-10 cursor-pointer hover:bg-background hover:outline hover:outline-1 hover:outline-dashed hover:outline-secondary hover:text-foreground transition"
+                class="w-full sm:w-auto flex items-center justify-center bg-foreground text-background rounded-2xl py-3 px-6 sm:py-4 sm:px-10 cursor-pointer hover:bg-background hover:outline hover:outline-1 hover:outline-solid hover:outline-secondary hover:text-foreground transition"
                 href="/contact">Get in Touch</a
             >
         </div>

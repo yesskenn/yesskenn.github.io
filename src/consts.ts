@@ -2,7 +2,7 @@ export const SITE = {
   URL: "https://yessikenney.com",
   TITLE: "Yessi Kenney",
   DESCRIPTION:
-    "Creative front-end developer and web designer merging accessibility and good visual design for nonprofits, public agencies, and growing organizations. Based in Sacramento, available remotely.",
+    "Designer and developer building accessible web systems and visual design for nonprofits, public agencies, and growing organizations. Based in Sacramento, available remotely.",
   EMAIL: "hi@yessikenney.com",
 };
 
