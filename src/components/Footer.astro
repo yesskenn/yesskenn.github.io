@@ -6,18 +6,18 @@ const Projects: CollectionEntry<"projects">[] = (
   await getCollection("projects")
 ).slice(0, 3);
 ---
-<footer class="container mx-auto border-t rounded-t-xl p-10">
+<footer class="container mx-auto border-t p-10">
 
 
   <div class="container mx-auto px-6 space-y-8">
   <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
-    <h2 class="text-5xl lg:text-9xl uppercase">{SITE.TITLE}</h2>
-    <p class="text-2xl lg:text-3xl max-w-[760px]"> Designing and building accessible web systems. Chaotically. Intuitively.</p>
+    <!--  <h2 class="text-5xl lg:text-2xl uppercase">{SITE.TITLE}</h2> -->
+    <p class="text-2xl lg:text-xl max-w-[760px]"> Designing and building accessible web systems. Chaotically. Intuitively.</p>
   </div>
 
   <div class="flex flex-col sm:flex-row sm:flex-wrap justify-between gap-12">
     <div>
-      <h3 class="mb-2 text-xl">Contact</h3>
+      <h3 class="mb-2 font-bold text-xl">Contact</h3>
       <ul>
         <li><a href="mailto:hi@yessikenney.com">{SITE.EMAIL}</a></li>
       </ul>
@@ -25,8 +25,8 @@ const Projects: CollectionEntry<"projects">[] = (
     </div>
 
     <div>
-      <h3 class="mb-2 text-xl">Navigation</h3>
-      <ul class="space-y-1 text-secondary">
+      <h3 class="mb-2 font-bold text-xl">General</h3>
+      <ul class="space-y-1 text-background">
         <li><a href="/">Home</a></li>
         <li><a href="/projects">Projects</a></li>
         <li><a href="/services">Services</a></li>
@@ -37,7 +37,7 @@ const Projects: CollectionEntry<"projects">[] = (
     </div>
 
     <div>
-      <h3 class="mb-2 text-xl">Socials</h3>
+      <h3 class="mb-2 font-bold text-xl">Socials</h3>
       <ul class="space-y-1 text-secondary">
         {
           SOCIALS.map((link) => (
@@ -50,7 +50,7 @@ const Projects: CollectionEntry<"projects">[] = (
     </div>
 
     <div>
-      <h3 class="mb-2 text-xl">Projects</h3>
+      <h3 class="mb-2 font-bold text-xl">Projects</h3>
       <ul class="space-y-1 text-secondary">
         {
           Projects.map((project) => ( 
@@ -63,7 +63,7 @@ const Projects: CollectionEntry<"projects">[] = (
     </div>
   
   <div>
-    <h3 class="mb-2 text-xl">Accessibility<h3>
+    <h3 class="mb-2 font-bold text-xl">Accessibility<h3>
     <a href="/accessibility-statement">Accessibility Statement</a>
     <h4 class="a11y-webring-club" aria-labelledby="a11y-webring-club" id="a11y-webring-club">Member of the <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a></h4>
     
@@ -75,8 +75,9 @@ const Projects: CollectionEntry<"projects">[] = (
   </h4>
   </div>
   <div>
-  <span class="block text-center text-sm">
-    © {SITE.TITLE}. Built with Astro. And care and caffeine and cozy vibes. 
-  </span>
+
   </div>
+    <span class="block text-center text-sm">
+    © {SITE.TITLE}. Built with Astro. And care and caffeine and cozy vibes. Last update on Sept 06 2026
+  </span>
 </footer>

@@ -2,8 +2,8 @@
 import { SITE } from "@/consts";
 
 const links = [
-  { name: "About", href: "/about", target: "_self" },
   { name: "Projects", href: "/projects", target: "_self" },
+  { name: "About", href: "/about", target: "_self" },
   { name: "Blog", href: "/blog", target: "_self" },
   { name: "Contact", href: "/contact", target: "_self" },
 ];
@@ -14,13 +14,13 @@ const links = [
 
 
     <div class="container mx-auto flex items-center justify-around gap-10 p-6">
-        <a href="/" class="font-bold font-space text-4xl">{SITE.TITLE.toUpperCase().charAt(0)}/K</a>
+        <a href="/" class="font-black font-space text-4xl">{SITE.TITLE.toUpperCase().charAt(0)}/K</a>
         <nav class="space-x-12 text-secondary hidden md:block">
             {
                 links.map((link) => (
                     <a
                         href={link.href}
-                        class="font-bold hover:border-b-2 hover:border-solid hover:border-secondary pb-0.5"
+                        class="font-medium text-xl hover:border-b-2 hover:border-solid hover:border-secondary "
                     >
                         {link.name}
                     </a>
@@ -45,12 +45,12 @@ const links = [
         id="menu-mobile"
         class="hidden md:hidden space-x-3 text-secondary bg-background backdrop-blur-2xl w-screen p-4"
     >
-        <nav class="flex flex-col gap-4 text-2xl">
+        <nav class="flex px-12 flex-col gap-4 text-2xl">
             {
                 links.map((link) => (
                     <a
                         href={link.href}
-                        class="hover:border-b-2 hover:border-dashed hover:border-secondary pb-0.5"
+                        class="hover:border-b-2 hover:border-solid hover:border-secondary pb-0.2"
                     >
                         {link.name}
                     </a>

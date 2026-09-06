@@ -9,13 +9,13 @@ const allPosts: CollectionEntry<"blog">[] = (await getCollection("blog"))
   .slice(0, 3);
 ---
 
-<section id="Projects" class="container mx-auto px-6 mt-18">
-  <div class="overflow-hidden mb-12">
+<section id="Posts" class="container mx-auto mt-18 px-6">
+  <div class="mb-12 overflow-hidden">
     <div class="flex">
       <div class="flex shrink-0 whitespace-nowrap">
         {
           Array.from({ length: 10 }).map((_) => (
-            <h2 class="heading text-5xl md:text-9xl uppercase mr-4 md:mr-8 -mb-2">
+            <h2 class="heading mr-4 -mb-2 text-5xl uppercase md:mr-8 md:text-9xl">
               Posts
             </h2>
           ))
@@ -24,7 +24,7 @@ const allPosts: CollectionEntry<"blog">[] = (await getCollection("blog"))
       <div class="flex shrink-0 whitespace-nowrap" aria-hidden="true">
         {
           Array.from({ length: 10 }).map((_) => (
-            <h2 class="heading text-5xl md:text-9xl uppercase mr-4 md:mr-8 -mb-2">
+            <h2 class="mr-4 -mb-2 text-5xl uppercase md:mr-8 md:text-9xl">
               Posts
             </h2>
           ))

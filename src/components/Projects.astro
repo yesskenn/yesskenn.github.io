@@ -9,18 +9,8 @@ const allProjects: CollectionEntry<"projects">[] = (
 ---
 
 <section id="Projects" class="container mx-auto px-6">
-  <div class="overflow-hidden mb-12">
-    <div class="flex">
-      <div class="flex shrink-0 whitespace-nowrap">
-        {
-          Array.from({ length: 1 }).map((_) => (
-            <h2 class="heading text-3xl md:text-9xl uppercase mr-4 md:mr-8 -mb-2">
-              Projects
-            </h2>
-          ))
-        }
-      </div>
-
+  <div class="mb-12 overflow-hidden">
+    <div class="flex justify-center">
       <!--
       <div class="flex shrink-0 whitespace-nowrap" aria-hidden="true">
         {
@@ -33,13 +23,15 @@ const allProjects: CollectionEntry<"projects">[] = (
       </div> -->
     </div>
   </div>
-  {allProjects.map((project) => <Card entry={project} />)}
+  <div class="line-clamp-3 md:mr-8">
+    {allProjects.map((project) => <Card entry={project} />)}
+  </div>
 </section>
 
 <style>
   @keyframes scroll {
     0% {
-      transform: translateX(0);
+      transform: translateX();
     }
     100% {
       transform: translateX(-50%);

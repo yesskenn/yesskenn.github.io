@@ -18,24 +18,24 @@
 
 @layer base {
   :root { /* LIGHT MODE */
-    --color-background: #EEECDE; /* warm cream */
+    --color-background: #f8f8f8; /* warm gray */
     --color-foreground: #111111;
     --color-surface: #ffffff;
     --color-primary: #A99BB3; /* lilac */
     --color-tertiary: #ba9bc9;
-    --color-secondary: #4A5A72; /* steel blue */
-    --color-muted: #303b4a;
+    --color-secondary: #121212; /* steel blue */
+    --color-muted: #121212; /* #303b4a; old steel blue */
    /* --color-muted: #245d63; /* soft lavender-gray */
   } 
  .dark {
     /*DARK MODE */
     --color-background: #111111; /* base */
-    --color-foreground: #EEECDE; /* warm cream text */
+    --color-foreground: #f8f8f8; /* warm gray text */
     --color-surface: #A99BB3;
     --color-primary: #4a5a72 ; /* cute jeans */
-    --color-secondary: #EEECDE; /* original: f5e6d3 warm cream*/
+    --color-secondary: #f8f8f8; /* original: f5e6d3 warm gray*/
     --color-tertiary: #ba9bc9;
-    --color-muted: #9197ae; /* dusty lilac */
+    --color-muted: #f8f8f8; /* dusty lilac */
   }
 
 .heading {
@@ -48,6 +48,7 @@ html {
 
   background-color: var(--color-background);
   color: var(--color-foreground);
+  
 }
 
 
@@ -71,11 +72,11 @@ footer a {
 
 
 footer {
-background-color: #a99bb3;
+background-color: #f8f8f8;
 }
 
 .dark footer{
-  background-color: #4a5a72;
+  background-color: #121212;
 }
 a {
   display: inline-block; /* Required for transforms to work on inline elements */

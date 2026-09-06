@@ -14,7 +14,7 @@ export default defineConfig({
   },
   fonts: [
     {
-      name: "Space Mono",
+      name: "Work Sans",
       cssVariable: "--font-space",
       provider: fontProviders.google(),
     },
