@@ -4,7 +4,7 @@ description: "Managing accessible, compliant web systems at the scale and operat
 liveUrl: "https://dot.ca.gov/programs/rail/about-rail"
 githubUrl: "https://dot.ca.gov/programs/rail/about-rail"
 image: {
-url: "/assets/images/dor-about-1024x1024.png",
+url: "/dor-about-1024x1024.png",
 alt:  "Sample of Division of Rail website"
 }
 ---
