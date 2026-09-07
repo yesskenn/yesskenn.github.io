@@ -4,7 +4,7 @@ description: "A UX transformation for a preschool nonprofit, designed from the i
 liveUrl: "https://jmpns.org"
 githubUrl: "https://jmpns.org"
 image: {
-url: "/src/assets/images/jmpns.png",
+url: "/images/jmpns.png",
 alt:  "Screenshot of JMPNS webpage"
 }
 ---
