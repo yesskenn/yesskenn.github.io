@@ -22,7 +22,7 @@ const { Content } = await render(post);
 <Layout title={post.data.title} description={post.data.description}>
   <div class="container mx-auto space-y-8 px-6 pt-18">
     <button
-      class="my-6 flex cursor-pointer items-center gap-2 pl-2 text-secondary hover:text-primary"
+      class="my-6 flex cursor-pointer items-center gap-2 pl-2 hover:text-primary"
       title="back"
       id="back-button"
     >
@@ -45,11 +45,11 @@ const { Content } = await render(post);
       class="flex flex-col justify-between gap-4 border-b border-dashed border-secondary pb-4 md:flex-row md:items-center"
     >
       <div class="space-y-4">
-        <h1 class="heading text-3xl uppercase md:text-5xl">
+        <h1 class="text-3xl uppercase md:text-5xl">
           {post.data.title}
         </h1>
         <p>{post.data.description}</p>
-        <p class="text-secondary">
+        <p class="text-foreground">
           <FormattedDate date={post.data.date} />
         </p>
       </div>

@@ -40,7 +40,8 @@ export default {
       fontFamily: {
         "sans": ["Work Sans", ...defaultTheme.fontFamily.sans],
         gorgias: ["Gorgias", "serif"],
-        deseo: ["Deseo", "cursive"],
+        space: ["Space Mono", "mono"],
+        deseo: ["Deseo", "cursive"]
         
       },
       typography: {

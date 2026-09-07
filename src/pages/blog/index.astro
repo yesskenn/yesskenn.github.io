@@ -32,7 +32,7 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
       {
         years.map((year) => (
           <section class="animate space-y-4">
-            <h4 class="text-2xl lg:text-4xl">{year}</h4>
+            <h4 class="font-space text-2xl lg:text-4xl">{year}</h4>
             <div>
               <ul class="not-prose flex flex-col gap-4">
                 {posts[year].map((post) => (
