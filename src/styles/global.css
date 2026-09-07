@@ -19,28 +19,26 @@
 @layer base {
   :root { /* LIGHT MODE */
     --color-background: #f8f8f8; /* warm gray */
-    --color-foreground: #111111;
+    --color-foreground: #121212;
     --color-surface: #ffffff;
-    --color-primary: #A99BB3; /* lilac */
-    --color-tertiary: #ba9bc9;
-    --color-secondary: #121212; /* steel blue */
+    --color-primary: #ba9bc9; /* lilac */
+    --color-secondary: #ba9bc9; /* steel blue */
     --color-muted: #121212; /* #303b4a; old steel blue */
-   /* --color-muted: #245d63; /* soft lavender-gray */
   } 
  .dark {
     /*DARK MODE */
-    --color-background: #111111; /* base */
+    --color-background: #121212; /* base */
     --color-foreground: #f8f8f8; /* warm gray text */
     --color-surface: #A99BB3;
-    --color-primary: #4a5a72 ; /* cute jeans */
+    --color-primary: #61789a ; /* cute jeans */
     --color-secondary: #f8f8f8; /* original: f5e6d3 warm gray*/
-    --color-tertiary: #ba9bc9;
     --color-muted: #f8f8f8; /* dusty lilac */
   }
 
 .heading {
-  @apply font-space tracking-[-2%] font-bold;
+  @apply font-space font-bold;
 }
+
 html {
   @apply scroll-smooth;
   overflow-y: scroll;
@@ -58,9 +56,9 @@ body {
 }
 
 article {
-  @apply prose prose-neutral prose-img:mx-auto prose-img:my-auto text-lg leading-8;
+  @apply prose prose-neutral prose-img:mx-auto prose-img:my-auto text-foreground text-lg leading-8;
   @apply prose-headings:font-bold prose-headings:font-space prose-headings:text-foreground mx-auto;
-  @apply text-secondary prose-a:underline-offset-2;
+  @apply prose-a:underline-offset-2;
 }
 
 
@@ -70,14 +68,14 @@ footer a {
 }
 
 
-
+/* maybe when I'm craving a change, change the footer colors
 footer {
-background-color: #f8f8f8;
+background-color: #643d3d;
 }
-
 .dark footer{
-  background-color: #121212;
+  background-color: #9988dd;
 }
+*/
 a {
   display: inline-block; /* Required for transforms to work on inline elements */
   transition: transform 0.3s ease; /* Smooths the zoom */
@@ -92,10 +90,4 @@ a:hover {
 }
 }
 
-footer {
-  color: #1f2937;
-}
 
-.dark footer {
-  color: #f3f4f6;
-}
