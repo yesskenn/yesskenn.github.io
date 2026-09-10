@@ -11,10 +11,7 @@ import { SOCIALS } from "@/consts";
         Questions, ideas, or feedback are always welcome. Whether you have a
         question or just want to say hi, my inbox is always open!
       </p>
-      <p>
-        Open to remote roles where front-end development, design, and
-        accessibility overlap.
-      </p>
+      <p></p>
 
       <div class="space-y-2 text-xl">
         {
@@ -32,8 +29,19 @@ import { SOCIALS } from "@/consts";
         }
       </div>
     </div>
-
-    <form class="space-y-6">
+    <a
+      href="mailto:hi@yessikenney.com"
+      class="flex cursor-pointer items-center justify-center rounded-2xl bg-primary px-6 py-3 transition hover:bg-background hover:text-foreground hover:outline hover:outline-1 hover:outline-secondary hover:outline-solid sm:px-10 sm:py-4"
+    >
+      <button> Send Message </button>
+    </a>
+    <!-- 
+    <form
+      class="space-y-6"
+      action="mailto:hi@yessikenney.com"
+      method="POST"
+      name="emailForm"
+    >
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div class="relative">
           <input
@@ -93,5 +101,6 @@ import { SOCIALS } from "@/consts";
         Send Message
       </button>
     </form>
+  -->
   </div>
 </section>
