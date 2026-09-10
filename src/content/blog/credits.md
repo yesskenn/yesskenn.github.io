@@ -14,4 +14,4 @@ tags:
 
 Giving credit where credit is due. These are some of the resources and inspiration I used to build this site.
 
-- Background: [Hero Patterns](https://heropatterns.org)
+- Background: [Hero Patterns](https://heropatterns.com)
