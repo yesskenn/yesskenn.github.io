@@ -38,8 +38,8 @@ Another thing I know of the site's information architecture is that the actual c
 
 Alternatively, another California agency's website is organized by its programs.
 
-![CDE header with topics](images/cde/ia-topics)
-![Caltrans topics, organized by Departments.](images/cde/ia-program)
+![CDE header with topics](images/cde/ia-topic.png)
+![Caltrans topics, organized by Departments.](images/cde/ia-program.png)
 Existing content structure
 Existing page patterns
 
