@@ -28,7 +28,7 @@ export const PROJECTS = {
 export const SOCIALS = [
   {
     NAME: "Behance",
-    HREF: "https://www.behance.net/ysnraya",
+    HREF: "https://www.behance.net/yesskenn",
   },
   {
     NAME: "Linkedin",
