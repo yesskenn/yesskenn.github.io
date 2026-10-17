@@ -2,6 +2,7 @@
 title: "Serene Strides"
 description: "Building a clearer digital presence for a growing nonprofit."
 liveUrl: "https://serenestrides.org"
+githubUrl: "https://serenestrides.org"
 image: {
 url: "/serene-strides.png",
 alt:  "Serene Strides thumbnail"

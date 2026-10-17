@@ -2,6 +2,7 @@
 title: "JMPNS.org"
 description: "A UX transformation for a preschool nonprofit, designed from the inside out."
 liveUrl: "https://jmpns.org"
+githubUrl: "https://jmpns.org"
 image: {
 url: "/jmpns.png",
 alt:  "Screenshot of JMPNS webpage"
