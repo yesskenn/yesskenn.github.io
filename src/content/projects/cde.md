@@ -33,14 +33,14 @@ Note, I have been thinking about this since I started working here - before the 
 
 - It's large. There's a lot of pages. Lots of moving parts.
   I ran a scan with SortSite (or was it PowerMapper?) so that I could get a feel of the folder structure and it's...a lot. Check out this birds-eye view of all the pages on the site.
-  ![CDE Sitemap: A birds-eye view](/images/cde/sitemap-birdseye.png)
+  ![CDE Sitemap: A birds-eye view](images/cde/sitemap-birdseye.png)
 
 Another thing I know of the site's information architecture is that the actual content is organized by topics (and subsequently, sub-topics and sub-sub-topics), not by divisions or departments. That means that two offices or branches within the agency are able to access pages under the same content folder. For example, both a financial regulation office and a curriculum guidance office could both have access to a sub-topic folder in the "Professional Learning" area. This is great for giving web contributors the flexibility to edit the pages they need to without worrying about stepping on toes or waiting for someone to sign off on permissions. I do feel that this can get murky when it comes to a user journey, depending on the user and what they are looking for.
 
 Alternatively, another California agency's website is organized by its programs.
 
-![CDE header with topics ](/images/cde/ia-topics)
-[![Caltrans topics, organized by Departments.](/images/cde/ia-program)](https://dot.ca.gov/programs)
+![CDE header with topics ](images/cde/ia-topics)
+[![Caltrans topics, organized by Departments.](images/cde/ia-program)](https://dot.ca.gov/programs)
 Existing content structure
 Existing page patterns
 
