@@ -33,8 +33,8 @@ My goal was to create a repeatable system through the website, content structure
 - Developed a brand style guide covering typography, color palette, tone of voice
 - Researched equine-assisted learning to write and shape page content accurately, using AI tools to support drafting with careful editorial review (I'm not an equine programs expert, but I wanted to make sure that users had accurate and clear information.)
 - Took over social media content creation, developing posts against newly-created content pillars, writing CTAs, and creatively editing limited source photography to maintain visual brand consistency
-  ![Brand guide for Serene Strides showing logo variations, typography, visuals, and color palette](/assets/images/serene-strides/serene-strides-brand-guide.png)
-  ![Social media post samples showcasing how to brand guide translates to text posts for Instagram carousels](/assets/images/serene-strides/social-media-samples.png)
+  ![Brand guide for Serene Strides showing logo variations, typography, visuals, and color palette](/images/serene-strides/serene-strides-brand-guide.png)
+  ![Social media post samples showcasing how to brand guide translates to text posts for Instagram carousels](images/serene-strides/social-media-samples.png)
 
 ## Outcome
 
@@ -44,8 +44,8 @@ My goal was to create a repeatable system through the website, content structure
 - Ongoing social media management with intentional visual designs, not just posting
 - Accessible and interactive forms, including a registration form, liability, questionnaires, that also matched the new brand style
 - An increase in traffic for both the Instagram and Facebook accounts leading to more inquiries
-  ![Lighthouse score for Serene Strides as of October 17, 2026. 97 for performance, 100 for accessibility, 100 for best practices, and 92 for SEO ](/images/serenestrides/lighthouse-score.png)
-  ![Facebook stats for the Serene Strides account showing a 10% increase in views between April and June 2026](/assets/serenestrides/fb-views-90-crop.png)
+  ![Lighthouse score for Serene Strides as of October 17, 2026. 97 for performance, 100 for accessibility, 100 for best practices, and 92 for SEO ](images/serenestrides/lighthouse-score.png)
+  ![Facebook stats for the Serene Strides account showing a 10% increase in views between April and June 2026](images/serenestrides/fb-views-90-crop.png)
 
 ## Skill Stack
 
