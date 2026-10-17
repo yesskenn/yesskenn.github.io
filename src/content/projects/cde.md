@@ -2,9 +2,8 @@
 title: "CDE"
 description: "A [proposed] visual redesign of the CDEs public-facing site"
 liveUrl: "https://cde.ca.gov"
-githubUrl: "https://figma.com/"
 image: {
-url: "/dor-about-1024x1024.png",
+url: "/cde.png",
 alt:  "Screenshot of the revamped homepage for the California Department of Education"
 }
 ---
@@ -39,8 +38,8 @@ Another thing I know of the site's information architecture is that the actual c
 
 Alternatively, another California agency's website is organized by its programs.
 
-![CDE header with topics ](images/cde/ia-topics)
-[![Caltrans topics, organized by Departments.](images/cde/ia-program)](https://dot.ca.gov/programs)
+![CDE header with topics](images/cde/ia-topics)
+![Caltrans topics, organized by Departments.](images/cde/ia-program)
 Existing content structure
 Existing page patterns
 

@@ -2,7 +2,6 @@
 title: "Serene Strides"
 description: "Building a clearer digital presence for a growing nonprofit."
 liveUrl: "https://serenestrides.org"
-githubUrl: "https://serenestrides.org"
 image: {
 url: "/serene-strides.png",
 alt:  "Serene Strides thumbnail"
@@ -25,7 +24,7 @@ Serene Strides had meaningful programs and heartfelt stories, but their digital 
 
 Even though eventually I worked through the organization's digital ecosystem, my first task was to redesign the website. My first decision was to treat accessibility as part of the architecture and not just an afterthought. WCAG compliance was baked into every color choice, component build, and content structure. I also established reusable visual and content patterns and created a style guide the team could refer to in the future.
 My goal was to create a repeatable system through the website, content structure and social media materials, in addition to polishing up the site.
-![Different screenshots from different parts of the Serene Strides website](/serene-strides/site-screenshots.png)
+![Different screenshots from different parts of the Serene Strides website](images/serene-strides/site-screenshots.png)
 
 ## Process
 
@@ -33,8 +32,8 @@ My goal was to create a repeatable system through the website, content structure
 - Developed a brand style guide covering typography, color palette, tone of voice
 - Researched equine-assisted learning to write and shape page content accurately, using AI tools to support drafting with careful editorial review (I'm not an equine programs expert, but I wanted to make sure that users had accurate and clear information.)
 - Took over social media content creation, developing posts against newly-created content pillars, writing CTAs, and creatively editing limited source photography to maintain visual brand consistency
-  ![Brand guide for Serene Strides showing logo variations, typography, visuals, and color palette](serene-strides/serene-strides-brand-guide.png)
-  ![Social media post samples showcasing how to brand guide translates to text posts for Instagram carousels](serene-strides/social-media-samples.png)
+  ![Brand guide for Serene Strides showing logo variations, typography, visuals, and color palette](images/serene-strides/serene-strides-brand-guide.png)
+  ![Social media post samples showcasing how to brand guide translates to text posts for Instagram carousels](images/serene-strides/social-media-samples.png)
 
 ## Outcome
 
@@ -44,8 +43,8 @@ My goal was to create a repeatable system through the website, content structure
 - Ongoing social media management with intentional visual designs, not just posting
 - Accessible and interactive forms, including a registration form, liability, questionnaires, that also matched the new brand style
 - An increase in traffic for both the Instagram and Facebook accounts leading to more inquiries
-  ![Lighthouse score for Serene Strides as of October 17, 2026. 97 for performance, 100 for accessibility, 100 for best practices, and 92 for SEO ](/projects/serenestrides/lighthouse-score.png)
-  ![Facebook stats for the Serene Strides account showing a 10% increase in views between April and June 2026](/projects/serenestrides/fb-views-90-crop.png)
+  ![Lighthouse score for Serene Strides as of October 17, 2026. 97 for performance, 100 for accessibility, 100 for best practices, and 92 for SEO ](images/serene-strides/lighthouse-score.png)
+  ![Facebook stats for the Serene Strides account showing a 10% increase in views between April and June 2026](images/serene-strides/fb-views-90-crop.png)
 
 ## Skill Stack
 

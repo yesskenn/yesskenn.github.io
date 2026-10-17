@@ -2,7 +2,6 @@
 title: "Caltrans"
 description: "Managing accessible, compliant web systems at the scale and operational complexity of a California state agency."
 liveUrl: "https://dot.ca.gov/programs/rail/about-rail"
-githubUrl: "https://dot.ca.gov/programs/rail/about-rail"
 image: {
 url: "/dor-about-1024x1024.png",
 alt:  "Sample of Division of Rail website"
