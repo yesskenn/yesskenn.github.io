@@ -91,3 +91,9 @@ a:hover {
 }
 
 
+article img {
+  display: block;
+  width: calc(100% + 6rem);
+  max-width: none;
+  height: auto;
+}
