@@ -30,26 +30,29 @@ Note, I have been thinking about this since I started working here - before the 
 
 ## The Existing System
 
-- It's large. There's a lot of pages. Lots of moving parts.
-  I ran a scan with SortSite (or was it PowerMapper?) so that I could get a feel of the folder structure and it's...a lot. Check out this birds-eye view of all the pages on the site.
-  ![CDE Sitemap: A birds-eye view](images/cde/sitemap-birdseye.png)
+PowerMapper helped me visualize the structure of the folders and pages of the CDE website. It's a lot.
+
+<video width="320" height="240" autoplay loop muted>
+  <source src="images/cde/tmi-ia.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 Another thing I know of the site's information architecture is that the actual content is organized by topics (and subsequently, sub-topics and sub-sub-topics), not by divisions or departments. That means that two offices or branches within the agency are able to access pages under the same content folder. For example, both a financial regulation office and a curriculum guidance office could both have access to a sub-topic folder in the "Professional Learning" area. This is great for giving web contributors the flexibility to edit the pages they need to without worrying about stepping on toes or waiting for someone to sign off on permissions. I do feel that this can get murky when it comes to a user journey, depending on the user and what they are looking for.
 
-Alternatively, another California agency's website is organized by its programs.
-
 ![CDE header with topics](images/cde/ia-topic.png)
+
+Caltrans, another California agency, organizes their web content by its programs.
+
 ![Caltrans topics, organized by Departments.](images/cde/ia-program.png)
-Existing content structure
-Existing page patterns
 
 ### Constraints
 
-The site contains a large volume of content, so I used a representative sampling approach rather than attempting to manually inventory every URL. Although after the site scan I have a pretty good idea of the lay of the land. Additionally, CDE as an organization does not have an established style guide, although they do have preferred web standards for web contributors to use for content they want to publish to the site.
+The site contains a large volume of content, so I used a representative sampling approach rather than attempting to manually inventory every URL. Additionally, CDE as an organization does not have an established style guide, although they do have [preferred web standards](https://www.cde.ca.gov/re/di/ws/webstandards.asp) for web contributors to use for content they want to publish to the site.
 
 #### Interesting Tidbits
 
-"All websites in the “ca.gov” DNS Zone must contain a direct link. to https://www.ca.gov/ and must provide both general information and details on digital services to be used on https://www.ca.gov/." [State Administrative Manual 519.5](https://www.dgs.ca.gov/Resources/SAM/TOC/5100/5195-1)
+"All websites in the “ca.gov” DNS Zone must contain a direct link to https://www.ca.gov/ and must provide both general information and details on digital services to be used on https://www.ca.gov/."
+[State Administrative Manual 519.5](https://www.dgs.ca.gov/Resources/SAM/TOC/5100/5195-1)
 
 Any site with the CA.GOV domain must adhere to certain requirements, see [Website Standards 5190.1](https://www.dgs.ca.gov/Resources/SAM/TOC/5100/5190-1)
 
