@@ -30,12 +30,9 @@ Note, I have been thinking about this since I started working here - before the 
 
 ## The Existing System
 
-PowerMapper helped me visualize the structure of the folders and pages of the CDE website. It's a lot.
+PowerMapper helped me visualize the current structure of the folders and pages of the CDE website. It's a lot.
 
-<video width="320" height="240" autoplay loop muted>
-  <source src="images/cde/tmi-ia.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+![PowerMapper animation showing the extent of the CDE content][images/cde/tmi-ia.mp4]
 
 Another thing I know of the site's information architecture is that the actual content is organized by topics (and subsequently, sub-topics and sub-sub-topics), not by divisions or departments. That means that two offices or branches within the agency are able to access pages under the same content folder. For example, both a financial regulation office and a curriculum guidance office could both have access to a sub-topic folder in the "Professional Learning" area. This is great for giving web contributors the flexibility to edit the pages they need to without worrying about stepping on toes or waiting for someone to sign off on permissions. I do feel that this can get murky when it comes to a user journey, depending on the user and what they are looking for.
 
