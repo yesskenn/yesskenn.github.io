@@ -1,26 +1,17 @@
 ---
 title: "CDE"
-description: "A [proposed] visual redesign of the CDEs public-facing site"
-liveUrl: "https://cde.ca.gov"
+description: "A (proposed) visual redesign of the CDEs public-facing site"
+liveUrl: ""
 image: {
 url: "/cde.png",
 alt:  "Screenshot of the revamped homepage for the California Department of Education"
 }
 ---
 
-## Problem
-
-The site is visually stuck in the early 2000s and is confusing to navigate.
-
 ## Overview
 
 Disclaimer: This is a proposed redesign, I have no implementation access.
-Reimagining a 3000+ page government website through content strategy, information architecture, and a scalable design system. In other words, this is an exploration of the content, structure, and interface of the CDE website. And some of the intranet.
-
-To put it plainly, the California Department of Education's website is stuck in the early 2000s. In the age of AI this could be a nostalgic, intentional vibe - but there are overlooked details that make the style look schlepped together and posted as "good enough". However, I know that this team works really hard to make the site accessible, so that's a plus.
-
-I examined the site and considered, very much, how it could support a more scalable and user-centered experience. how the experience could be improved and developed a prototype to demonstrate the proposed system.
-Note, I have been thinking about this since I started working here - before the vote to incorporate CDE into the governor's rule/kingdom and always wondered why it didn't match the other ca.gov websites (they use the California State Template).
+Reimagining a large page government website through content strategy, information architecture, and a scalable design system. In other words, this is an exploration of the content, structure, and interface of the CDE website snd related aspects.
 
 ## Role
 
@@ -28,7 +19,20 @@ Note, I have been thinking about this since I started working here - before the 
 
 - I took an existing content ecosystem, audited and structured the information architecture, identified reusable patterns, created a scalable design system, and created a prototype to show what it _could_ be.
 
-## The Existing System
+## Problem
+
+The site needs a visual update and is confusing to navigate in some ways.
+
+To put it plainly, the California Department of Education's website is stuck in the early 2000s. In the age of AI this could be a nostalgic, intentional vibe - but there are overlooked details that make the style look schlepped together and posted as "good enough". However, I know that this team works really hard to make the site accessible, so that's a plus.
+
+## Approach
+
+I examined the site and considered, very much, how it could support a more scalable and user-centered experience. how the experience could be improved and developed a prototype to demonstrate the proposed system.
+Note, I have been thinking about this since I started working here - before the vote to incorporate CDE into the governor's rule/kingdom and always wondered why it didn't match the other ca.gov websites (they use the California State Template).
+
+## Process
+
+### What I Found / The Existing System
 
 PowerMapper helped me visualize the current structure of the folders and pages of the CDE website. It's a lot.
 
@@ -42,9 +46,9 @@ Caltrans, another California agency, organizes their web content by its programs
 
 ![Caltrans topics, organized by Departments.](images/cde/ia-program.png)
 
-### Constraints
+#### Constraints
 
-The site contains a large volume of content, so I used a representative sampling approach rather than attempting to manually inventory every URL. Additionally, CDE as an organization does not have an established style guide, although they do have [preferred web standards](https://www.cde.ca.gov/re/di/ws/webstandards.asp) for web contributors to use for content they want to publish to the site.
+The site contains a large volume of content, so I used a representative sampling approach rather than attempting to manually inventory every URL. Additionally, CDE as an organization does not have an established style guide, although they do have [preferred web standards]() for web contributors to use for content they want to publish to the site.
 
 #### Interesting Tidbits
 
@@ -55,10 +59,6 @@ Any site with the CA.GOV domain must adhere to certain requirements, see [Websit
 
 http://www.webstandards.ca.gov/
 
-## Research and Audit
-
-### Process for Solution
-
 ### Observations
 
 information is difficult to locate
@@ -66,24 +66,13 @@ information is difficult to locate
 navigation / content hierarchy is unclear
 visual patterns vary
 
-## Architecture
+### Changes and Why
 
-### Content Architecture
-
-### Information Architecture
-
-- navigation - it is currently
+I used the California State Template as inspiration.
 
 ## Outcome
 
 - Established a more scalable content system by creating reusable Sitecore components and page patterns, while refreshing the existing content
-
-### Evidence
-
-- representative sample
-- screenshots
-- content inventory
-- anecdotal feedback
 
 ## Skill Stack
 
@@ -94,3 +83,18 @@ visual patterns vary
 - Accessible PDF
 - HTML / CSS / Javascript
 - Sitecore / Drupal
+- Figma
+
+## Links
+
+[Figma Link]()
+
+### Resources
+
+[CSS Stats](https://cssstats.com)
+[A11y Style Guide](https://a11y-style-guide.com/style-guide/)
+
+### Inspiration
+
+[California State Template](https://www.template.webstandards.ca.gov)
+[Utah Design System Guidelines](https://designsystem.utah.gov/guidelinesStandards/designGuidelines/)

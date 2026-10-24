@@ -20,11 +20,13 @@ The Division of Rail, a fairly new division at Caltrans, had a growing ecosystem
 
 Rather than aesthetics, and in addition to the content and structure, one of the themes for this project was _communication_. Not just ensuring that the public-facing communication was accurate and complete before publishing, but also collaborating with the stakeholders to ensure everything would be alright.
 
+## Approach
+
 I started by reviewing what was already there, auditing pages and folders. Most of everything was scattered blocks of text, and content was missing. For example, some pages had contact information other offices had paragraphs upon paragraphs to explain what their office did and others barely had a sentence. Needless to say, not everyone was on the same page. So, I managed the project day-to-day, which really meant wrangling up the content from different people and sending various follow-up emails and scheduling meetings. Also documenting every phase and minutiae in the project tracker, which I actually really enjoyed. This was actually really helpful in getting a birds-eye perspective of the type of content we had on hand, a sense of the Division's vibe and what kind of content we needed from them.
 
 After getting the content (and while we waited for the content to arrive) I got to work in Sitecore. Reminiscent of Brad Frost's [Atomic Design](https://atomicdesign.bradfrost.com/table-of-contents/), I created reusable Sitecore components (or molecules) such as sidebar containers for the contacts, html snippets to make the spacing less awkward, and interactive components like the accordion sets so that overall the content would be easy to digest for the public. Altogether, these created a template I could reuse for other offices for the Division of Rail without needing to rebuild them one by one. This was one template inside the overarching Caltrans (CA State Template) systems.
 
-## Approach
+## Process
 
 Things can look fine or "look good" and then still fail accessibility requirements, or be neglected by only adding paragraphs and not differentiating sections or headings. Sometimes "good enough" isn't good at all.
 

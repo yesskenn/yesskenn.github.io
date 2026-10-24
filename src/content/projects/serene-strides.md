@@ -12,11 +12,11 @@ alt:  "Serene Strides thumbnail"
 
 Serene Strides is a non-profit serving youth, professionals, and community members through programs centered on nature, connection, and social-emotional learning. It's meaningful, specialized work that is deserving of a website to match. They needed their site to be visually consistent and meet basic accessibility standards.
 
-## My Role
+## Role
 
 Digital strategy · Web design · Content · Brand systems · Accessibility · Social media
 
-### Challenge
+## Problem
 
 Serene Strides had meaningful programs and heartfelt stories, but their digital presence needed a change - starting with the website. The content, including the writing, needed to become clearer, more consistent, and easier to produce without creating more work for the small team.
 
@@ -60,6 +60,7 @@ My goal was to create a repeatable system through the website, content structure
 - Lightroom
 - Adobe
 - Jotform
+- Digital Communications
 
 ### Design + Systems + Accessibility
 

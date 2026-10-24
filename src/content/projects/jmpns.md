@@ -11,17 +11,17 @@ alt:  "Screenshot of JMPNS webpage"
 
 ## Overview
 
-### What was the problem?
+## Role
+
+I ran this project from start to finish as the UX designer: discovery, architecture, design, and delivery.
+
+## What was the problem?
 
 James Marshall Parent Nursery School (JMPNS) had a website that wasn't serving their audience. It was visually cluttered, the information was buried, and the mobile experience wasn't that great. It needed a new coat of paint, but the underlying structure needed to make sense too.
 
 #### Before & After
 
 ![Snippets of the JMPNS site before the redesign](images/jmpns/before-snippets.png)
-
-## My Role
-
-I ran this project from start to finish as the UX designer: discovery, architecture, design, and delivery.
 
 ## Approach
 
