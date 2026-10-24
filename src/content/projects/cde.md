@@ -1,7 +1,7 @@
 ---
 title: "CDE"
 description: "A (proposed) visual redesign of the CDEs public-facing site"
-liveUrl: ""
+liveUrl: "https://google.com"
 image: {
 url: "/cde.png",
 alt:  "Screenshot of the revamped homepage for the California Department of Education"
@@ -62,7 +62,7 @@ http://www.webstandards.ca.gov/
 ### Observations
 
 information is difficult to locate
-// similar content is structure inconsistently
+// similar content is structured inconsistently
 navigation / content hierarchy is unclear
 visual patterns vary
 
@@ -72,7 +72,7 @@ I used the California State Template as inspiration.
 
 ## Outcome
 
-- Established a more scalable content system by creating reusable Sitecore components and page patterns, while refreshing the existing content
+- Established a design system, created an updated visual design within a prototype
 
 ## Skill Stack
 
